@@ -1,0 +1,126 @@
+/**********************/
+/* Progress */
+/**********************/ 
+
+.progress {
+	.progress-bar {
+		background: $primary;
+	}
+
+}
+
+.progress-item {
+	.progress-value-round {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: $primary;
+		color: $white;
+		text-align: center;
+		position: relative;
+		font-size: 12px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 10px 0 10px;
+			border-color: $primary transparent transparent transparent;
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			margin-left: -10px;
+		}
+
+	}
+
+}
+
+.progress-item {
+	.progress-value-rounded {
+		width: 60px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 3px;
+		background: $primary;
+		color: $white;
+		text-align: center;
+		position: relative;
+		font-size: 12px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 10px 0 10px;
+			border-color: $primary transparent transparent transparent;
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			margin-left: -10px;
+		}
+
+	}
+
+}
+
+svg.radial-progress {
+	height: auto;
+	max-width: 200px;
+	padding: 1em;
+	transform: rotate(-90deg);
+	width: 100%;
+}
+
+svg.radial-progress circle {
+	fill: rgba(0, 0, 0, 0);
+	stroke: $primary;
+	stroke-dashoffset: 219.91148575129; /* Circumference */
+	stroke-width: 10;
+}
+
+svg.radial-progress.radial-progress-round-02 circle {
+	stroke-width: 2;
+}
+
+svg.radial-progress.radial-progress-round-05 circle {
+	stroke-width: 5;
+}
+
+svg.radial-progress.radial-progress-round-08 circle {
+	stroke-width: 8;
+}
+
+svg.radial-progress circle.incomplete {
+	opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+	stroke-dasharray: 219.91148575129; /* Circumference */
+}
+
+svg.radial-progress text {
+	fill: $dark;
+	text-anchor: middle;
+}
+
+svg.radial-progress:nth-of-type(6n+1) circle {
+	stroke: $primary;
+}
+
+svg.radial-progress.radial-progress-orange circle {
+	stroke: $orange;
+}
+
+svg.radial-progress.radial-progress-cyan circle {
+	stroke: $cyan;
+}
+
+svg.radial-progress.radial-progress-green circle {
+	stroke: $green;
+}

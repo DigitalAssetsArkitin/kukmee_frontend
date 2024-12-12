@@ -1,0 +1,137 @@
+/**********************/
+/* Swiper */
+/**********************/ 
+.swiper-button-prev {
+	width: auto;
+	height: auto;
+
+	&:after {
+		content: none;
+	}
+
+	.icon-btn {
+		font-size: 20px;
+		line-height: 20px;
+		color: $white;
+		width: 50px;
+		line-height: 50px;
+		height: 50px;
+		display: block;
+		text-align: center;
+		border-radius: 50%;
+		background: rgba($primary, 0.2);
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			background: $yellow;
+			color: $dark;
+		}
+
+	}
+
+}
+
+.swiper-button-next {
+	width: auto;
+	height: auto;
+
+	&:after {
+		content: none;
+	}
+
+	.icon-btn {
+		font-size: 20px;
+		line-height: 20px;
+		color: $white;
+		width: 50px;
+		line-height: 50px;
+		height: 50px;
+		display: block;
+		text-align: center;
+		border-radius: 50%;
+		background: rgba($primary, 0.2);
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			background: $yellow;
+			color: $dark;
+		}
+
+	}
+
+}
+
+.swiper-button-pink-gradient {
+	.swiper-button-next,
+	.swiper-button-prev {
+		.icon-btn {
+			background: rgba($pink, 0.2);
+
+			&:hover {
+				background: linear-gradient(125deg, #fd2590, #fd692e) !important;
+				color: $white;
+			}
+
+		}
+
+	}
+
+}
+
+// swiper-pagination
+
+.swiper-pagination {
+	position: relative;
+	margin-top: 30px;
+
+	.swiper-pagination-bullet {
+		width: 16px;
+		height: 16px;
+		background: $white;
+		opacity: 0.2;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: $primary;
+		opacity: 1;
+		border-radius: 10px;
+		width: 30px;
+	}
+
+}
+
+.swiper-pagination-light {
+	.swiper-pagination-bullet-active {
+		background: $white;
+	}
+
+}
+
+// slider slick 
+.slick-next {
+	right: 20px;
+
+	&:before {
+		color: $dark;
+	}
+
+}
+
+.slick-prev {
+	left: 10px;
+	z-index: 9;
+
+	&:before {
+		color: $dark;
+	}
+
+}
+
+@media (max-width:991px) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none;
+	}
+
+}

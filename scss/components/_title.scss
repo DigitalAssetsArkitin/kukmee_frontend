@@ -1,0 +1,42 @@
+/**********************/
+/* Title */
+/**********************/ 
+
+.sub-title-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:before {
+    content: "";
+    width: 3rem;
+    border-top: 3px solid $primary;
+    margin-top: -1px;
+    margin-bottom: 0;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+}
+
+.title-separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    width: 4rem;
+    border-top: 5px solid $primary;
+    margin-top: -1px;
+    margin-bottom: 0;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+}

@@ -1,0 +1,338 @@
+/**********************/
+/* Form */
+/**********************/ 
+
+.form-control {
+	border-radius: 3px;
+	height: 54px;
+	line-height: 54px;
+	padding: 12px 20px;
+	font-size: 14px;
+	transition: all 0.4s ease-in-out;
+
+	&:focus {
+		box-shadow: none;
+		border-color: $primary;
+	}
+
+}
+
+textarea.form-control,
+.form-floating > textarea.form-control {
+	height: auto;
+	line-height: 1.5;
+}
+
+.form-select {
+	border-radius: 3px;
+	height: 54px;
+	line-height: 24px;
+	padding: 12px 20px;
+	font-size: 14px;
+	transition: all 0.4s ease-in-out;
+
+	&:focus {
+		box-shadow: none;
+		border-color: $primary;
+	}
+
+}
+
+.form-light {
+	.form-control {
+		background: $light;
+
+		&:hover {
+			background: $white;
+		}
+
+	}
+
+}
+
+// form-border-bottom
+
+.form-border-bottom {
+	.form-control {
+		border: 0px;
+		border-radius: 0;
+		border-bottom: 2px solid $border-color;
+		padding-left: 0;
+
+		&:focus {
+			border-color: $primary;
+		}
+
+	}
+
+}
+
+.form-animation-custom {
+	.form-animation {
+		position: relative;
+		padding-top: 16px;
+		margin-bottom: 16px;
+
+		.animated-label {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			bottom: 0;
+			z-index: 2;
+			width: 100%;
+			cursor: text;
+			transition: 0.2s ease all;
+			margin: 0;
+			user-select: none;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 2px;
+				width: 10px;
+				visibility: hidden;
+				background-color: $primary;
+				transition: 0.2s ease all;
+			}
+
+		}
+
+		&.not-empty {
+			.animated-label {
+				top: 10px;
+				font-size: 12px;
+			}
+
+		}
+
+		.form-control {
+			position: relative;
+			z-index: 1;
+			border-radius: 0;
+			border-width: 0 0 1px;
+			border-bottom-color: $border-color;
+			height: auto;
+			padding: 3px 0 5px;
+
+			&:focus {
+				box-shadow: none;
+				border-bottom-color: $border-color;
+
+				~ .animated-label {
+					top: 10px;
+					opacity: 1;
+					font-size: 12px;
+
+					&:after {
+						visibility: visible;
+						width: 100%;
+						left: 0;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.form-shadow {
+	.form-control {
+		box-shadow: 0px 7px 20px rgba($dark, 0.1);
+	}
+
+}
+
+.form-control-lg {
+	height: 80px;
+	padding: 40px;
+	font-size: 14px;
+}
+
+.form-dark {
+	.form-control {
+		background: rgba($white, 0.1);
+		border-color: rgba($white, 0.1);
+		color: $white;
+	}
+
+}
+
+.form-dark .form-control::-moz-placeholder {
+	color: $white;
+}
+
+.form-dark .form-control::-ms-input-placeholder {
+	color: $white;
+}
+
+.form-dark .form-control::-webkit-input-placeholder {
+	color: $white;
+}
+
+// subscribe form
+
+.subscribe-form-no-gutter {
+	.form-control {
+		border-radius: 0;
+		height: 64px;
+		line-height: 64px;
+		background: $light;
+		border-color: $light;
+	}
+
+	.btn {
+		border-radius: 0 !important;
+		padding: 19px 10px;
+	}
+
+}
+
+// subscribe-form-shadow
+
+.subscribe-form-shadow {
+	.form-control {
+		border-radius: 0;
+		height: 64px;
+		line-height: 64px;
+		border-color: $light;
+		box-shadow: 0px 7px 20px rgba($dark, 0.1);
+
+		&:focus {
+			box-shadow: 0px 7px 20px rgba($dark, 0.15);
+		}
+
+	}
+
+}
+
+// subscribe-form-shadow
+
+.subscribe-form-wrap {
+	position: relative;
+
+	.form-control {
+		border-radius: 0;
+		height: 64px;
+		line-height: 64px;
+		border-color: $light;
+		padding-right: 130px;
+
+		&:focus {
+			box-shadow: 0px 7px 20px rgba($dark, 0.15);
+		}
+
+	}
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 19px 20px;
+		color: $primary;
+	}
+
+}
+
+.subscribe-form-wrap.icon-wrap {
+	position: relative;
+
+	.form-control {
+		border-radius: 0;
+		height: 64px;
+		line-height: 64px;
+		border-color: $light;
+		padding-right: 100px;
+
+		&:focus {
+			box-shadow: 0px 7px 20px rgba($dark, 0.15);
+		}
+
+	}
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 19px 26px 19px 20px;
+		color: $primary;
+		border-left: 1px solid $border-color;
+
+		&:hover {
+			background: $primary;
+			color: $white;
+		}
+
+	}
+
+}
+
+.subscribe-form-francy {
+	position: relative;
+
+	.form-control {
+		border-radius: 0;
+		height: 64px;
+		line-height: 64px;
+		border-color: $light;
+		padding-right: 160px;
+
+		&:focus {
+			box-shadow: 0px 7px 20px rgba($dark, 0.15);
+		}
+
+	}
+
+	.btn {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		border-left: 0;
+
+		&:hover {
+			background: $primary;
+			color: $white;
+		}
+
+	}
+
+}
+
+// subscribe floating
+.subscribe-floating {
+	.btn {
+		padding: 16px 30px;
+	}
+
+}
+
+// form-check
+.form-check {
+	line-height: 1.5;
+}
+
+.form-check-input {
+	box-shadow: none !important;
+}
+
+.form-check-input:checked {
+	border-color: $primary;
+	background-color: $primary;
+}
+
+@media (max-width:767px) {
+	.subscribe-form-francy .btn {
+		position: relative;
+		right: 0;
+	}
+
+	.subscribe-form-francy .form-control {
+		padding-right: 10px;
+	}
+
+}

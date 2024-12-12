@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--===== Required meta tags =====-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Infinitysoftway" />
+  <meta name="description" content="statistic charts">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!--===== Title =====-->
+  <title>Kukmee</title>
+
+  <!--===== Favicon =====-->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!--===== Google fonts =====-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Lora:wght@400;500;600;700&display=swap">
+
+  <!--===== Global bootstrap required css =====-->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--===== Global styles including: Font Icons, Plugins, etc =====-->
+  <link rel="stylesheet" href="css/font-awesome/all.min.css">
+  <link rel="stylesheet" href="css/feather/iconfont.css">
+  <link rel="stylesheet" href="css/pe-icon-stroke/Pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="css/simple-line-icons/simple-line-icons.css">
+  <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="css/pe-icon-stroke/Pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="css/swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/animate/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+
+
+  <!-- Stepper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Add Bootstrap CSS in the <head> section -->
+  <!--===== Main theme css =====-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--===== Category demo css =====-->
+  <link rel="stylesheet" href="css/demo/food.css">
+
+
+
+
+</head>
+
+<body class="stokes-wrapper">
+
+
+  <!--==========  Start of Header Section ========== -->
+  <header class="header">
+
+    <nav class="navbar navbar-light navbar-expand-lg navbar-transparent navbar-blur navbar-text-dark">
+      <div class="container-fluid">
+        <!--===== Start of logo ===== -->
+        <a class="navbar-brand" href="index-food.html">
+          <img class="logo" src="images/food/logo/logo 3.jpg" alt="Logo">
+        </a>
+        <!--===== End of logo ===== -->
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="icon-bar top-bar mt-0"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+
+        <!--===== Start of nav ===== -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav" style="margin-right: -21px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="index-food.html" id="navbar-home">
+                <span class="text-line"><strong>Order</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book-catering.html" id="navbar-features">
+                <span class="text-line"><strong>Catering</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cook.html" id="navbar-pages">
+                <span class="text-line"><strong>Cook</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chef.html" id="navbar-blog">
+                <span class="text-line"><strong>Chef</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bartender.html" id="navbar-elements">
+                <span class="text-line"><strong>Bartender</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franchise.html" id="navbar-shop">
+                <span class="text-line"><strong>Franchise</strong></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franchise.html" id="navbar-shop">
+                <span class="text-line"><strong>Kukmart</strong></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <i class="bi bi-bag-check btn btn-round" id="rocky1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"></i>
+
+        <!-- Login Button triggers modal -->
+        <div class=" rocky1">
+          <a class="btn btn-outline-dark btn-round" id="loginBtn" href="#" data-bs-toggle="modal"
+            data-bs-target="#loginModal" style="margin-left: -7px;">Login</a>
+        </div>
+
+      </div>
+      <!--===== End of nav ===== -->
+    </nav>
+    <!--===== End of navbar =====-->
+  </header>
+
+  <!--===== Login Modal ===== -->
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Stepper Component for Login -->
+          <div class="bs-stepper" id="stepperLogin">
+            <div class="bs-stepper-header" role="tablist" style="display: none;">
+              <!-- Step 1: Name -->
+              <div class="step" data-target="#name-step">
+                <button type="button" class="step-trigger" role="tab" aria-controls="name-step" id="name-step-trigger">
+                  <span class="bs-stepper-circle">1</span>
+                  <span class="bs-stepper-label">Name</span>
+                </button>
+              </div>
+              <div class="line"></div>
+              <!-- Step 2: Password -->
+              <div class="step" data-target="#password-step">
+                <button type="button" class="step-trigger" role="tab" aria-controls="password-step"
+                  id="password-step-trigger">
+                  <span class="bs-stepper-circle">2</span>
+                  <span class="bs-stepper-label">Password</span>
+                </button>
+              </div>
+            </div>
+            <div class="bs-stepper-content">
+              <!-- Step Content -->
+              <!-- Step 1: Name -->
+              <div id="name-step" class="content" role="tabpanel" aria-labelledby="name-step-trigger">
+                <form id="nameForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label" style="color: black !important;;">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <div class="invalid-feedback">Name must be at least 5 characters long.</div>
+                  </div>
+                  <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+                </form>
+
+
+
+
+                <!-- Sign Up Prompt -->
+                <div class="text-center mt-3">
+                  <p class="mb-0">Don't have an account?
+                    <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signupModal"
+                      data-bs-dismiss="modal">
+                      Sign Up
+                    </a>
+                  </p>
+                </div>
+
+              </div>
+              <!-- Step 2: Password -->
+              <div id="password-step" class="content" role="tabpanel" aria-labelledby="password-step-trigger">
+                <form id="passwordForm">
+                  <div class="mb-3">
+                    <label for="password" class="form-label" style="color: black !important;">Password</label>
+                    <div class="input-group">
+                      <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                      <span class="input-group-text" id="togglePassword" style="padding-top: 15px;">
+                        <i class="bi bi-eye" id="toggleIcon"></i>
+                      </span>
+                    </div>
+                    <div class="invalid-feedback">Password must contain at least two numbers.</div>
+                  </div>
+                  <p><strong>Entered Name:</strong> <span id="namePreview"></span></p>
+                  <button type="button" class="btn btn-secondary" id="prevButton">Previous</button>
+                  <button type="button" class="btn btn-primary" id="loginButton">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Stepper end -->
+          <div class="mt-3" id="loginSuccessMsg" style="display:none;">
+            <p class="text-success">Login was successful!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!--===== Sign Up Modal =====-->
+  <!--===== Sign Up Modal with Stepper ===== -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="bs-stepper" id="stepperSignup">
+            <div class="bs-stepper-header" role="tablist" style="display: none;">
+
+              <div class="step" data-target="#signup-details-step">
+                <button type="button" class="step-trigger" role="tab" aria-controls="signup-details-step"
+                  id="signup-details-step-trigger">
+                  <span class="bs-stepper-circle">1</span>
+                  <span class="bs-stepper-label">Details</span>
+                </button>
+              </div>
+              <div class="line"></div>
+
+              <div class="step" data-target="#signup-password-step">
+                <button type="button" class="step-trigger" role="tab" aria-controls="signup-password-step"
+                  id="signup-password-step-trigger">
+                  <span class="bs-stepper-circle">2</span>
+                  <span class="bs-stepper-label">Password</span>
+                </button>
+              </div>
+            </div>
+            <div class="bs-stepper-content">
+
+              <div id="signup-details-step" class="content" role="tabpanel"
+                aria-labelledby="signup-details-step-trigger">
+                <form id="signupDetailsForm">
+                  <div class="mb-3">
+                    <label for="signupName" class="form-label" style="color: black !important;">Name</label>
+                    <input type="text" class="form-control" id="signupName" placeholder="Enter your name">
+                    <div class="invalid-feedback">Name must be at least 5 characters long.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signupPhone" class="form-label" style="color: black !important;">Phone Number</label>
+                    <input type="tel" class="form-control" id="signupPhone" placeholder="Enter your phone number">
+                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signupEmail" class="form-label" style="color: black !important;">Email</label>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <button type="button" class="btn btn-primary" id="signupNextButton">Continue</button>
+                </form>
+              </div>
+
+
+              <div id="signup-password-step" class="content" role="tabpanel"
+                aria-labelledby="signup-password-step-trigger">
+                <form id="signupPasswordForm">
+                  <div class="mb-3">
+                    <label for="signupPassword" class="form-label" style="color: black !important;">Password</label>
+                    <div class="input-group">
+                      <input type="password" class="form-control" id="signupPassword"
+                        placeholder="Create your password">
+                      <span class="input-group-text" id="signupTogglePassword">
+                        <i class="bi bi-eye" id="signupToggleIcon"></i>
+                      </span>
+                    </div>
+                    <div class="invalid-feedback">Password must contain at least 6 characters.</div>
+                  </div>
+                  <button type="button" class="btn btn-secondary" id="signupPrevButton">Previous</button>
+                  <button type="button" class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--========== End of header ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--==========  Start of banner section ==========-->
+  <section class="banner-food bg-fit" style="background-image: url(images/food/01.jpg);">
+
+    <div class="container overflow-hidden">
+      <div class="row">
+     
+          <div class="col-lg-6">
+
+          </div>
+      
+        <div class="col-lg-6">
+          <div class="row justify-content-center align-items-center g-2">
+            <div class="col-lg-6">
+              <a href="book-catering.html" class="card me-3 mb-3 position-relative"
+              >
+              <img src="/images/food/Home card image/white.jpg" class="card-img-top" alt="Book Catering">
+              <div class="hover-text">Book Catering</div>
+            </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="book-cook.html" class="card me-3 mb-3 position-relative" >
+                <img src="/images/food/Home card image/white.jpg" class="card-img-top" alt="Book Cook">
+                <div class="hover-text">Book Cook</div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="chef.html" class="card me-3 mb-3 position-relative" >
+                <img src="/images/food/chef card/card 2.jpg" class="card-img-top" alt="Book Chef">
+                <div class="hover-text">Book Chef</div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="bartender.html" class="card me-3 mb-3 position-relative" >
+                <img src="/images/food/Home card image/bartender.jpg" class="card-img-top" alt="Book Bartender">
+                <div class="hover-text">Book Bartender</div>
+              </a>
+            </div>
+          </div>
+          
+          <!-- <div class="d-flex flex-row justify-content-between flex-nowrap">
+           
+            <a href="book-catering.html" class="card me-3 mb-3 position-relative"
+              style="width: 18rem; cursor: pointer;">
+              <img src="/images/food/Home card image/white.jpg" class="card-img-top" alt="Book Catering">
+              <div class="hover-text">Book Catering</div>
+            </a>
+
+            <a href="book-cook.html" class="card me-3 mb-3 position-relative" style="width: 18rem; cursor: pointer;">
+              <img src="/images/food/Home card image/white.jpg" class="card-img-top" alt="Book Cook">
+              <div class="hover-text">Book Cook</div>
+            </a>
+
+            <a href="chef.html" class="card me-3 mb-3 position-relative" style="width: 18rem; cursor: pointer;">
+              <img src="/images/food/chef card/card 2.jpg" class="card-img-top" alt="Book Chef">
+              <div class="hover-text">Book Chef</div>
+            </a>
+
+            <a href="bartender.html" class="card me-3 mb-3 position-relative" style="width: 18rem; cursor: pointer;">
+              <img src="/images/food/Home card image/bartender.jpg" class="card-img-top" alt="Book Bartender">
+              <div class="hover-text">Book Bartender</div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    </section>
+  
+  
+  
+
+
+
+  <!--========== End of banner section ==========-->
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="loginToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Login Required</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" style="color: black !important;">
+        <strong>Please log in to continue your order.</strong>
+      </div>
+    </div>
+  </div>
+
+  <!--========== Start of categories section ==========-->
+  <section class="slice-ptb position-relative">
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center mb-5">
+            <h2>Veg & Non-Veg Food Categories</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Veg & Non-Veg Sections -->
+      <div class="row no-gutters">
+        <!-- Veg Section -->
+        <div class="col-lg-6 bg-green-section p-3 Black">
+          <div class="row">
+            <!-- Veg Card 1 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-2">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/combo.jpg"
+                    alt="Meals Curry Combo">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Curry Combo</h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki">(1.9k)</span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1" id="quantity-display1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Curry Combo"
+                      data-price="10" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="servingToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Serving Info</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" style="color: black !important;">
+                  <strong>1 Curry Combo serves 4 people.</strong>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Veg Card 2 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-2">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/poriyal.jpg" alt="Veg 1">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Kovaka Poriyal</h5>
+                  <p class="updownnn">Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (1.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Kovaka Poriyal"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Veg Card 3 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/panner.jpg" alt="Veg 1">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Panner with Masala</h5>
+                  <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki">(1.9k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Panner with Masala" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 4 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4 ">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/gobi.jpg" alt="Veg 2">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5 bhai">
+                  <h5 class="mt-5 mt-lg-4">Gobi with Masala</h5>
+                  <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki">(1.9k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Gobi with Masala" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 5 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/sambar.jpg" alt="Veg 1">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Kalyana Sambar</h5>
+                  <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki">(1.9k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Kalyana Sambar"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 6 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/puli kulambu.jpg" alt="Veg 2">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5 bhai">
+                  <h5 class="mt-5 mt-lg-4"> Puli Kulambu</h5>
+                  <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki">(1.9k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Puli Kulambu"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 7 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/rasam.jpg" alt="Veg 1">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Puli Rasam</h5>
+                  <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (1k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Puli Rasam"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 8 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/payasam.jpg" alt="Veg 2">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5 bhai">
+                  <h5 class="mt-5 mt-lg-4"> Payasam</h5>
+                  <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (1.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Payasam"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 9 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/butter milk.jpg" alt="Veg 1">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Butter Milk</h5>
+                  <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Butter Milk"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 10 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/kootu.jpg" alt="Veg 2">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5 bhai">
+                  <h5 class="mt-5 mt-lg-4"> Birkankai Kuutu</h5>
+                  <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (1.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Birkankai Kuutu" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Veg Card 11 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul" id="bhai">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/boiled rice.jpg"
+                    alt="Boiled Rice">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Boiled Rice</h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (1.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Boiled Rice"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="servingToast11" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <strong class="me-auto">Serving Info</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body" style="color: black !important;">
+                    <strong>Please add a gravy item to go with Boiled Rice.</strong>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Veg Card 12 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/veg biryani.jpg" alt="Veg 2">
+                </div>
+                <div class="bg-green-soft-01 p-xl-5 p-4 rounded mt-n5 bhai">
+                  <h5 class="mt-5 mt-lg-4">Veg-Biryani </h5>
+                  <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Veg-Biryani"
+                      data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-Veg Section -->
+        <div class="col-lg-6 bg-red-section p-3 mrblack">
+          <div class="row">
+            <!-- Non-Veg Card 1 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-2">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom"
+                    src="images/food/categories/seeraga samba chicken briyani.jpg" alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Chicken Biryani Seeraga Samba</h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae.</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Chicken Biryani Seeraga Samba" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Non-Veg Card 2  -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-2">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/basmati chicken rice.jpg"
+                    alt="Non-Veg 2">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 rider">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Chicken Biryani Basmati Rice </h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae .</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Chicken Briyani Basmati Rice" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 3 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/Mutton Briyani - 600x600.png"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Mutton Biryani Seeraga Samba</h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae .</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Mutton Seeraga Samba" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Non-Veg Card 4 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/basmati mutton briyani.jpg"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Mutton Biryani Basmati Rice </h5>
+                    <p>Odio reprehenderit, deserunt tenetur nemo beatae .</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Mutton Basmati Rice" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 5 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/chettinadu chicken.jpg"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Chettinad Chicken</h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Chettinad Chicken" data-price="20" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 6 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/pepper chicken.jpg"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Pepper Chicken </h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias.</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Pepper Chicken"
+                      data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Non-Veg Card 7 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/chicken 65.jpg"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Chicken-65</h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Chicken-65"
+                      data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 8 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/chicken kulambu.JPG"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Chicken kulambu</h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button"
+                      data-item="Chicken Kulambu" data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Non-Veg Card 9 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/mutton kulambu.jpg"
+                    alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Mutton Kulambu</h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Mutton Kulambu"
+                      data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 10 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/egg curry.jpg" alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <div class="space">
+                    <h5 class="mt-5 mt-lg-4">Egg Curry</h5>
+                    <p>Expedita reprehenderit saepe, sapiente iure deserunt molestias</p>
+                  </div>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Egg Curry"
+                      data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Non-Veg Card 11 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soul">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/fish fry.jpg" alt="Non-Veg 1">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5 sala">
+                  <h5 class="mt-5 mt-lg-4">Fish Fry</h5>
+                  <p>Sunt animi ratione doloribus illo reprehenderit ipsam deserunt.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between">
+                    <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                      <button class="btn btn-black py-0 px-1 minus">-</button>
+                      <span class="quantity text-white mx-1">0</span>
+                      <button class="btn btn-black py-0 px-1 plus">+</button>
+                    </div>
+                    <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Fish Fry"
+                      data-price="30" data-bs-toggle="offcanvas">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Non-Veg Card 12 -->
+            <div class="col-lg-6 col-sm-6 text-center mb-lg-0 mb-5 mt-4">
+              <div class="soulrider">
+                <div class="px-5">
+                  <img class="img-fluid rounded-circle zoom" src="images/food/categories/fish kulambu.jpg"
+                    alt="Non-Veg 2">
+                </div>
+                <div class="bg-black-soft-01 p-xl-5 p-4 rounded mt-n5">
+                  <h5 class="mt-5 mt-lg-4">Fish Kulambu</h5>
+                  <p>Sunt animi ratione doloribus illo reprehenderit ipsam deserunt`.</p>
+                  <div class="bg-white py-2 px-4 d-flex align-items-end justify-content-end">
+                    <ul class="d-flex text-warning mb-0 rounded ms-3">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span class="nakki"> (2.5k) </span>
+                  </div>
+                  <section id="targetSection">
+                    <div class="mt-3 d-flex justify-content-between">
+                      <div class="quantity-control d-inline-flex align-items-center border border-dark p-1">
+                        <button class="btn btn-black py-0 px-1 minus">-</button>
+                        <span class="quantity text-white mx-1">0</span>
+                        <button class="btn btn-black py-0 px-1 plus">+</button>
+                      </div>
+                      <button class="btn btn-black text-white py-1 px-3 add-to-cart add-button" data-item="Fish Kulambu"
+                        data-price="30" data-bs-toggle="offcanvas">Add</button>
+                    </div>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==========  End of categories section ==========-->
+
+
+
+  <!--==========  Start of why choose us section ==========-->
+
+
+  <section class="slice-pb position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img class="img-fluid" src="images/food/02.png" alt="">
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="mb-5">
+            <span class="text-green d-block">Why choose us</span>
+            <h2>The only thing we’re serious about is food eat strong.</h2>
+            <p>Voluptas ab facere quaerat laboriosam accusantium, perspiciatis, dignissimos atque praesentium eius ipsam
+              totam.</p>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-warning">01</h5>
+            </div>
+            <div class="ms-4">
+              <h5>Fresh food</h5>
+              <p>Optio accusamus molestias quod delectus laudantiu minima hic expedita.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-warning">02</h5>
+            </div>
+            <div class="ms-4">
+              <h5>Best offer</h5>
+              <p>Sunt animi ratione doloribus illo velit doloribus quasi, maxime.</p>
+            </div>
+          </div>
+          <div class="d-sm-flex">
+            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-warning">03</h5>
+            </div>
+            <div class="ms-4">
+              <h5>Best quality</h5>
+              <p>Ea qui debitis dolores quasi officiis, maiores enim, error perspiciatis veniam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==========  End of why choose us section ==========-->
+
+
+
+
+
+
+
+  <!--==========  Start of menu section ==========-->
+
+
+  <section class="slice-pb position-relative overflow-hidden">
+    <div class="container-fluid p-0">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 text-center">
+          <div class="mb-5 px-4">
+            <span class="text-green d-block">Since 1911</span>
+            <h2>We are the best sushi recipe</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="swiper-container swiper-container-auto" data-slidesPerView="4" data-laptop-slidesPerView="3"
+            data-tablet-slidesPerView="2" data-mobile-slidesPerView="1" data-spaceBetween="0" data-loop="true"
+            data-autoplay="true" data-auto-speed="2500" data-disable-on-touch="false" data-dots="true"
+            data-auto-height="false" data-pagination="true" data-navigation="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feature-box-bg-image h-100">
+                  <div class="feature-box">
+                    <div class="feature-box-img bg-fit" style="background-image: url('images/food/categories/05.jpg');">
+                    </div>
+                    <div class="feature-box-info">
+                      <a class="bg-green text-white px-3 py-1 rounded" href="#"> Food </a>
+                      <h4 class="text-white mt-3"> <a href="#"> California sushi rolls recipe </a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-box-bg-image h-100">
+                  <div class="feature-box">
+                    <div class="feature-box-img bg-fit" style="background-image: url('images/food/categories/06.jpg');">
+                    </div>
+                    <div class="feature-box-info">
+                      <a class="bg-green text-white px-3 py-1 rounded" href="#"> Burger </a>
+                      <h4 class="text-white mt-3"> <a href="#">Rice & easy sushi rolls </a> </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-box-bg-image h-100">
+                  <div class="feature-box">
+                    <div class="feature-box-img bg-fit" style="background-image: url('images/food/categories/07.jpg');">
+                    </div>
+                    <div class="feature-box-info">
+                      <a class="bg-green text-white px-3 py-1 rounded" href="#"> Cake </a>
+                      <h4 class="text-white mt-3"> <a href="#"> Vegetable sushi rolls </a> </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-box-bg-image h-100">
+                  <div class="feature-box">
+                    <div class="feature-box-img bg-fit" style="background-image: url('images/food/categories/08.jpg');">
+                    </div>
+                    <div class="feature-box-info">
+                      <a class="bg-green text-white px-3 py-1 rounded" href="#"> Pizza </a>
+                      <h4 class="text-white mt-3"> <a href="#">Restaurant-style sushi rolls </a> </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--========== End of menu section ==========-->
+
+
+
+  <!--==========  Start of reservation section ==========-->
+
+
+  <section class="slice-pb position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="outside-box-left">
+            <img class="img-fluid" src="images/food/04.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="pt-5 p-lg-6 position-relative">
+            <div class="mb-5">
+              <span class="text-green d-block">Our reservation</span>
+              <h2>Online book a table</h2>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="Your name" value="First name">
+                    <label>First name</label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="Your name" value="Last name">
+                    <label>Last name</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="info@gmail.com" value="info@gmail.com">
+                    <label>Your mail</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="+444 (111 456 1465)"
+                      value="+444 (111 456 1465)">
+                    <label>Your phone</label>
+                  </div>
+                </div>
+                <div class="col-12 d-grid">
+                  <a class="btn btn-green btn-rounded" href="#">Get in touch</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========== End of reservation section ==========-->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Your Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul id="offcanvas-cart-items"></ul>
+      <p id="offcanvas-cart-total"></p>
+
+      <!-- Address Box -->
+      <div class="mt-4">
+        <h5>Delivery Address</h5>
+        <textarea id="address-details" class="form-control" placeholder="Enter your address"></textarea>
+      </div>
+
+      <div id="payment-section" class="d-none mt-3">
+        <h5>Payment Method</h5>
+        <div class="form-group mb-3">
+          <label for="payment-method">Choose Payment Method:</label>
+          <select class="form-select" id="payment-method">
+            <option value="cash">Cash on Delivery</option>
+            <option value="credit-card">Online Payment</option>
+          </select>
+        </div>
+
+        <!-- UPI ID Input Box (Initially Hidden) -->
+        <div id="upi-section" class="d-none">
+          <div class="form-group mb-3">
+            <label for="upi-id">Enter UPI ID:</label>
+            <input type="text" class="form-control" id="upi-id" placeholder="Enter your UPI ID">
+          </div>
+
+          <!-- Additional Payment Methods -->
+          <div class="form-group mb-3">
+            <label for="payment-method-option">Select Payment App:</label>
+            <select class="form-select" id="payment-method-option">
+              <option value="gpay" data-icon="fab fa-google-pay">Google Pay</option>
+              <option value="phonepe" data-icon="fab fa-phonepe">PhonePe</option>
+              <option value="paytm" data-icon="fab fa-paytm">Paytm</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="confirm-order">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--==========  Start of blogs section ==========-->
+
+  <section class="slice-pb position-relative" id="blog">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 text-center">
+          <div class="mb-5">
+            <span class="text-green d-block">Our blogs</span>
+            <h2>Our latest articles.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="swiper-container swiper-container-auto" data-slidesPerView="3" data-mobile-slidesPerView="1"
+            data-tablet-slidesPerView="2" data-spaceBetween="20" data-loop="true" data-autoplay="true"
+            data-auto-speed="2500" data-disable-on-touch="false" data-dots="true" data-auto-height="false"
+            data-pagination="true" data-navigation="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!--===== Start of blog =====-->
+                <div class="blog-post blog-post-boxed bg-green-soft-02">
+                  <div class="blog-caption">
+                    <ul class="blog-meta list-unstyled mb-3">
+                      <li> <a href="#">veg,</a> </li>
+                      <li> <a href="#">nonveg</a> </li>
+                    </ul>
+                    <h5 class="mb-3"><a href="#">The only thing we're serious about is food see you tomorrow.</a></h5>
+                    <p>Totam ipsam maxime sed deserunt laborum, tempora quas quod cum dolore. Iste, sint! Corporis
+                      tenetur placeat culpa atque veniam dolorum. Quae, animi.</p>
+                    <div class="blog-author d-flex mt-4 align-items-center">
+                      <img class="img-fluid rounded-circle avatar-40" src="images/avatar/05.jpg" alt="">
+                      <div class="ms-3">
+                        <a href="#">Kobe taylor</a>
+                        <small class="d-block">Jan 10 2021</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-box-img" style="background-image: url(images/food/categories/05.jpg);"></div>
+                </div>
+                <!--===== End of blog =====-->
+              </div>
+              <div class="swiper-slide">
+                <!--===== Start of blog item =====-->
+                <div class="blog-post blog-post-boxed bg-green-soft-02 active">
+                  <div class="blog-caption">
+                    <ul class="blog-meta list-unstyled mb-3">
+                      <li> <a href="#">burger,</a> </li>
+                      <li> <a href="#">meat</a> </li>
+                    </ul>
+                    <h5 class="mb-3"><a href="#"> If you don’t lick your fingers, enjoy only half share the Love.. </a>
+                    </h5>
+                    <p>Nam cum minima expedita autem voluptatum porro consequuntur quas perspiciatis. Placeat ex
+                      eligendi nobis modi velit animi nisi, libero eius ea delectus. </p>
+                    <div class="blog-author d-flex mt-4 align-items-center">
+                      <img class="img-fluid rounded-circle avatar-40" src="images/avatar/05.jpg" alt="">
+                      <div class="ms-3">
+                        <a href="#">Skye peters</a>
+                        <small class="d-block">Feb 22 2021</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-box-img" style="background-image: url(images/food/categories/07.jpg);"></div>
+                </div>
+                <!--===== End of blog item =====-->
+              </div>
+              <div class="swiper-slide">
+                <!--===== Start of blog item =====-->
+                <div class="blog-post blog-post-boxed bg-green-soft-02">
+                  <div class="blog-caption">
+                    <ul class="blog-meta list-unstyled mb-3">
+                      <li> <a href="#">pizza,</a> </li>
+                      <li> <a href="#">food</a> </li>
+                    </ul>
+                    <h5 class="mb-3"><a href="#">Buy a bucket of chicken and have a barrel of fun eat and go!</a></h5>
+                    <p>Id, consequuntur! Vero nulla nam eum atque natus repellat quibusdam laboriosam sit accusamus
+                      neque, vitae ea minima quam quia modi asperiores omnis.</p>
+                    <div class="blog-author d-flex mt-4 align-items-center">
+                      <img class="img-fluid rounded-circle avatar-40" src="images/avatar/05.jpg" alt="">
+                      <div class="ms-3">
+                        <a href="#">Lewis bass</a>
+                        <small class="d-block">March 30 2021</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-box-img" style="background-image: url(images/food/categories/06.jpg);"></div>
+                </div>
+                <!--===== End of blog item =====-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========  End of blogs section ==========-->
+
+
+  <!----=============================================-->
+
+
+
+
+
+
+
+
+  <!--========== Start of call to action section ==========-->
+  <section class="slice-pb position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2>Make people happy, have some fun and be number 1! satisfying people’s hunger for life’s simple pleasures
+          </h2>
+          <a class="btn btn-green mt-4 btn-rounded" href="#">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========End of call to action section ==========-->
+
+
+
+  <!--========== Start of Reserve section ==========-->
+  <footer class="footer bg-green-soft-01">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 position-relative mb-5 mb-sm-0 food-footer-bg">
+          <div class="outside-box-left d-none d-lg-block">
+            <img class="img-fluid" src="images/food/03.jpg" alt="">
+          </div>
+          <div class="position-absolute top-0 start-0 slice-pt ps-lg-8 text-center text-lg-start">
+            <span class="text-green d-block">Dine in</span>
+            <h2 class="display-2 mb-5">Reserve <br /> online</h2>
+            <a class="btn btn-outline-dark btn-rounded" href="#">Book a table</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!--===== Start of REserve Section =====-->
+          <div class="text-center slice-ptb">
+            <h4 class="mb-4 mt-md-0">Time Open </h4>
+            <div class="mb-4">
+              <h5> Monday to Friday</h5>
+              <p>7 pm to 11 pm ( Dinner)</p>
+            </div>
+            <div class="mb-5">
+              <h5> Saturday to Sunday</h5>
+              <p>5 pm to 12 pm ( Dinner)</p>
+            </div>
+            <h4 class="mb-4">Address </h4>
+            <div class="mb-4">
+              <h5>4 Lakeview Lane Sterling, VA 20164</h5>
+              <p>info@example.com</p>
+            </div>
+            <h2 class="text-green mb-0 mt-5"> <i class="feather icon-phone-call"></i> (781) 210-0377</h2>
+          </div>
+          <!--===== End of Reserve section =====-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--==========  End of footer section ==========-->
+
+
+  <!--Start of footer section ==========-->
+  <footer class="footer bg-dark slice-pt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <!--===== Start of footer item =====-->
+          <a href="index.html"> <img class="footer-logo" src="images/logo-light.svg" alt="Logo"> </a>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-2">734 Fairfield dr. port charlotte, FL 33952</li>
+            <li class="mb-2">(781) 210-0377</li>
+            <li>info@example.com</li>
+          </ul>
+
+          <!--===== Start of footer social =====-->
+          <div class="social-icons icon-colored list-unstyled mt-4">
+            <a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
+            <a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
+            <a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
+            <a class="pinterest icon" href="#"> <i class="fab fa-pinterest-p fa-fw"></i> </a>
+            <a class="rss icon" href="#"> <i class="fas fa-rss fa-fw"></i> </a>
+          </div>
+          <!--===== End of footer social =====-->
+
+          <!--===== End of footer item =====-->
+
+        </div>
+
+        <div class="col-lg-2 col-sm-6 mb-4 mb-lg-0">
+
+          <!--===== Start of footer item =====-->
+          <div class="footer-links">
+            <h5 class="text-white mb-4">Additional Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Community</a></li>
+              <li class="mb-2"><a href="#">About us</a></li>
+              <li class="mb-2"><a href="#">Jobs</a></li>
+              <li class="mb-2"><a href="#">Forums</a></li>
+              <li class="mb-2"><a href="#">Keep in touch</a></li>
+              <li class="mb-2"><a href="#">Purchase</a></li>
+            </ul>
+          </div>
+          <!--===== End of footer item =====-->
+
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+
+          <!--===== Start of footer item =====-->
+          <div class="footer-links">
+            <h5 class="text-white mb-4">About The Faculty</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Portfolio</a></li>
+              <li class="mb-2"><a href="#">Blogs</a></li>
+              <li class="mb-2"><a href="#">Video Tutorials</a></li>
+              <li class="mb-2"><a href="#">Tickets</a></li>
+              <li class="mb-2"><a href="#">Template Library</a></li>
+              <li class="mb-2"><a href="#">Documentation</a></li>
+            </ul>
+          </div>
+          <!--===== End of footer item =====-->
+
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+
+          <!--===== Start of footer item =====-->
+          <h5 class="text-white mb-4">Join our newsletter and get 3 free products, instantly.</h5>
+          <form class="subscribe-form-francy">
+            <input type="email" class="form-control rounded" placeholder="Enter your email address">
+            <a href="#" class="btn btn-warning rounded">Subscribe</a>
+          </form>
+          <small class="form-text mt-3 text-muted d-block">Plus nothing but quality pixels in your inbox every 2
+            weeks!</small>
+          <!--===== End of footer item =====-->
+
+        </div>
+        <div class="col-12 mt-4">
+          <hr class="hr-light">
+        </div>
+      </div>
+    </div>
+
+    <!--===== Start of copyright =====-->
+    <div class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0 text-light">© 2020 <a target="_blank" href="#">infinitysoftway </a>all right reserved</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="footer-links">
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item"><a href="#">Privacy Policy </a></li>
+                <li class="list-inline-item"><a href="#">Terms of Use </a></li>
+                <li class="list-inline-item"><a href="#">Support </a></li>
+                <li class="list-inline-item"><a href="#">Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== End of copyright =====-->
+  </footer>
+
+  <!--========== End of footer section ==========-->
+
+  <!--==========  Start of back to top section ==========-->
+
+
+  <div class="go-top">
+    <p class="go-top-text">Scroll to top <i class="fas fa-long-arrow-alt-right ps-2"></i></p>
+  </div>
+
+  <!--==========  End of back to top section ==========-->
+
+  <!--========== Start of Javascript ==========-->
+
+
+  <!--===== Global required js =====-->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <!--===== Global script: js libraries and plugins =====-->
+  <script src="js/appear/jquery.appear.js"></script>
+  <script src="js/swiper/swiper.min.js"></script>
+  <script src="js/swiper/SwiperAnimation.min.js"></script>
+  <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+  <script src="js/typer/typer.js"></script>
+  <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/jarallax/jarallax.min.js"></script>
+  <!--===== Main theme script =====-->
+  <script src="js/functions.js"></script>
+
+
+
+  <!-- Bootstrap JS and Popper.js (for dropdowns, modals, and collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <!-- Stepper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+
+</body>
+<!--==========  End of Javascript ==========-->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepperLogin = new Stepper(document.querySelector('#stepperLogin'));
+
+    // Handle the Next button click (Name step)
+    document.getElementById('nextButton').addEventListener('click', function () {
+      var nameInput = document.getElementById('name');
+      var nameValue = nameInput.value.trim();
+
+      // Validate name input for minimum 10 characters
+      if (nameValue.length < 10) {
+        nameInput.classList.add('is-invalid');
+      } else {
+        nameInput.classList.remove('is-invalid');
+
+        // Display the name in the password step as a preview
+        document.getElementById('namePreview').innerText = nameValue;
+
+        // Move to the next step
+        stepperLogin.next();
+      }
+    });
+
+    // Handle the Previous button click to go back to the Name step
+    document.getElementById('prevButton').addEventListener('click', function () {
+      stepperLogin.previous();
+    });
+
+    // Handle the Login button click with password validation
+    document.getElementById('loginButton').addEventListener('click', function () {
+      var passwordInput = document.getElementById('password');
+      var passwordValue = passwordInput.value.trim();
+
+      // Check if password contains at least two numbers
+      var numCount = passwordValue.replace(/[^0-9]/g, '').length;
+
+      if (passwordValue === "" || numCount < 2) {
+        passwordInput.classList.add('is-invalid');
+      } else {
+        passwordInput.classList.remove('is-invalid');
+        alert('Login successful!');
+        // Proceed with login process...
+      }
+    });
+
+    // Toggle password visibility with eye icon
+    document.getElementById('togglePassword').addEventListener('click', function () {
+      var passwordInput = document.getElementById('password');
+      var passwordType = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', passwordType);
+
+      // Toggle the eye icon
+      var toggleIcon = document.getElementById('toggleIcon');
+      toggleIcon.classList.toggle('bi-eye');
+      toggleIcon.classList.toggle('bi-eye-slash');
+    });
+
+    // Clear fields and reset stepper when the modal is closed
+    document.getElementById('loginModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('name').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('namePreview').innerText = '';
+      stepperLogin.to(0); // Go back to the first step
+    });
+  });
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepperSignup = new Stepper(document.querySelector('#stepperSignup'));
+
+    // Step navigation buttons
+    document.getElementById('signupNextButton').addEventListener('click', function () {
+      // Perform validation for Name, Phone, and Email before proceeding
+      var name = document.getElementById('signupName');
+      var phone = document.getElementById('signupPhone');
+      var email = document.getElementById('signupEmail');
+
+      // Clear previous error states
+      name.classList.remove('is-invalid');
+      phone.classList.remove('is-invalid');
+      email.classList.remove('is-invalid');
+
+      if (name.value.length >= 5 && phone.value.length > 0 && email.value.includes('@')) {
+        stepperSignup.next(); // Go to next step
+      } else {
+        // Show error messages if validation fails
+        if (name.value.length < 5) {
+          name.classList.add('is-invalid');
+        }
+        if (phone.value.length === 0) {
+          phone.classList.add('is-invalid');
+        }
+        if (!email.value.includes('@')) {
+          email.classList.add('is-invalid');
+        }
+      }
+    });
+
+    document.getElementById('signupPrevButton').addEventListener('click', function () {
+      stepperSignup.previous();
+    });
+
+    // Toggle password visibility
+    document.getElementById('signupTogglePassword').addEventListener('click', function () {
+      var passwordInput = document.getElementById('signupPassword');
+      var passwordIcon = document.getElementById('signupToggleIcon');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordIcon.classList.remove('bi-eye');
+        passwordIcon.classList.add('bi-eye-slash');
+      } else {
+        passwordInput.type = 'password';
+        passwordIcon.classList.remove('bi-eye-slash');
+        passwordIcon.classList.add('bi-eye');
+      }
+    });
+
+    // Handle Sign Up
+    document.getElementById('signupBtn').addEventListener('click', function () {
+      var password = document.getElementById('signupPassword').value;
+
+      if (password.length >= 6) {
+        // Simulate sign-up success
+        document.getElementById('signupSuccessMsg').style.display = 'block';
+      } else {
+        document.getElementById('signupPassword').classList.add('is-invalid');
+      }
+    });
+
+    // Clear fields and reset stepper when the modal is closed
+    document.getElementById('signupModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('signupName').value = '';
+      document.getElementById('signupPhone').value = '';
+      document.getElementById('signupEmail').value = ''; // Fix here
+      document.getElementById('signupPassword').value = ''; // Clear password field
+      stepperSignup.to(0); // Go back to the first step
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

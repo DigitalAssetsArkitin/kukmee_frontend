@@ -1,0 +1,17 @@
+/**********************/
+/* Newsletter */
+/**********************/ 
+
+.newsletter-box {
+  input {
+    padding-right: 50px;
+  }
+
+  .newsletter-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+  }
+
+}

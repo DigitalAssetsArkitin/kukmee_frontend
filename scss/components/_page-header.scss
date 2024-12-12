@@ -1,0 +1,24 @@
+/**********************/
+/* Page header */
+/**********************/ 
+
+.page-header {
+  padding: 180px 0;
+
+  .breadcrumb {
+    display: inline-flex;
+    background: transparent;
+  }
+
+}
+
+.page-header-bg {
+  padding: 300px 0 200px;
+}
+
+@media (max-width:576px) {
+  .page-header-bg {
+    padding: 250px 0 150px;
+  }
+
+}

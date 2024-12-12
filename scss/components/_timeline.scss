@@ -1,0 +1,71 @@
+/**********************/
+/* Timeline */
+/**********************/ 
+
+.feature-timeline {
+  position: relative;
+
+  &:before {
+    width: 2px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 12px;
+    background: $border-color;
+    z-index: -1;
+  }
+
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:before {
+    height: 4px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: $primary;
+    z-index: -1;
+    top: 60px;
+  }
+
+  .timeline-item {
+    flex: 0 0 auto;
+    width: 25%;
+    position: relative;
+    padding: 0 15px;
+
+    &:before {
+      height: 20px;
+      width: 20px;
+      content: "";
+      position: absolute;
+      background: $primary;
+      z-index: -1;
+      top: 50px;
+      border-radius: 50%;
+      left: 50%;
+      margin-left: -10px;
+    }
+
+  }
+
+}
+
+@media (max-width:576px) {
+  .timeline {
+    display: block;
+  }
+
+  .timeline .timeline-item {
+    width: 100%;
+  }
+
+  .timeline:before {
+    display: none;
+  }
+
+}

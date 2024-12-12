@@ -1,0 +1,159 @@
+/**********************/
+/* Components */
+/**********************/
+/**********************/
+/* Accordion */
+/**********************/
+
+.accordion {
+	.accordion-item {
+		border: none;
+	}
+
+}
+
+.accordion-button:not(.collapsed) {
+	box-shadow: none;
+}
+
+.accordion.accordion-box {
+	.accordion-button {
+		padding: 0 20px;
+		position: relative;
+
+		&:after {
+			background-image: none;
+			font-family: "Font Awesome 5 Free";
+			content: "\f068";
+			margin-left: auto;
+			font-weight: 900;
+			transform: none;
+			height: auto;
+			width: auto;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+
+	}
+
+	.accordion-button {
+		&.collapsed {
+			&:after {
+				content: "\f067";
+			}
+
+		}
+
+	}
+
+}
+
+.accordion.accordion-icon {
+	.accordion-header {
+		background: transparent;
+		border-radius: 5px;
+		border: 1px solid $border-color;
+		margin-bottom: 16px;
+		box-shadow: 0 4px 6px rgba($dark, 0.05);
+
+		.accordion-button {
+			font-size: 16px;
+			color: $dark;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+
+			i {
+				font-size: 34px;
+				color: $primary;
+				margin-right: 20px;
+			}
+
+			&:focus {
+				box-shadow: none;
+			}
+
+		}
+
+	}
+
+}
+
+.accordion.accordion-simple {
+	.accordion-button {
+		padding: 0;
+		position: relative;
+		font-weight: 600;
+		border: none;
+		background: transparent;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+	}
+
+	.accordion-body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+.accordion-big {
+	.accordion-item {
+		border-bottom: 1px solid $border-color;
+		padding: 10px 0;
+	}
+
+	.accordion-button:not(.collapsed) {
+		background: transparent;
+	}
+
+	.accordion-button {
+		font-size: 28px;
+		line-height: 44px;
+		padding: 10px 0;
+
+		&:after {
+			background-image: none;
+			font-family: "Font Awesome 5 Free";
+			content: "\f078";
+			margin-left: auto;
+			font-weight: 900;
+			transform: none;
+			height: auto;
+			width: auto;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+
+	}
+
+	.accordion-button {
+		&.collapsed {
+			&:after {
+				content: "\f077";
+			}
+
+		}
+
+	}
+
+	.accordion-body {
+		padding: 10px 0;
+	}
+
+}
+
+@media (max-width:576px) {
+	.accordion-big .accordion-button {
+		font-size: 22px;
+	}
+
+}

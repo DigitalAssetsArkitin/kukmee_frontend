@@ -1,0 +1,19 @@
+/**********************/
+/* Dropcap */
+/**********************/ 
+
+.dropcap {
+  float: left;
+  font-size: 46px;
+  margin-right: 20px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.dropcap.dropcap-square {
+  padding: 20px;
+}
+
+.dropcap.border-bottom {
+  border-width: 5px !important;
+}

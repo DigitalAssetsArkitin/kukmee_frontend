@@ -1,0 +1,157 @@
+/**********************/
+/* Pagination */
+/**********************/ 
+.pagination {
+	flex-wrap: wrap;
+
+	.page-item {
+		margin: 0 5px
+	}
+
+	.page-link {
+		padding: 7px 16px;
+		color: $dark;
+		border-radius: .25rem;
+		background: $light;
+		transition: all 0.4s ease-in-out;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&:hover {
+			background: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+
+	}
+
+	.page-item.active {
+		.page-link {
+			background: $primary;
+			border-color: $primary;
+		}
+
+	}
+
+}
+
+.pagination.pagination-02 {
+	padding: 6px;
+	background: $white;
+	box-shadow: 0 10px 20px rgba($black, 0.1);
+	display: inline-flex;
+	border: 1px solid $border-color;
+	border-radius: .25rem;
+
+	.page-link {
+		color: $dark;
+		background: transparent;
+		border: none;
+
+		&:hover {
+			background: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+
+	}
+
+	.page-item.active {
+		.page-link {
+			color: $white;
+		}
+
+	}
+
+}
+
+.pagination.pagination-03 {
+	.page-item {
+		margin: 0 5px
+	}
+
+	.page-link {
+		padding: 7px 16px;
+		color: $dark;
+		border-radius: .25rem;
+		background: transparent;
+		border: none;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			background: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+
+	}
+
+	.page-item.active {
+		.page-link {
+			background: $primary;
+			color: $white;
+		}
+
+	}
+
+}
+
+.pagination.pagination-04 {
+	.page-item {
+		margin: 0 5px
+	}
+
+	.page-link {
+		padding: 7px 16px;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		line-height: 36px;
+		text-align: center;
+	}
+
+	.page-item:last-child .page-link,
+	.page-item:first-child .page-link {
+		border-radius: 50%;
+	}
+
+}
+
+.pagination.pagination-05 {
+	padding: 6px;
+	background: $white;
+	box-shadow: 0 10px 20px rgba($primary, 0.2);
+	display: inline-flex;
+	border: 2px solid $primary;
+	border-radius: .25rem;
+
+	.page-link {
+		color: $dark;
+		background: transparent;
+		border: none;
+
+		&:hover {
+			background: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+
+	}
+
+	.page-item.active {
+		.page-link {
+			color: $white;
+		}
+
+	}
+
+}
+
+@media (max-width:576px) {
+	.pagination .page-item {
+		margin: 5px;
+	}
+
+}

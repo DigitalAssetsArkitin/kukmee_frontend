@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Infinitysoftway" />
+    <meta name="description" content="statistic charts">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    
+    <title>Bartender</title>
+
+    <!--===== Favicon =====-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!--===== Google fonts =====-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Lora:wght@400;500;600;700&display=swap">
+
+    <!--===== Global bootstrap required css =====-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--===== Global styles including: Font Icons, Plugins, etc =====-->
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <link rel="stylesheet" href="css/feather/iconfont.css">
+    <link rel="stylesheet" href="css/pe-icon-stroke/Pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/simple-line-icons/simple-line-icons.css">
+    <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/pe-icon-stroke/Pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+
+
+    <!-- Stepper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Add Bootstrap CSS in the <head> section -->
+    <!--===== Main theme css =====-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--===== Category demo css =====-->
+    <link rel="stylesheet" href="css/demo/food.css">
+
+
+
+
+</head>
+
+<body class="stokes-wrapper">
+
+
+    <!--==========  Start of Header Section ========== -->
+
+
+    <header class="header">
+
+        <nav class="navbar navbar-light navbar-expand-lg navbar-transparent  navbar-text-dark"
+            style="border-bottom:none">
+            <div class="container-fluid">
+                <!--===== Start of logo ===== -->
+                <a class="navbar-brand" href="index-food.html">
+                    <img class="logo" src="images/food/logo/logo 3.jpg" alt="Logo">
+                </a>
+                <!--===== End of logo ===== -->
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar mt-0"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+
+                <!--===== Start of nav ===== -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index-food.html" id="navbar-home">
+                                <span class="text-line"><strong>Order</strong></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-catering.html" id="navbar-features">
+                                <span class="text-line"><strong>Catering</strong></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cook.html" id="navbar-pages">
+                                <span class="text-line"><strong>Cook</strong></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chef.html" id="navbar-blog">
+                                <span class="text-line"><strong>Chef</strong></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bartender.html" id="navbar-elements">
+                                <span class="text-line"><strong>Bartender</strong></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="franchise.html" id="navbar-shop">
+                                <span class="text-line"><strong>Franchise</strong></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <i class="bi bi-bag-check btn btn-round" id="rocky" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvas"></i>
+
+                <!-- Login Button triggers modal -->
+                <div class=" rocky1">
+                    <a class="btn btn-outline-dark btn-round" id="loginBtn" href="#" data-bs-toggle="modal"
+                        data-bs-target="#loginModal" style="margin-left: -7px;">Login</a>
+                </div>
+                <div class="rocky">
+                    <a class="btn btn-outline-dark btn-round" id="loginBtn" href="#" data-bs-toggle="modal"
+                        data-bs-target="#signupModal" style="    padding-left: 7px;
+        padding-right: 7px;">Sign up</a>
+                </div>
+            </div>
+            <!--===== End of nav ===== -->
+        </nav>
+        <!--===== End of navbar =====-->
+    </header>
+
+
+
+
+    <!--===== Login Modal ===== -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Stepper Component for Login -->
+                    <div class="bs-stepper" id="stepperLogin">
+                        <div class="bs-stepper-header" role="tablist">
+                            <!-- Step 1: Name -->
+                            <div class="step" data-target="#name-step">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="name-step"
+                                    id="name-step-trigger">
+                                    <span class="bs-stepper-circle">1</span>
+                                    <span class="bs-stepper-label">Name</span>
+                                </button>
+                            </div>
+                            <div class="line"></div>
+                            <!-- Step 2: Password -->
+                            <div class="step" data-target="#password-step">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="password-step"
+                                    id="password-step-trigger">
+                                    <span class="bs-stepper-circle">2</span>
+                                    <span class="bs-stepper-label">Password</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bs-stepper-content">
+                            <!-- Step Content -->
+                            <!-- Step 1: Name -->
+                            <div id="name-step" class="content" role="tabpanel" aria-labelledby="name-step-trigger">
+                                <form id="nameForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label"
+                                            style="color: black !important;;">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                        <div class="invalid-feedback">Name must be at least 5 characters long.</div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+                                </form>
+                            </div>
+                            <!-- Step 2: Password -->
+                            <div id="password-step" class="content" role="tabpanel"
+                                aria-labelledby="password-step-trigger">
+                                <form id="passwordForm">
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label"
+                                            style="color: black !important;">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Enter your password">
+                                            <span class="input-group-text" id="togglePassword"
+                                                style="padding-top: 15px;">
+                                                <i class="bi bi-eye" id="toggleIcon"></i>
+                                            </span>
+                                        </div>
+                                        <div class="invalid-feedback">Password must contain at least two numbers.</div>
+                                    </div>
+                                    <p><strong>Entered Name:</strong> <span id="namePreview"></span></p>
+                                    <button type="button" class="btn btn-secondary" id="prevButton">Previous</button>
+                                    <button type="button" class="btn btn-primary" id="loginButton">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stepper end -->
+                    <div class="mt-3" id="loginSuccessMsg" style="display:none;">
+                        <p class="text-success">Login was successful!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--===== Sign Up Modal =====-->
+    <!--===== Sign Up Modal with Stepper =====-->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Stepper Component for Sign Up -->
+                    <div class="bs-stepper" id="stepperSignup">
+                        <div class="bs-stepper-header" role="tablist">
+                            <!-- Step 1: Details (Name, Phone, Email) -->
+                            <div class="step" data-target="#signup-details-step">
+                                <button type="button" class="step-trigger" role="tab"
+                                    aria-controls="signup-details-step" id="signup-details-step-trigger">
+                                    <span class="bs-stepper-circle">1</span>
+                                    <span class="bs-stepper-label">Details</span>
+                                </button>
+                            </div>
+                            <div class="line"></div>
+                            <!-- Step 2: Create Password -->
+                            <div class="step" data-target="#signup-password-step">
+                                <button type="button" class="step-trigger" role="tab"
+                                    aria-controls="signup-password-step" id="signup-password-step-trigger">
+                                    <span class="bs-stepper-circle">2</span>
+                                    <span class="bs-stepper-label">Password</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bs-stepper-content">
+                            <!-- Step Content -->
+                            <!-- Step 1: Name, Phone, Email -->
+                            <div id="signup-details-step" class="content" role="tabpanel"
+                                aria-labelledby="signup-details-step-trigger">
+                                <form id="signupDetailsForm">
+                                    <div class="mb-3">
+                                        <label for="signupName" class="form-label"
+                                            style="color: black !important;">Name</label>
+                                        <input type="text" class="form-control" id="signupName"
+                                            placeholder="Enter your name">
+                                        <div class="invalid-feedback">Name must be at least 5 characters long.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signupPhone" class="form-label"
+                                            style="color: black !important;">Phone Number</label>
+                                        <input type="tel" class="form-control" id="signupPhone"
+                                            placeholder="Enter your phone number">
+                                        <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signupEmail" class="form-label"
+                                            style="color: black !important;">Email</label>
+                                        <input type="email" class="form-control" id="signupEmail"
+                                            placeholder="Enter your email">
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"
+                                        id="signupNextButton">Continue</button>
+                                </form>
+                            </div>
+
+                            <!-- Step 2: Create Password -->
+                            <div id="signup-password-step" class="content" role="tabpanel"
+                                aria-labelledby="signup-password-step-trigger">
+                                <form id="signupPasswordForm">
+                                    <div class="mb-3">
+                                        <label for="signupPassword" class="form-label"
+                                            style="color: black !important;">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="signupPassword"
+                                                placeholder="Create your password">
+                                            <span class="input-group-text" id="signupTogglePassword">
+                                                <i class="bi bi-eye" id="signupToggleIcon"></i>
+                                            </span>
+                                        </div>
+                                        <div class="invalid-feedback">Password must contain at least 6 characters.</div>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary"
+                                        id="signupPrevButton">Previous</button>
+                                    <button type="button" class="btn btn-primary" id="signupBtn">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stepper end -->
+                    <div class="mt-3" id="signupSuccessMsg" style="display:none;">
+                        <p class="text-success">Your sign-up was successful!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--========== End of header ========== -->
+
+    <!--==========  Start of banner section ==========-->
+
+
+    <section class="banner-food bg-fit" style="background-image: url(/images/food/bartender/new\ banner.jpg);">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    <h1
+                        style="color: #ff6600; font-size: 48px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); margin-top: 15rem;">
+                        Bartender in Chennai</h1>
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+
+                            <nav aria-label="breadcrumb breadcrumb-box" style="    margin-top: -1rem;">
+                                <ol class="breadcrumb mb-0  bg-white d-inline-flex p-1 px-4 rounded mt-4">
+                                    <li class="breadcrumb-item"><a href="index-food.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Bartender</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--========== End of banner section ==========-->
+
+    <!--==========  Start of About section ==========-->
+
+    <h1 class="about-title" style=" line-height: 53px;">About</h1> <!-- Separate About Heading outside the container -->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-12">
+                <p class="about-details">
+                    We provide professional bartender services for all types of events, including private parties,
+                    weddings, corporate events, and more. Our experienced bartenders are dedicated to creating memorable
+                    experiences for you and your guests.
+                    Enjoy a customized cocktail menu, expert drink preparation, and exceptional service. Let us handle
+                    the drinks while you focus on enjoying your event. Contact us today to book your bartender and
+                    elevate your gathering!
+                    Our team consists of skilled bartenders who are not only experts in mixology but also excellent at
+                    interacting with guests. We believe that a great bartender can enhance the atmosphere of any event,
+                    making it more enjoyable and engaging.
+                </p>
+                <div class="video-wrapper" id="video-wrapper">
+                    <div class="play-button" id="play-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen overlay for the YouTube video -->
+    <div class="overlay" id="video-overlay">
+        <iframe id="youtube-video" src="" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+
+
+    <!--==========  End of About section ==========-->
+    
+
+    <div class="text-center mt-4">
+        <h1 style="color: #ff6600; line-height: 53px;">Bartender in Chennai</h1>
+        <h2 style="font-family: 'Great Vibes', cursive; color: black !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); letter-spacing: 1px; margin-bottom: 60px;">
+            Let's plan a party together
+        </h2>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh; background-color: beige;">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="form-section p-4" style="background-color: #f8f9fa; border-radius: 10px; width: 100%; max-width: 500px; margin-top: 3rem; margin-bottom: 3rem;">
+                <form id="party-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" id="event-date" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="budget" placeholder="Enter your budget" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" id="event-type" style="line-height: 32px;" required>
+                            <option value="">Select event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="private-party">Private Party</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="guests" placeholder="Number of guests" required>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100" id="choose-drinks">Choose Drinks</button>
+                </form>
+<!--
+                <div id="drink-options" style="display: none; margin-top: 20px;">
+                    <div class="row">
+                        <div id="cocktail-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Cocktails</h6>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="mojito" value="Mojito" data-rate="8">
+                                <label class="form-check-label" for="mojito"><strong>Mojito</strong> - $8</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="margarita" value="Margarita" data-rate="9">
+                                <label class="form-check-label" for="margarita"><strong>Margarita</strong> - $9</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="cosmopolitan" value="Cosmopolitan" data-rate="10">
+                                <label class="form-check-label" for="cosmopolitan"><strong>Cosmopolitan</strong> - $10</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="old-fashioned" value="Old Fashioned" data-rate="11">
+                                <label class="form-check-label" for="old-fashioned"><strong>Old Fashioned</strong> - $11</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="pina-colada" value="Pina Colada" data-rate="12">
+                                <label class="form-check-label" for="pina-colada"><strong>Pina Colada</strong> - $12</label>
+                            </div>
+                        </div>
+
+                        <div id="mocktail-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Mocktails</h6>
+                            <div class="form-check" style="color: rgb(249, 249, 249);">
+                                <input class="form-check-input" type="checkbox" id="virgin-mojito" value="Virgin Mojito" data-rate="7">
+                                <label class="form-check-label" for="virgin-mojito"><strong>Virgin Mojito</strong> - $7</label>
+                                
+                            </div>
+                            <div class="form-check" style="color: rgb(255, 255, 255);">
+                                <input class="form-check-input" type="checkbox" id="lemonade" value="Lemonade" data-rate="6">
+                                <label class="form-check-label" for="lemonade"><strong>Lemonade</strong> - $6</label>
+                            </div>
+                            <div class="form-check" style="color: rgb(255, 255, 255);">
+                                <input class="form-check-input" type="checkbox" id="fruit-punch" value="Fruit Punch" data-rate="5">
+                                <label class="form-check-label" for="fruit-punch"><strong>Fruit Punch</strong> - $5</label>
+                            </div>
+                            <div class="form-check" style="color: rgb(255, 255, 255);">
+                                <input class="form-check-input" type="checkbox" id="mint-cooler" value="Mint Cooler" data-rate="5">
+                                <label class="form-check-label" for="mint-cooler"><strong>Mint Cooler</strong> - $5</label>
+                            </div>
+                            <div class="form-check" style="color: rgb(255, 255, 255);">
+                                <input class="form-check-input" type="checkbox" id="ginger-ale" value="Ginger Ale" data-rate="4">
+                                <label class="form-check-label" for="ginger-ale"><strong>Ginger Ale</strong> - $4</label>
+                            </div>
+                        </div>
+
+                        <div id="beer-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Beer</h6>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="lager" value="Lager" data-rate="5">
+                                <label class="form-check-label" for="lager"><strong>Lager</strong> - $5</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="ipa" value="IPA" data-rate="6">
+                                <label class="form-check-label" for="ipa"><strong>IPA</strong> - $6</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="stout" value="Stout" data-rate="7">
+                                <label class="form-check-label" for="stout"><strong>Stout</strong> - $7</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="pale-ale" value="Pale Ale" data-rate="6">
+                                <label class="form-check-label" for="pale-ale"><strong>Pale Ale</strong> - $6</label>
+                            </div>
+                        </div>
+
+                        <div id="wine-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Wine</h6>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="red-wine" value="Red Wine" data-rate="10">
+                                <label class="form-check-label" for="red-wine"><strong>Red Wine</strong> - $10</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="white-wine" value="White Wine" data-rate="10">
+                                <label class="form-check-label" for="white-wine"><strong>White Wine</strong> - $10</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="rose-wine" value="Rosé Wine" data-rate="10">
+                                <label class="form-check-label" for="rose-wine"><strong>Rosé Wine</strong> - $10</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="sparkling-wine" value="Sparkling Wine" data-rate="12">
+                                <label class="form-check-label" for="sparkling-wine"><strong>Sparkling Wine</strong> - $12</label>
+                            </div>
+                            <div class="form-check" style="color: white;">
+                                <input class="form-check-input" type="checkbox" id="dessert-wine" value="Dessert Wine" data-rate="10">
+                                <label class="form-check-label" for="dessert-wine"><strong>Dessert Wine</strong> - $10</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-warning w-100 mt-3" id="add-to-cart">Add to Cart</button>
+                </div>
+                -->
+
+
+                <div id="drink-options" style="display: none; margin-top: 20px;">
+                    <div class="row">
+                       
+                        
+                        <!-- Cocktails Section -->
+                        <div id="cocktail-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Cocktails</h6>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="mojito" value="Mojito" data-rate="8">
+                                <label class="form-check-label" for="mojito">
+                                    <strong>Mojito</strong> - $8
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('mojito', -1)">-</button>
+                                    <span id="mojito-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('mojito', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Mojito')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="margarita" value="Margarita" data-rate="9">
+                                <label class="form-check-label" for="margarita">
+                                    <strong>Margarita</strong> - $9
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('margarita', -1)">-</button>
+                                    <span id="margarita-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('margarita', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Margarita')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="cosmopolitan" value="Cosmopolitan" data-rate="10">
+                                <label class="form-check-label" for="cosmopolitan">
+                                    <strong>Cosmopolitan</strong> - $10
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('cosmopolitan', -1)">-</button>
+                                    <span id="cosmopolitan-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('cosmopolitan', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Cosmopolitan')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="old-fashioned" value="Old Fashioned" data-rate="11">
+                                <label class="form-check-label" for="old-fashioned">
+                                    <strong>Old Fashioned</strong> - $11
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('old-fashioned', -1)">-</button>
+                                    <span id="old-fashioned-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('old-fashioned', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Old Fashioned')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="pina-colada" value="Pina Colada" data-rate="12">
+                                <label class="form-check-label" for="pina-colada">
+                                    <strong>Pina Colada</strong> - $12
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('pina-colada', -1)">-</button>
+                                    <span id="pina-colada-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('pina-colada', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Pina Colada')">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Mocktails Section -->
+                        <div id="mocktail-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Mocktails</h6>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="virgin-mojito" value="Virgin Mojito" data-rate="7">
+                                <label class="form-check-label" for="virgin-mojito">
+                                    <strong>Virgin Mojito</strong> - $7
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('virgin-mojito', -1)">-</button>
+                                    <span id="virgin-mojito-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('virgin-mojito', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Virgin Mojito')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="lemonade" value="Lemonade" data-rate="6">
+                                <label class="form-check-label" for="lemonade">
+                                    <strong>Lemonade</strong> - $6
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('lemonade', -1)">-</button>
+                                    <span id="lemonade-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('lemonade', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Lemonade')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="fruit-punch" value="Fruit Punch" data-rate="5">
+                                <label class="form-check-label" for="fruit-punch">
+                                    <strong>Fruit Punch</strong> - $5
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('fruit-punch', -1)">-</button>
+                                    <span id="fruit-punch-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('fruit-punch', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Fruit Punch')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="mint-cooler" value="Mint Cooler" data-rate="5">
+                                <label class="form-check-label" for="mint-cooler">
+                                    <strong>Mint Cooler</strong> - $5
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('mint-cooler', -1)">-</button>
+                                    <span id="mint-cooler-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('mint-cooler', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Mint Cooler')">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Beer Section -->
+                        <div id="beer-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Beer</h6>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="lager" value="Lager" data-rate="5">
+                                <label class="form-check-label" for="lager">
+                                    <strong>Lager</strong> - $5
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('lager', -1)">-</button>
+                                    <span id="lager-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('lager', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Lager')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="ipa" value="IPA" data-rate="6">
+                                <label class="form-check-label" for="ipa">
+                                    <strong>IPA</strong> - $6
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('ipa', -1)">-</button>
+                                    <span id="ipa-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('ipa', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('IPA')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="stout" value="Stout" data-rate="7">
+                                <label class="form-check-label" for="stout">
+                                    <strong>Stout</strong> - $7
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('stout', -1)">-</button>
+                                    <span id="stout-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('stout', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Stout')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="pale-ale" value="Pale Ale" data-rate="6">
+                                <label class="form-check-label" for="pale-ale">
+                                    <strong>Pale Ale</strong> - $6
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('pale-ale', -1)">-</button>
+                                    <span id="pale-ale-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('pale-ale', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Pale Ale')">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Wine Section -->
+                        <div id="wine-selection" class="col-6 mb-3">
+                            <h6 class="text-center" style="color: #ff6600; font-size: 1.5rem; font-weight: bold;">Wine</h6>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="red-wine" value="Red Wine" data-rate="10">
+                                <label class="form-check-label" for="red-wine">
+                                    <strong>Red Wine</strong> - $10
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('red-wine', -1)">-</button>
+                                    <span id="red-wine-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('red-wine', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Red Wine')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="white-wine" value="White Wine" data-rate="10">
+                                <label class="form-check-label" for="white-wine">
+                                    <strong>White Wine</strong> - $10
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('white-wine', -1)">-</button>
+                                    <span id="white-wine-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('white-wine', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('White Wine')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="rose-wine" value="Rosé Wine" data-rate="10">
+                                <label class="form-check-label" for="rose-wine">
+                                    <strong>Rosé Wine</strong> - $10
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('rose-wine', -1)">-</button>
+                                    <span id="rose-wine-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('rose-wine', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Rosé Wine')">Add</button>
+                                </div>
+                            </div>
+                            <div class="drink-card">
+                                <input class="form-check-input" type="checkbox" id="sparkling-wine" value="Sparkling Wine" data-rate="12">
+                                <label class="form-check-label" for="sparkling-wine">
+                                    <strong>Sparkling Wine</strong> - $12
+                                </label>
+                                <div class="quantity-control">
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('sparkling-wine', -1)">-</button>
+                                    <span id="sparkling-wine-quantity" class="quantity">0</span>
+                                    <button class="btn btn-light btn-sm" onclick="changeQuantity('sparkling-wine', 1)">+</button>
+                                    <button class="btn btn-warning btn-sm ml-2" onclick="addToCart('Sparkling Wine')">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <button class="btn btn-warning w-100 mt-3" id="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <style>
+                    .drink-card {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border: 1px solid #ff6600;
+                        border-radius: 8px;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        transition: background-color 0.3s ease;
+                    }
+                
+                    .drink-card:hover {
+                        background-color: rgba(255, 255, 255, 0.2);
+                    }
+                
+                    .quantity-control {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start; /* Aligns buttons to the left */
+                        margin-top: 5px;
+                    }
+                
+                    .quantity {
+                        margin: 0 10px;
+                    }
+                </style>
+                <script>
+                // Show drink options when the button is clicked
+                document.getElementById('choose-drinks-button').addEventListener('click', function () {
+                    document.getElementById('drink-options').style.display = 'block';
+                });
+            
+                // Handle adding drinks to the cart
+                document.getElementById('add-to-cart').addEventListener('click', function () {
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const eventDate = document.getElementById('event-date').value;
+                    const city = document.getElementById('city').value;
+                    const budget = document.getElementById('budget').value;
+                    const eventType = document.getElementById('event-type').value;
+                    const guests = document.getElementById('guests').value;
+            
+                    const selectedDrinks = [];
+                    const drinkCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                    let totalAmount = 0;
+            
+                    drinkCheckboxes.forEach(checkbox => {
+                        const quantity = parseInt(document.getElementById(`${checkbox.id}-quantity`).innerText);
+                        if (quantity > 0) {
+                            selectedDrinks.push(`${checkbox.value} (x${quantity})`);
+                            totalAmount += parseFloat(checkbox.getAttribute('data-rate')) * quantity;
+                        }
+                    });
+            
+                    let modalContent = `
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Phone:</strong> ${phone}</p>
+                        <p><strong>Event Date:</strong> ${eventDate}</p>
+                        <p><strong>City:</strong> ${city}</p>
+                        <p><strong>Budget:</strong> $${budget}</p>
+                        <p><strong>Event Type:</strong> ${eventType}</p>
+                        <p><strong>Number of Guests:</strong> ${guests}</p>
+                        <p><strong>Selected Drinks:</strong> ${selectedDrinks.length > 0 ? selectedDrinks.join(', ') : 'None'}</p>
+                        <p><strong>Total Amount:</strong> $${totalAmount}</p>
+                    `;
+            
+                    document.getElementById('modal-content').innerHTML = modalContent;
+                    const modal = new bootstrap.Modal(document.getElementById('cartModal'));
+                    modal.show();
+            
+                    // Reset input fields
+                    document.getElementById('name').value = '';
+                    document.getElementById('phone').value = '';
+                    document.getElementById('event-date').value = '';
+                    document.getElementById('city').value = '';
+                    document.getElementById('budget').value = '';
+                    document.getElementById('event-type').value = '';
+                    document.getElementById('guests').value = '';
+            
+                    // Reset checkboxes and quantities
+                    drinkCheckboxes.forEach(checkbox => {
+                        checkbox.checked = false;
+                        document.getElementById(`${checkbox.id}-quantity`).innerText = '0';
+                    });
+                });
+            
+                // Change the quantity of drinks
+                function changeQuantity(drink, change) {
+                    const quantityElement = document.getElementById(`${drink}-quantity`);
+                    let currentQuantity = parseInt(quantityElement.innerText);
+            
+                    // Adjust the quantity based on the button clicked
+                    currentQuantity += change;
+            
+                    // Prevent negative quantities
+                    if (currentQuantity < 0) {
+                        currentQuantity = 0;
+                    }
+            
+                    // Update the displayed quantity
+                    quantityElement.innerText = currentQuantity;
+            
+                    // Update checkbox state based on quantity
+                    const checkbox = document.getElementById(drink);
+                    if (currentQuantity > 0) {
+                        checkbox.checked = true;
+                    } else {
+                        checkbox.checked = false;
+                    }
+                }
+            
+                // Function to add drinks to the cart
+                function addToCart(drinkName) {
+                    const quantityElement = document.getElementById(`${drinkName.toLowerCase().replace(/\s+/g, '-')}-quantity`);
+                    let currentQuantity = parseInt(quantityElement.innerText);
+                    if (currentQuantity > 0) {
+                        alert(`${drinkName} added to cart (x${currentQuantity})`);
+                    } else {
+                        alert(`Select a quantity for ${drinkName} before adding to cart.`);
+                    }
+                }
+            </script>
+                
+
+
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying form details -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-content">
+                    <!-- Cart details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--========== End of form section ==========-->
+
+    <div class=" text-center mt-4">
+        <h1 style=" color: #ff6600;  line-height: 53px;     margin-top: 4.5rem !important;
+    margin-bottom: 4rem;">Our Bartenders</h1>
+    </div>
+    <div class="image-container" style="display: flex; align-items: center; justify-content: center; ">
+        <div class="image-wrapper" style="padding-right: 10px;    overflow: hidden;">
+            <img src="/images/food/bartender/Dale DeGroff.jpg" alt="Dale DeGroff">
+            <div class=" imgaeoverlay">
+                <div>Dale DeGroff</div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="image-wrapper" style="padding-right: 10px;   overflow: hidden;">
+            <img src="/images/food/bartender/julie_reiner.png" alt="Julie Reiner">
+            <div class="imgaeoverlay">
+                <div>Julie Reiner</div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="image-wrapper   overflow: hidden;">
+            <img src="/images/food/bartender/ivy mix.jpg" alt="Ivy Mix">
+            <div class=" imgaeoverlay">
+                <div style="    margin-right: -2rem;">Ivy Mix</div>
+                <div class="social-icons" style="    margin-right: -2rem;">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--==========  Start of Experience section ==========-->
+
+    <div class=" text-center mt-4">
+        <h1 style=" color: #ff6600;  line-height: 53px;     margin-top: 4.5rem !important;
+    margin-bottom: 2rem;">We Have a Unique Bar Experience</h1>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" style="margin-top: -6rem !important;">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #ff6600;">Cocktail Mastery</h5>
+                        <p class="card-text">
+                            Experience the art of mixing cocktails with our expert bartenders and unique recipes.
+                            Whether you are a connoisseur or a curious beginner, immerse yourself in the
+                            fascinating world of cocktail creation. Discover the secrets behind crafting the perfect
+                            balance of flavors, using premium ingredients and innovative techniques.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #ff6600;">Exclusive Drinks</h5>
+                        <p class="card-text">
+                            Enjoy a wide range of exclusive drinks that you won't find anywhere else. From our
+                            signature handcrafted beverages to rare selections, every drink tells a story. Savor
+                            the richness of bespoke cocktails that blend creativity with the finest spirits. Each
+                            glass is a work of art, tailored to elevate your drinking experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #ff6600;">Luxurious Ambiance</h5>
+                        <p class="card-text">
+                            Relax in a luxurious setting with music, mood lighting, and great company. Our venue
+                            is designed to offer an intimate and sophisticated atmosphere where every detail is
+                            curated for comfort and style. Whether you're celebrating or unwinding, our
+                            ambiance provides the perfect backdrop for unforgettable moments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  End of Experience section ==========-->
+
+
+
+    <!--==========  End of footer section ==========-->
+
+
+    <!--Start of footer section ==========-->
+    <footer class="footer bg-dark slice-pt" style="margin-top: 4rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                    <!--===== Start of footer item =====-->
+                    <a href="index.html"> <img class="footer-logo" src="images/logo-light.svg" alt="Logo"> </a>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-2">734 Fairfield dr. port charlotte, FL 33952</li>
+                        <li class="mb-2">(781) 210-0377</li>
+                        <li>info@example.com</li>
+                    </ul>
+
+                    <!--===== Start of footer social =====-->
+                    <div class="social-icons icon-colored list-unstyled mt-4">
+                        <a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
+                        <a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
+                        <a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
+                        <a class="pinterest icon" href="#"> <i class="fab fa-pinterest-p fa-fw"></i> </a>
+                        <a class="rss icon" href="#"> <i class="fas fa-rss fa-fw"></i> </a>
+                    </div>
+                    <!--===== End of footer social =====-->
+
+                    <!--===== End of footer item =====-->
+
+                </div>
+
+                <div class="col-lg-2 col-sm-6 mb-4 mb-lg-0">
+
+                    <!--===== Start of footer item =====-->
+                    <div class="footer-links">
+                        <h5 class="text-white mb-4">Additional Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Community</a></li>
+                            <li class="mb-2"><a href="#">About us</a></li>
+                            <li class="mb-2"><a href="#">Jobs</a></li>
+                            <li class="mb-2"><a href="#">Forums</a></li>
+                            <li class="mb-2"><a href="#">Keep in touch</a></li>
+                            <li class="mb-2"><a href="#">Purchase</a></li>
+                        </ul>
+                    </div>
+                    <!--===== End of footer item =====-->
+
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+
+                    <!--===== Start of footer item =====-->
+                    <div class="footer-links">
+                        <h5 class="text-white mb-4">About The Faculty</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Portfolio</a></li>
+                            <li class="mb-2"><a href="#">Blogs</a></li>
+                            <li class="mb-2"><a href="#">Video Tutorials</a></li>
+                            <li class="mb-2"><a href="#">Tickets</a></li>
+                            <li class="mb-2"><a href="#">Template Library</a></li>
+                            <li class="mb-2"><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <!--===== End of footer item =====-->
+
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+
+                    <!--===== Start of footer item =====-->
+                    <h5 class="text-white mb-4">Join our newsletter and get 3 free products, instantly.</h5>
+                    <form class="subscribe-form-francy">
+                        <input type="email" class="form-control rounded" placeholder="Enter your email address">
+                        <a href="#" class="btn btn-warning rounded">Subscribe</a>
+                    </form>
+                    <small class="form-text mt-3 text-muted d-block">Plus nothing but quality pixels in your inbox every
+                        2
+                        weeks!</small>
+                    <!--===== End of footer item =====-->
+
+                </div>
+                <div class="col-12 mt-4">
+                    <hr class="hr-light">
+                </div>
+            </div>
+        </div>
+
+        <!--===== Start of copyright =====-->
+        <div class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0 text-light">© 2020 <a target="_blank" href="#">infinitysoftway </a>all right
+                            reserved</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-links">
+                            <ul class="list-unstyled list-inline mb-0">
+                                <li class="list-inline-item"><a href="#">Privacy Policy </a></li>
+                                <li class="list-inline-item"><a href="#">Terms of Use </a></li>
+                                <li class="list-inline-item"><a href="#">Support </a></li>
+                                <li class="list-inline-item"><a href="#">Contact us </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== End of copyright =====-->
+    </footer>
+
+    <!--========== End of footer section ==========-->
+
+    <!--==========  Start of back to top section ==========-->
+
+
+    <div class="go-top">
+        <p class="go-top-text">Scroll to top <i class="fas fa-long-arrow-alt-right ps-2"></i></p>
+    </div>
+
+    <!--==========  End of back to top section ==========-->
+
+    <!--========== Start of Javascript ==========-->
+
+
+    <!--===== Global required js =====-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!--===== Global script: js libraries and plugins =====-->
+    <script src="js/appear/jquery.appear.js"></script>
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/swiper/SwiperAnimation.min.js"></script>
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/typer/typer.js"></script>
+    <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jarallax/jarallax.min.js"></script>
+    <!--===== Main theme script =====-->
+    <script src="js/functions.js"></script>
+    <script src="js/bartender.js"></script>
+
+
+
+    <!-- Bootstrap JS and Popper.js (for dropdowns, modals, and collapse) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- Stepper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+
+</body>
+<!--==========  End of Javascript ==========-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var stepperLogin = new Stepper(document.querySelector('#stepperLogin'));
+
+        // Handle the Next button click (Name step)
+        document.getElementById('nextButton').addEventListener('click', function () {
+            var nameInput = document.getElementById('name');
+            var nameValue = nameInput.value.trim();
+
+            // Validate name input for minimum 10 characters
+            if (nameValue.length < 10) {
+                nameInput.classList.add('is-invalid');
+            } else {
+                nameInput.classList.remove('is-invalid');
+
+                // Display the name in the password step as a preview
+                document.getElementById('namePreview').innerText = nameValue;
+
+                // Move to the next step
+                stepperLogin.next();
+            }
+        });
+
+        // Handle the Previous button click to go back to the Name step
+        document.getElementById('prevButton').addEventListener('click', function () {
+            stepperLogin.previous();
+        });
+
+        // Handle the Login button click with password validation
+        document.getElementById('loginButton').addEventListener('click', function () {
+            var passwordInput = document.getElementById('password');
+            var passwordValue = passwordInput.value.trim();
+
+            // Check if password contains at least two numbers
+            var numCount = passwordValue.replace(/[^0-9]/g, '').length;
+
+            if (passwordValue === "" || numCount < 2) {
+                passwordInput.classList.add('is-invalid');
+            } else {
+                passwordInput.classList.remove('is-invalid');
+                alert('Login successful!');
+                // Proceed with login process...
+            }
+        });
+
+        // Toggle password visibility with eye icon
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            var passwordInput = document.getElementById('password');
+            var passwordType = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', passwordType);
+
+            // Toggle the eye icon
+            var toggleIcon = document.getElementById('toggleIcon');
+            toggleIcon.classList.toggle('bi-eye');
+            toggleIcon.classList.toggle('bi-eye-slash');
+        });
+
+        // Clear fields and reset stepper when the modal is closed
+        document.getElementById('loginModal').addEventListener('hidden.bs.modal', function () {
+            document.getElementById('name').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('namePreview').innerText = '';
+            stepperLogin.to(0); // Go back to the first step
+        });
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var stepperSignup = new Stepper(document.querySelector('#stepperSignup'));
+
+        // Step navigation buttons
+        document.getElementById('signupNextButton').addEventListener('click', function () {
+            // Perform validation for Name, Phone, and Email before proceeding
+            var name = document.getElementById('signupName');
+            var phone = document.getElementById('signupPhone');
+            var email = document.getElementById('signupEmail');
+
+            // Clear previous error states
+            name.classList.remove('is-invalid');
+            phone.classList.remove('is-invalid');
+            email.classList.remove('is-invalid');
+
+            if (name.value.length >= 5 && phone.value.length > 0 && email.value.includes('@')) {
+                stepperSignup.next(); // Go to next step
+            } else {
+                // Show error messages if validation fails
+                if (name.value.length < 5) {
+                    name.classList.add('is-invalid');
+                }
+                if (phone.value.length === 0) {
+                    phone.classList.add('is-invalid');
+                }
+                if (!email.value.includes('@')) {
+                    email.classList.add('is-invalid');
+                }
+            }
+        });
+
+        document.getElementById('signupPrevButton').addEventListener('click', function () {
+            stepperSignup.previous();
+        });
+
+        // Toggle password visibility
+        document.getElementById('signupTogglePassword').addEventListener('click', function () {
+            var passwordInput = document.getElementById('signupPassword');
+            var passwordIcon = document.getElementById('signupToggleIcon');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.classList.remove('bi-eye');
+                passwordIcon.classList.add('bi-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                passwordIcon.classList.remove('bi-eye-slash');
+                passwordIcon.classList.add('bi-eye');
+            }
+        });
+
+        // Handle Sign Up
+        document.getElementById('signupBtn').addEventListener('click', function () {
+            var password = document.getElementById('signupPassword').value;
+
+            if (password.length >= 6) {
+                // Simulate sign-up success
+                document.getElementById('signupSuccessMsg').style.display = 'block';
+            } else {
+                document.getElementById('signupPassword').classList.add('is-invalid');
+            }
+        });
+
+        // Clear fields and reset stepper when the modal is closed
+        document.getElementById('signupModal').addEventListener('hidden.bs.modal', function () {
+            document.getElementById('signupName').value = '';
+            document.getElementById('signupPhone').value = '';
+            document.getElementById('signupEmail').value = ''; // Fix here
+            document.getElementById('signupPassword').value = ''; // Clear password field
+            stepperSignup.to(0); // Go back to the first step
+        });
+    });
+</script>
+
+
+<!--======About Section======-->
+<script>
+    const playButton = document.getElementById('play-button');
+    const overlay = document.getElementById('video-overlay');
+    const youtubeVideo = document.getElementById('youtube-video');
+
+    // Set your YouTube video link here
+    const videoURL = "https://www.youtube.com/embed/P2EOVODrSzs?autoplay=1";
+
+    // Show overlay and play video on play button click  
+    playButton.addEventListener('click', () => {
+        youtubeVideo.src = videoURL; // Set video source
+        overlay.classList.add('active'); // Show overlay
+    });
+
+    // Hide overlay and stop video on overlay click
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('active'); // Hide overlay
+        youtubeVideo.src = ""; // Stop video by clearing the source
+    });
+</script>
+
+</html>

@@ -1,0 +1,221 @@
+/**********************/
+/*  Banner  */
+/**********************/
+
+/* Intro (commune) */
+#section-intro .letter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -17em;
+	margin-left: -17em;
+	display: inline-block;
+	width: 34em;
+	height: 34em;
+	overflow: hidden;
+}
+
+#section-intro .letter .letter-back {
+	position: absolute;
+	top: -0.5em;
+	left: -0.5em;
+	width: calc(100% + 1em);
+	width: -webkit-calc(100% + 1em);
+	height: calc(100% + 1em);
+	height: -webkit-calc(100% + 1em);
+}
+
+#section-intro .letter .letter-back svg {
+	filter: blur(0.5px);
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	width: calc(100% - 1em);
+	width: -webkit-calc(100% - 1em);
+	height: calc(100% - 1em);
+	height: -webkit-calc(100% - 1em);
+}
+
+#section-intro .letter .letter-mid {
+	position: absolute;
+	top: -0.5em;
+	left: -0.5em;
+	width: calc(100% + 1em);
+	width: -webkit-calc(100% + 1em);
+	height: calc(100% + 1em);
+	height: -webkit-calc(100% + 1em);
+	background-color: white;
+	-webkit-mix-blend-mode: darken;
+	mix-blend-mode: darken;
+}
+
+#section-intro .letter .letter-mid svg {
+	filter: blur(0.5px);
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	width: calc(100% - 1em);
+	width: -webkit-calc(100% - 1em);
+	height: calc(100% - 1em);
+	height: -webkit-calc(100% - 1em);
+}
+
+#section-intro .letter .letter-mid .video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-mix-blend-mode: lighten;
+	mix-blend-mode: lighten;
+	overflow: hidden;
+}
+
+#section-intro .letter .letter-mid .video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+#section-intro.seen .letter svg path.triggered {
+	transition: stroke-dashoffset 1s ease-in-out 1s;
+	-webkit-transition: stroke-dashoffset 1s ease-in-out 1s;
+	stroke-dashoffset: 0 !important;
+}
+
+.default-banner .video video {
+	height: 670px !important;
+	width: 900px !important;
+}
+
+.slider-02 {
+	height: 100vh;
+}
+
+// personal
+.banner-personal {
+	padding: 400px 0 100px;
+}
+
+// banner-business
+
+.banner-business {
+	padding: 200px 0;
+}
+
+.banner-corporate {
+	padding-top: 300px;
+}
+
+// banner-blog-minimal
+.banner-blog-minimal {
+	padding: 200px 0;
+}
+
+// banner-blog-creative
+.banner-blog-creative {
+	padding: 200px 0 0;
+}
+
+.banner-saas {
+	padding: 200px 0;
+}
+
+.banner-portfolio {
+	padding: 200px 0 100px;
+}
+
+.banner-portfolio-panel {
+	padding: 200px 0;
+}
+
+.banner-creative {
+	padding: 300px 0 200px;
+}
+
+.banner-landing {
+	padding: 0 0 100px;
+}
+
+.banner-seo {
+	padding: 200px 0 230px;
+}
+
+@media (max-width:991px) {
+	.banner-corporate {
+		padding-top: 150px;
+	}
+
+	#section-intro .letter {
+		margin-top: -10em;
+		margin-left: -13em;
+		width: 20em;
+		height: 20em;
+	}
+
+	.banner-blog-minimal {
+		padding: 100px 0;
+	}
+
+	.banner-saas {
+		padding: 100px 0 0;
+	}
+
+	.banner-portfolio {
+		padding: 100px 0;
+	}
+
+	.banner-portfolio-panel {
+		padding: 100px 0;
+	}
+
+	.banner-creative {
+		padding: 250px 0 150px;
+	}
+
+	.banner-landing {
+		padding: 100px 0;
+	}
+
+	.banner-seo {
+		padding: 170px 0 200px;
+	}
+
+}
+
+@media (max-width:767px) {
+	.banner-portfolio {
+		padding: 80px 0;
+	}
+
+	.banner-portfolio-panel {
+		padding: 80px 0;
+	}
+
+}
+
+@media (max-width:576px) {
+	.display-1 {
+		font-size: 50px;
+	}
+
+	.banner-corporate {
+		padding-top: 70px;
+	}
+
+	.banner-creative {
+		padding: 150px 0 100px;
+	}
+
+	.banner-landing {
+		padding: 60px 0;
+	}
+
+}

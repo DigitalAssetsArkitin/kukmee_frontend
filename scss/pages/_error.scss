@@ -1,0 +1,25 @@
+/**********************/
+/* Error */
+/**********************/
+
+.error-title {
+	font-size: 300px;
+	font-weight: 500;
+	line-height: 300px;
+}
+
+@media (max-width:767px) {
+	.error-title {
+		font-size: 200px;
+		line-height: 200px;
+	}
+
+}
+
+@media (max-width:576px) {
+	.error-title {
+		font-size: 100px;
+		line-height: 100px;
+	}
+
+}

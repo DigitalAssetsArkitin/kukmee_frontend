@@ -1,0 +1,45 @@
+/**********************/
+/* Counter */
+/**********************/ 
+
+.counter.counter-icon {
+  position: relative;
+  z-index: 1;
+  padding-left: 50px;
+
+  .icon {
+    position: absolute;
+    font-size: 100px;
+    top: 0;
+    color: rgba($primary, 0.1);
+    z-index: -1;
+    left: 0;
+  }
+
+}
+
+.counter.counter-icon-left {
+  display: flex;
+
+  .icon {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+}
+
+.counter.counter-box {
+  padding: 35px 30px 40px;
+  position: relative;
+  display: flex;
+
+  .icon {
+    position: absolute;
+    font-size: 60px;
+    bottom: 0;
+    color: rgba($primary, 0.1);
+    z-index: 0;
+    right: 0;
+  }
+
+}

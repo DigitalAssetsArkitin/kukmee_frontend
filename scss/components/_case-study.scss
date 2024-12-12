@@ -1,0 +1,15 @@
+/**********************/
+/* Case study */
+/**********************/ 
+
+.case-study-hover {
+	transition: all 0.4s ease-in-out;
+	background: $white;
+
+	&:hover {
+		background: $warning;
+		box-shadow: 0 6px 16px rgba($black, 0.06);
+		border-color: $warning !important;
+	}
+
+}

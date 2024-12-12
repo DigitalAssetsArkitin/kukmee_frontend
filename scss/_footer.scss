@@ -1,0 +1,38 @@
+/**********************/
+/* Footer */
+/**********************/
+
+.footer {
+	.footer-links {
+		ul {
+			li {
+				a {
+					color: $body-text;
+
+					&:hover {
+						color: $primary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.footer-logo {
+	height: 50px;
+}
+
+@media (max-width:991px) {
+
+	.footer-portfolio {
+		.portfolio-column-4 .grid-item {
+			width: 33.333%;
+		}
+	}
+
+}

@@ -1,0 +1,157 @@
+/**********************/
+/* Countdown */
+/**********************/ 
+
+.countdown-item {
+	display: flex;
+	text-align: center;
+
+	span {
+		font-size: 50px;
+		display: block;
+		margin-bottom: 10px;
+		color: $primary;
+	}
+
+	p {
+		font-size: 20px;
+		color: $dark;
+	}
+
+	.seperator {
+		margin: 0 16px;
+		font-size: 22px;
+		color: $dark;
+	}
+
+}
+
+.countdown-item.countdown-small {
+	li {
+		margin: 0 10px;
+	}
+
+	span {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+}
+
+.countdown-item.countdown-big {
+	li {
+		margin: 0 20px;
+	}
+
+	span {
+		font-size: 70px;
+		line-height: 70px;
+	}
+
+}
+
+.countdown-item.countdown-box {
+	li {
+		margin: 0 5px;
+		background: $white;
+		border-radius: 4px;
+		padding: 20px;
+		align-content: center;
+		box-shadow: 0 .125rem .25rem rgba($black, 0.075);
+	}
+
+	span {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.seperator {
+		background: transparent;
+		box-shadow: none;
+		line-height: 40px;
+	}
+
+}
+
+.coming-soon .display-1 {
+	font-size: 200px;
+	line-height: 200px;
+}
+
+@media (max-width:1366px) {
+	.coming-soon .display-1 {
+		font-size: 160px;
+		line-height: 160px;
+	}
+
+}
+
+@media (max-width:1199px) {
+	.coming-soon .display-1 {
+		font-size: 120px;
+		line-height: 120px;
+	}
+
+}
+
+@media (max-width:767px) {
+	.countdown-item.countdown-big span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.countdown-item.countdown-big li {
+		margin: 0 10px;
+	}
+
+	.countdown-item.countdown-box li {
+		padding: 15px 10px;
+	}
+
+}
+
+@media (max-width:575px) {
+	.countdown-item.countdown-small li {
+		margin: 0 4px;
+	}
+
+	.countdown-item span {
+		font-size: 30px;
+	}
+
+	.countdown-item p {
+		font-size: 15px;
+	}
+
+	.countdown-item.countdown-big span {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.countdown-item.countdown-big li {
+		margin: 0 6px;
+	}
+
+	.countdown-item.countdown-box li {
+		margin: 0;
+		padding: 15px 6px;
+	}
+
+	.countdown-item.countdown-box span {
+		font-size: 26px;
+		line-height: 20px;
+	}
+
+	.countdown-item .seperator {
+		margin: 0 10px;
+	}
+
+}

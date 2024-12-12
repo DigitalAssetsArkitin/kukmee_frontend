@@ -1,0 +1,263 @@
+/**********************/
+/* Shop */
+/**********************/
+.banner-shop {
+	padding: 200px 0;
+}
+
+.banner-shop-02 {
+	padding: 460px 0 100px;
+}
+
+.cart-list-item {
+	display: flex;
+
+	.cart-product {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		flex: 0 0 50px;
+	}
+
+	.cart-info {
+		margin-left: 20px;
+
+		.cart-price {
+			font-size: 14px;
+		}
+
+	}
+
+}
+
+// product-item
+.product-item {
+	display: flex;
+	position: relative;
+	padding: 40px 20px 20px;
+	border-radius: 10px;
+	z-index: 1;
+
+	&:before {
+		box-shadow: 0px 7px 20px rgba($dark, 0.1);
+		height: 70%;
+		width: 100%;
+		position: absolute;
+		content: "";
+		bottom: 0;
+		background: $white;
+		left: 0;
+		z-index: -1;
+	}
+
+	.product-info {
+		margin-left: 40px;
+	}
+
+}
+
+.product-item-02 {
+	position: relative;
+	padding: 30px;
+	background: $white;
+	border-radius: .25rem;
+	box-shadow: 0 2px 6px rgba($black, 0.12);
+	transition: all .4s ease-in-out;
+
+	.product-image {
+		position: relative;
+
+		&:before {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			content: "";
+			bottom: 0;
+			background: rgba($white, 0.4);
+			left: 0;
+			opacity: 0;
+			transition: all .4s ease-in-out;
+		}
+
+	}
+
+	.product-hover {
+		position: absolute;
+		top: 40%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		opacity: 0;
+		transition: all .4s ease-in-out;
+
+		.product-btn {
+			font-weight: 500;
+			color: $dark;
+			background: $white;
+			display: block;
+			margin: 4px 2px;
+			padding: 6px 5px;
+			box-shadow: 0 1px 6px rgba($black, 0.1);
+			border-radius: .25rem;
+
+			i {
+				color: $primary;
+				padding-right: 2px;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+	&:hover {
+		.product-hover {
+			opacity: 1;
+			top: 50%;
+		}
+
+		.product-image {
+			&:before {
+				opacity: 1;
+			}
+
+		}
+
+		box-shadow: 0px 7px 30px rgba($dark, 0.1);
+	}
+
+}
+
+// shop-filters
+.shop-filters {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	.filter-shop-views a {
+		font-size: 20px;
+		color: $dark;
+
+		&:hover {
+			color: $primary;
+		}
+
+	}
+
+	.filter-box a {
+		color: $dark;
+		height: 100%;
+
+		i {
+			font-size: 20px;
+			color: $dark;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover {
+			i {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.shop-sidebar {
+	.widget {
+		margin-bottom: 40px;
+	}
+
+	.widget-title {
+		margin-bottom: 20px;
+	}
+
+	.widget-category {
+		li {
+			margin-bottom: 10px;
+
+			a {
+				color: $dark;
+			}
+
+		}
+
+	}
+
+}
+
+.widget-color {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		margin: 0 20px 20px 0;
+
+		a {
+			.color-box {
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+				display: inline-block;
+			}
+
+		}
+
+	}
+
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+
+	div {
+		margin: 0 5px;
+	}
+
+	.cart-product {
+		display: flex;
+
+		img {
+			flex: 0 0 100px;
+			width: 100px;
+			height: auto;
+		}
+
+	}
+
+}
+
+@media (max-width:991px) {
+	.banner-shop {
+		padding: 100px 0 150px;
+	}
+
+}
+
+@media (max-width:767px) {
+	.cart-item {
+		flex-wrap: wrap;
+		display: block;
+
+		div {
+			margin: 5px;
+		}
+
+	}
+
+	.shop-filters {
+		justify-content: start;
+		flex-wrap: wrap;
+	}
+
+	.banner-shop-02 {
+		padding: 160px 0 100px;
+	}
+
+}

@@ -1,0 +1,57 @@
+/**********************/
+/* Separator */
+/**********************/ 
+
+.separator {
+	height: 1px;
+	width: 100%;
+}
+
+.separator {
+	height: 1px;
+	width: 100%;
+}
+
+.separator-h-2 {
+	height: 2px;
+}
+
+.separator-h-3 {
+	height: 3px;
+}
+
+.separator-h-4 {
+	height: 4px;
+}
+
+.separator-h-5 {
+	height: 5px;
+}
+
+.separator-h-10 {
+	height: 10px;
+}
+
+.separator.separator-dotted {
+	height: inherit;
+	border-bottom: 2px dotted $dark;
+}
+
+.separator.separator-dashed {
+	height: inherit;
+	border-bottom: 2px dashed $dark;
+}
+
+.separator.separator-double {
+	height: inherit;
+	border-bottom: 6px double $dark;
+}
+
+.bottom-separator,
+.top-separator {
+	svg {
+		width: 100%;
+	}
+
+}
+

@@ -1,0 +1,33 @@
+/**********************/
+/* Step */
+/**********************/ 
+
+.process-step {
+	border: 1px solid $border-color;
+	border-radius: 4px;
+	overflow: hidden;
+
+	.step-number {
+		font-size: 40px;
+		line-height: 70px;
+		position: relative;
+		margin-bottom: 50px;
+		padding-top: 50px;
+		text-align: center;
+		padding: 0 50px; 	
+
+		&:before {
+			position: absolute;
+			width: 160px;
+			height: 160px;
+			background: rgba($orange, 0.1);
+			content: "";
+			top: -80px;
+			left: 0;
+			border-radius: 50%;
+
+		}
+
+	}
+
+}

@@ -1,0 +1,510 @@
+/**********************/
+/* Food  */
+/**********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav li .text-line:before {
+  background:#ff6600;
+  }
+  
+.navbar .navbar-nav .dropdown-menu li .dropdown-item .text-line:before {
+  background: #50d294;
+}
+
+.navbar .navbar-nav .dropdown-item:focus .dropdown-toggle::after, .navbar .navbar-nav .dropdown-item:hover.dropdown-toggle::after {
+  color: #50d294;
+}
+
+.banner-food {
+  padding: 11rem 0px;
+ 
+}
+
+.food-menu-item .food-menu-border {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.food-menu-item .food-menu-border h5 {
+  position: relative;
+}
+
+.food-menu-item .food-menu-border:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 12px;
+  border: 1px dashed #ced4da;
+}
+
+.swiper-button-green .swiper-button-next .icon-btn,
+.swiper-button-green .swiper-button-prev .icon-btn {
+  background: #50d294;
+}
+
+.swiper-button-green .swiper-button-next .icon-btn:hover,
+.swiper-button-green .swiper-button-prev .icon-btn:hover {
+  background: #50d294;
+  color: #fff;
+}
+
+@media (max-width:991px) {
+  .banner-food {
+    padding: 150px 0;
+  }
+
+}
+
+@media (max-width:767px) {
+  .food-footer-bg .position-absolute {
+    position: relative !important;
+  }
+
+}
+
+@media (max-width:576px) {
+  .banner-food {
+    padding: 100px 0;
+  }
+
+}
+
+
+.mx-1 {
+  margin-right: .25rem !important;
+  margin-left: .25rem !important;
+  
+}
+
+.bhai{
+  padding-top: 51px !important;
+}
+
+
+
+.card {
+  position: relative;
+  /* margin-top: 7rem; */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  display: none;
+  background-color: rgb(0, 0, 0, 1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card:hover .hover-text {
+  display: block;
+}
+
+
+
+.far{
+  margin-top: 41px;
+}
+
+
+
+
+.rocky{
+  display: flex;
+  padding-left: 11px;
+  padding-right: 8px;
+}
+.rocky1{
+  padding-left: 5px;
+}
+
+.modal-header{
+  background-color: #ffffff;
+}
+.modal-body{
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+#togglePassword {
+  cursor: pointer;
+}
+
+#toggleIcon {
+  pointer-events: none; /* Prevents the icon from being clicked */
+}
+
+
+
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+  }
+  h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.8rem;
+      color: #ff6600;
+      margin-bottom: 20px;
+  }
+
+
+.main-f{
+  line-height: 33px !important;
+}
+
+/* Full height container */
+.container.booking-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Section with Background Image */
+.form-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 600px; /* To limit the width of the form */
+  background-image: url('/images/food/bartender/6f2031a9ee.jpg'); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+ 
+}
+
+/* Overlay for form content */
+.form-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Input field styles */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input fields */
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* Label color to contrast with the background */
+.form-label {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-section {
+      padding: 1rem;
+  }
+
+  .form-overlay {
+      padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+  .heading-section h1 {
+    font-size: 2rem;
+  } 
+}
+
+/* Large heading styles */
+.heading-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.heading-section h1 {
+ 
+  font-weight: bold;
+  color:#ffffff;
+  background-color: #ff6600;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.4s ease;
+}
+
+/* Card Details (Hidden initially) */
+.card-details {
+  position: absolute;
+  bottom: -100%; /* Hidden below the image */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.4s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.card-container:hover .card-details {
+  bottom: 0; /* Slide up on hover */
+}
+
+/* Optional: Add a slight zoom-in effect to the image */
+.card-container:hover img {
+  transform: scale(1.05); /* Zoom in slightly */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .card-details {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+
+
+/* About section Bartender */
+
+ /* Video wrapper with background image */
+ .video-wrapper {
+  position: relative;
+  padding-bottom: 40.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  background-image: url('/images/food/bartender/new\ banner.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+  
+}
+
+/* Glowing play button */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation: glowing 1.5s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px white; }
+  100% { box-shadow: 0 0 20px white; }
+}
+
+.play-button::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/* Fullscreen overlay styling */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay iframe {
+  width: 90%;
+  max-width: 800px;
+  height: 90%;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+
+
+.about-title {
+  font-weight: bold;
+  color: #ff6600; /* Change color to differentiate */
+  text-align: center; /* Center the heading */
+  margin-bottom: 30px; /* Add margin for spacing */
+  margin-top: 69px; /* Add margin for spacing */
+ 
+  
+}
+.about-details {
+  font-size: 15px;
+  color: #000000;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add margin for spacing */
+  margin-bottom: 4rem;
+}
+
+
+
+
+
+
+/* chef booking home card */
+
+.custom-card {
+  height: 250px;
+  /* Set desired height for the card */
+  overflow: hidden;
+  /* Hide overflow to keep it clean */
+  margin-bottom: 8px;
+  /* Adjust the bottom margin to bring cards closer */
+}
+
+.custom-card img {
+  height: 100%;
+  /* Ensure image fills the card */
+  object-fit: cover;
+  /* Cover the area without stretching */
+}
+
+/* chef details */
+.food5 {
+  margin-top: -5rem;
+}
+.food2 {
+  margin-top: 2rem;
+  height: 12rem;
+}
+.food6 {
+  margin-top: 0rem;
+}
+.food4 {
+  margin-top: 0rem;
+}
+.food1{
+  height: 12rem;
+}
+.food3{
+  height: 12rem;
+}
+.chef-details {
+  margin-top: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  /* Adjust as needed */
+  object-fit: cover;
+}
+
+
+
+/* book button */
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right side */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 18px; /* Font size for readability */
+  background-color: #ff6600; /* Bootstrap primary button color */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+}
+
+.fixed-button:hover {
+  background-color: #ff6600; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+  .fixed-button {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+
+
+
+

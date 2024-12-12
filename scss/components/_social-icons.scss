@@ -1,0 +1,473 @@
+/**********************/
+/* Social icons */
+/**********************/ 
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    margin-right: 20px;
+    color: $dark;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+}
+
+.social-icons.icons-xl {
+  font-size: 36px;
+
+  .icon {
+    margin-right: 20px;
+  }
+
+}
+
+.social-icons.icons-md {
+  .icon {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+}
+
+.social-icons.icons-sm {
+  .icon {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+}
+
+.social-icons.social-icon-box {
+  .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: $light;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icons-xl {
+  .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+}
+
+.social-icons.social-icon-box.icons-md {
+  .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+}
+
+.social-icons.social-icon-box.icons-sm {
+  .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+}
+
+.social-icons.social-icon-rounded {
+  .icon {
+    border-radius: 4px;
+  }
+
+}
+
+.social-icons.social-icon-round {
+  .icon {
+    border-radius: 50%;
+  }
+
+}
+
+// icon-colored
+
+.social-icons.icon-colored {
+  .icon.facebook {
+    color: #4267B2;
+
+    &:hover {
+      background: transparent;
+      color: #4267B2;
+    }
+
+  }
+
+}
+
+.social-icons.icon-colored {
+  .icon.twitter {
+    color: #1DA1F2;
+
+    &:hover {
+      background: transparent;
+      color: #1DA1F2;
+    }
+
+  }
+
+}
+
+.social-icons.icon-colored {
+  .icon.pinterest {
+    color: #E60023;
+
+    &:hover {
+      background: transparent;
+      color: #E60023;
+    }
+
+  }
+
+}
+
+.social-icons.icon-colored {
+  .icon.instagram {
+    color: #8a3ab9;
+
+    &:hover {
+      background: transparent;
+      color: #8a3ab9;
+    }
+
+  }
+
+}
+
+.social-icons.icon-colored {
+  .icon.dribbble {
+    color: #ea4c89;
+
+    &:hover {
+      background: transparent;
+      color: #ea4c89;
+    }
+
+  }
+
+}
+
+.social-icons.icon-colored {
+  .icon.rss {
+    color: #ee802f;
+
+    &:hover {
+      background: transparent;
+      color: #ee802f;
+    }
+
+  }
+
+}
+
+// icon-colored
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.facebook {
+    color: #4267B2;
+
+    &:hover {
+      background: #4267B2;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.twitter {
+    color: #1DA1F2;
+
+    &:hover {
+      background: #1DA1F2;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.pinterest {
+    color: #E60023;
+
+    &:hover {
+      background: #E60023;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.instagram {
+    color: #8a3ab9;
+
+    &:hover {
+      background: #8a3ab9;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.dribbble {
+    color: #ea4c89;
+
+    &:hover {
+      background: #ea4c89;
+      color: $white;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-box.icon-colored {
+  .icon.linkedin {
+    color: #0077b5;
+
+    &:hover {
+      background: #0077b5;
+      color: $white;
+    }
+
+  }
+
+}
+
+// icon-bg-colored
+.social-icons.icon-bg-colored {
+  .icon.facebook {
+    color: $white;
+    background: #4267B2;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-bg-colored {
+  .icon.twitter {
+    color: $white;
+    background: #1DA1F2;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-bg-colored {
+  .icon.pinterest {
+    color: $white;
+    background: #E60023;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-bg-colored {
+  .icon.instagram {
+    color: $white;
+    background: #8a3ab9;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-bg-colored {
+  .icon.dribbble {
+    color: $white;
+    background: #ea4c89;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-bg-colored {
+  .icon.linkedin {
+    color: $white;
+    background: #0077b5;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 20px rgba($dark, 0.3);
+    }
+
+  }
+
+}
+
+.social-icons.icon-border {
+  .icon {
+    background: transparent;
+    border: 2px solid $light;
+
+    &:hover {
+      background: $primary;
+      border: 2px solid $primary;
+    }
+
+  }
+
+}
+
+// icons-animation
+.social-icons.icons-animation {
+  overflow: hidden;
+
+  .icon {
+    &:hover {
+      i {
+        animation: toTopFromBottom 0.3s forwards;
+      }
+
+    }
+
+  }
+
+}
+
+@-webkit-keyframes toTopFromBottom {
+  49% {
+    -webkit-transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes toTopFromBottom {
+  49% {
+    -moz-transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes toTopFromBottom {
+  49% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+}
+
+// social-text-small
+
+.social-icons.icon-colored.social-text-small {
+  .icon {
+    font-size: 16px;
+
+    span {
+      padding-left: 4px;
+    }
+
+    &:hover {
+      background: transparent;
+      color: $primary;
+    }
+
+  }
+
+}
+
+.social-icons.social-icon-text.icon-colored {
+  .icon {
+    font-size: 16px;
+
+    span {
+      padding-left: 4px;
+    }
+
+    &:hover {
+      background: transparent;
+      color: $primary;
+    }
+
+  }
+
+}

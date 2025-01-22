@@ -430,7 +430,7 @@ function addToWishlist(e) {
     console.log("Wishlist product details:", wishlistProduct);
 
     // Send the product data to the backend via a POST request
-    fetch("https://f793-2401-4900-1cc9-ec27-8539-12b7-b3ad-69e1.ngrok-free.app/api/wishlist/product", {
+    fetch("https://f793-2401-4900-1cc9-ec27-8539-12b7-b3ad-69e1.ngrok-free.app/api/products/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(wishlistProduct), // Send full product details
@@ -675,6 +675,72 @@ function attachEventListeners() {
 window.onload = function () {
   renderProducts("All");
 };
+
+
+
+
+// fetch the product 
+
+// Function to fetch and display wishlist items
+function fetchWishlist() {
+  fetch("https://f793-2401-4900-1cc9-ec27-8539-12b7-b3ad-69e1.ngrok-free.app/api/products/getAll")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch wishlist");
+      }
+      return response.json();
+    })
+    .then((wishlistItems) => {
+      const wishlistContainer = document.getElementById("wishlist-items");
+      wishlistContainer.innerHTML = ""; // Clear previous content
+
+      if (wishlistItems.length === 0) {
+        wishlistContainer.innerHTML = "<p>Your wishlist is empty.</p>";
+        return;
+      }
+
+      // Generate HTML for each wishlist item
+      wishlistItems.forEach((item) => {
+        const itemHTML = `
+          <div class="wishlist-item d-flex align-items-center mb-3">
+            <img src="${item.image}" alt="${item.name}" class="img-fluid rounded" style="width: 50px; height: 50px;">
+            <div class="ms-3">
+              <h6>${item.name}</h6>
+              <p class="mb-0"><del>₹${item.price.original}</del> ₹${item.price.discounted}</p>
+              <p class="mb-0">Available Sizes: ${item.sizes
+                .map((size) => `${size.size} - ₹${size.price}`)
+                .join(", ")}</p>
+            </div>
+          </div>
+        `;
+        wishlistContainer.innerHTML += itemHTML;
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching wishlist:", error);
+      alert("Failed to load wishlist. Please try again.");
+    });
+}
+
+// Event listener to fetch and show the wishlist modal
+document.getElementById("wishlistModal").addEventListener("show.bs.modal", fetchWishlist);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Location Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: calc(100% - 22px);
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shop Location</h1>
+  <p>Enter an address to locate it on the map or use your current location.</p>
+  <input type="text" id="locationInput" placeholder="Enter city, landmark, or detailed address">
+  <button onclick="locate()">Locate</button>
+  <button onclick="getCurrentLocation()">Use Current Location</button>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize the map and set the default view
+    const map = L.map('map').setView([12.973940,80.219325], 13);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add a marker for your shop's location
+    const shopMarker = L.marker([12.973940,80.219325]).addTo(map)
+      .bindPopup("Our Shop Location")
+      .openPopup();
+
+    // Function to locate a specific address
+    function locate() {
+      const location = document.getElementById('locationInput').value.trim();
+      if (!location) {
+        alert("Please enter a location.");
+        return;
+      }
+
+      const encodedLocation = encodeURIComponent(location);
+
+      // Fetch location data from Nominatim API
+      fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodedLocation}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.length > 0) {
+            const result = data[0];
+            const lat = parseFloat(result.lat);
+            const lon = parseFloat(result.lon);
+            
+            // Add a marker for the user's entered location
+            const userMarker = L.marker([lat, lon]).addTo(map)
+              .bindPopup(result.display_name)
+              .openPopup();
+            map.setView([lat, lon], 13);
+          } else {
+            alert("Location not found! Try simplifying the address.");
+          }
+        })
+        .catch(err => {
+          console.error("Error fetching location:", err);
+          alert("An error occurred while locating the address. Please try again.");
+        });
+    }
+
+    // Function to get the current location
+    function getCurrentLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(position => {
+          const lat = position.coords.latitude;
+          const lon = position.coords.longitude;
+
+          // Add a marker for the user's current location
+          const currentMarker = L.marker([lat, lon]).addTo(map)
+            .bindPopup("Your Current Location")
+            .openPopup();
+          map.setView([lat, lon], 13);
+        }, error => {
+          console.error("Error getting current location:", error);
+          alert("Unable to retrieve your current location.");
+        });
+      } else {
+        alert("Geolocation is not supported by your browser.");
+      }
+    }
+  </script>
+</body>
+</html>

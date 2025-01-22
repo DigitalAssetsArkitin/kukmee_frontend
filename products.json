@@ -1,0 +1,1027 @@
+{
+    "categories": {
+      "Groceries": [
+        {
+          "id": 1,
+          "name": "Rice",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 45.00, "discounted": 40.00 },
+          "sizes": [
+            { "size": "500g", "price": 20.00 },
+            { "size": "1kg", "price": 40.00 },
+            { "size": "5kg", "price": 150.00 }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Wheat Flour",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 50.00, "discounted": 45.00 },
+          "sizes": [
+            { "size": "1kg", "price": 45.00 },
+            { "size": "5kg", "price": 220.00 }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Sugar",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 40.00, "discounted": 35.00 },
+          "sizes": [
+            { "size": "500g", "price": 18.00 },
+            { "size": "1kg", "price": 35.00 }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Salt",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 20.00, "discounted": 18.00 },
+          "sizes": [
+            { "size": "500g", "price": 10.00 },
+            { "size": "1kg", "price": 18.00 }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Spices Pack",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 200.00, "discounted": 180.00 },
+          "sizes": [
+            { "size": "500g", "price": 90.00 },
+            { "size": "1kg", "price": 180.00 }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Cooking Oil",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 120.00, "discounted": 110.00 },
+          "sizes": [
+            { "size": "1L", "price": 110.00 },
+            { "size": "5L", "price": 520.00 }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Pulses",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 80.00, "discounted": 70.00 },
+          "sizes": [
+            { "size": "500g", "price": 35.00 },
+            { "size": "1kg", "price": 70.00 }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Dry Fruits",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 300.00, "discounted": 270.00 },
+          "sizes": [
+            { "size": "250g", "price": 75.00 },
+            { "size": "500g", "price": 270.00 }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Tea",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 150.00, "discounted": 140.00 },
+          "sizes": [
+            { "size": "250g", "price": 70.00 },
+            { "size": "500g", "price": 140.00 }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Coffee",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 250.00, "discounted": 240.00 },
+          "sizes": [
+            { "size": "200g", "price": 240.00 }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Honey",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 350.00, "discounted": 320.00 },
+          "sizes": [
+            { "size": "250g", "price": 80.00 },
+            { "size": "500g", "price": 320.00 }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Biscuits",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 20.00, "discounted": 18.00 },
+          "sizes": [
+            { "size": "150g", "price": 18.00 }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "Chips",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 10.00, "discounted": 8.00 },
+          "sizes": [
+            { "size": "100g", "price": 8.00 }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Noodles",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 15.00, "discounted": 12.00 },
+          "sizes": [
+            { "size": "150g", "price": 12.00 }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "Breakfast Cereal",
+          "image": "https://via.placeholder.com/150",
+          "price": { "original": 180.00, "discounted": 170.00 },
+          "sizes": [
+            { "size": "500g", "price": 170.00 }
+          ]
+        }
+      ],
+      "Dairy & Beverages": [
+      {
+        "id": 1,
+        "name": "Milk",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 30.00, "discounted": 28.00 },
+        "sizes": [
+          { "size": "1L", "price": 28.00 },
+          { "size": "2L", "price": 50.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Yogurt",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 60.00, "discounted": 55.00 },
+        "sizes": [
+          { "size": "500g", "price": 55.00 },
+          { "size": "1kg", "price": 100.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Butter",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "200g", "price": 70.00 },
+          { "size": "500g", "price": 140.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Cheese",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 240.00 },
+        "sizes": [
+          { "size": "200g", "price": 120.00 },
+          { "size": "500g", "price": 240.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Cream",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "200ml", "price": 50.00 },
+          { "size": "500ml", "price": 90.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Ice Cream",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 110.00 },
+        "sizes": [
+          { "size": "500ml", "price": 55.00 },
+          { "size": "1L", "price": 110.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Paneer",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 300.00, "discounted": 280.00 },
+        "sizes": [
+          { "size": "200g", "price": 70.00 },
+          { "size": "500g", "price": 280.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Lassi",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 40.00, "discounted": 35.00 },
+        "sizes": [
+          { "size": "200ml", "price": 15.00 },
+          { "size": "1L", "price": 35.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Cold Coffee",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "250ml", "price": 45.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Orange Juice",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 110.00 },
+        "sizes": [
+          { "size": "1L", "price": 110.00 },
+          { "size": "2L", "price": 210.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Apple Juice",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 130.00, "discounted": 120.00 },
+        "sizes": [
+          { "size": "1L", "price": 120.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Mango Juice",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "1L", "price": 90.00 },
+          { "size": "2L", "price": 170.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Almond Milk",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "1L", "price": 180.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Soy Milk",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "1L", "price": 140.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Protein Shake",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 240.00 },
+        "sizes": [
+          { "size": "250ml", "price": 60.00 },
+          { "size": "1L", "price": 240.00 }
+        ]
+      }
+    ],
+      "Packaged Foods": [
+      {
+        "id": 1,
+        "name": "Instant Noodles",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 25.00, "discounted": 20.00 },
+        "sizes": [
+          { "size": "70g", "price": 20.00 },
+          { "size": "300g (Family Pack)", "price": 80.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pasta",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 80.00, "discounted": 70.00 },
+        "sizes": [
+          { "size": "250g", "price": 70.00 },
+          { "size": "500g", "price": 140.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Tomato Ketchup",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 110.00 },
+        "sizes": [
+          { "size": "500g", "price": 110.00 },
+          { "size": "1kg", "price": 200.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Peanut Butter",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 230.00 },
+        "sizes": [
+          { "size": "340g", "price": 230.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Jam",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "250g", "price": 140.00 },
+          { "size": "500g", "price": 250.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Pickles",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "200g", "price": 45.00 },
+          { "size": "500g", "price": 90.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Ready-to-Eat Soup",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "50g", "price": 45.00 },
+          { "size": "250g", "price": 200.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Cookies",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 100.00 },
+        "sizes": [
+          { "size": "150g", "price": 100.00 },
+          { "size": "500g", "price": 300.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Chocolates",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "50g", "price": 45.00 },
+          { "size": "150g (Pack of 3)", "price": 120.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Popcorn",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 40.00, "discounted": 35.00 },
+        "sizes": [
+          { "size": "90g", "price": 35.00 },
+          { "size": "300g", "price": 120.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Breakfast Cereal",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 180.00, "discounted": 170.00 },
+        "sizes": [
+          { "size": "500g", "price": 170.00 },
+          { "size": "1kg", "price": 300.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Dry Cakes",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "300g", "price": 140.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Instant Soup Powder",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 40.00, "discounted": 35.00 },
+        "sizes": [
+          { "size": "50g", "price": 35.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Energy Bars",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "40g", "price": 45.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Instant Coffee Sachets",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "10 Sachets", "price": 180.00 }
+        ]
+      }
+    ],
+   "Fruits & Vegetables": [
+      {
+        "id": 1,
+        "name": "Apple",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "1kg", "price": 90.00 },
+          { "size": "5kg", "price": 450.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Banana",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 40.00, "discounted": 35.00 },
+        "sizes": [
+          { "size": "1 Dozen", "price": 35.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Orange",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 80.00, "discounted": 70.00 },
+        "sizes": [
+          { "size": "1kg", "price": 70.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Grapes",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 90.00, "discounted": 80.00 },
+        "sizes": [
+          { "size": "1kg", "price": 80.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Mango",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "1kg", "price": 140.00 },
+          { "size": "5kg", "price": 650.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Potato",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 30.00, "discounted": 25.00 },
+        "sizes": [
+          { "size": "1kg", "price": 25.00 },
+          { "size": "5kg", "price": 120.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Tomato",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 40.00, "discounted": 35.00 },
+        "sizes": [
+          { "size": "1kg", "price": 35.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Onion",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "1kg", "price": 45.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Carrot",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 60.00, "discounted": 55.00 },
+        "sizes": [
+          { "size": "1kg", "price": 55.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Cucumber",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 30.00, "discounted": 25.00 },
+        "sizes": [
+          { "size": "1kg", "price": 25.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Broccoli",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 100.00 },
+        "sizes": [
+          { "size": "500g", "price": 50.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Spinach",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 20.00, "discounted": 18.00 },
+        "sizes": [
+          { "size": "1 Bunch", "price": 18.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Pineapple",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 60.00, "discounted": 55.00 },
+        "sizes": [
+          { "size": "1 Piece", "price": 55.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Cabbage",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 30.00, "discounted": 25.00 },
+        "sizes": [
+          { "size": "1kg", "price": 25.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Lemon",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 60.00, "discounted": 50.00 },
+        "sizes": [
+          { "size": "1kg", "price": 50.00 }
+        ]
+      }
+    ],
+    "Home & Kitchen": [
+      {
+        "id": 1,
+        "name": "Dishwashing Liquid",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 90.00, "discounted": 80.00 },
+        "sizes": [
+          { "size": "500ml", "price": 80.00 },
+          { "size": "1L", "price": 150.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Floor Cleaner",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 130.00 },
+        "sizes": [
+          { "size": "1L", "price": 130.00 },
+          { "size": "5L", "price": 600.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Laundry Detergent",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 220.00 },
+        "sizes": [
+          { "size": "500g", "price": 120.00 },
+          { "size": "1kg", "price": 220.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Kitchen Towels",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "1 Roll", "price": 45.00 },
+          { "size": "3 Rolls", "price": 120.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Garbage Bags",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 60.00, "discounted": 55.00 },
+        "sizes": [
+          { "size": "Medium (30 Bags)", "price": 55.00 },
+          { "size": "Large (20 Bags)", "price": 70.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Air Freshener",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "250ml", "price": 140.00 },
+          { "size": "500ml", "price": 260.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Kitchen Gloves",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "1 Pair", "price": 90.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Non-Stick Frying Pan",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 800.00, "discounted": 750.00 },
+        "sizes": [
+          { "size": "24cm", "price": 750.00 },
+          { "size": "28cm", "price": 950.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Pressure Cooker",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 1200.00, "discounted": 1100.00 },
+        "sizes": [
+          { "size": "3L", "price": 1100.00 },
+          { "size": "5L", "price": 1400.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Glass Storage Jars",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 500.00, "discounted": 450.00 },
+        "sizes": [
+          { "size": "Set of 3 (500ml each)", "price": 450.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Electric Kettle",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 1500.00, "discounted": 1400.00 },
+        "sizes": [
+          { "size": "1.5L", "price": 1400.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Cutting Board",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 400.00, "discounted": 350.00 },
+        "sizes": [
+          { "size": "Standard", "price": 350.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Reusable Food Wraps",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 300.00, "discounted": 280.00 },
+        "sizes": [
+          { "size": "Set of 3", "price": 280.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Dustbin",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 600.00, "discounted": 550.00 },
+        "sizes": [
+          { "size": "10L", "price": 550.00 },
+          { "size": "20L", "price": 900.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Broom and Dustpan Set",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 230.00 },
+        "sizes": [
+          { "size": "1 Set", "price": 230.00 }
+        ]
+      }
+    ],
+    "Personal Care & Beauty": [
+      {
+        "id": 1,
+        "name": "Shampoo",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "200ml", "price": 180.00 },
+          { "size": "500ml", "price": 350.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Conditioner",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 220.00, "discounted": 200.00 },
+        "sizes": [
+          { "size": "200ml", "price": 200.00 },
+          { "size": "500ml", "price": 400.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Face Wash",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "100ml", "price": 140.00 },
+          { "size": "200ml", "price": 250.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Body Lotion",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 230.00 },
+        "sizes": [
+          { "size": "200ml", "price": 230.00 },
+          { "size": "400ml", "price": 450.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Sunscreen",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 300.00, "discounted": 280.00 },
+        "sizes": [
+          { "size": "50ml", "price": 280.00 },
+          { "size": "100ml", "price": 500.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Hand Wash",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 100.00 },
+        "sizes": [
+          { "size": "250ml", "price": 100.00 },
+          { "size": "500ml", "price": 180.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Deodorant",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "150ml", "price": 180.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Lip Balm",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "10g", "price": 45.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Moisturizer",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 230.00 },
+        "sizes": [
+          { "size": "100g", "price": 230.00 },
+          { "size": "300g", "price": 600.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Hair Oil",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 130.00 },
+        "sizes": [
+          { "size": "200ml", "price": 130.00 },
+          { "size": "500ml", "price": 300.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Face Cream",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 300.00, "discounted": 280.00 },
+        "sizes": [
+          { "size": "50g", "price": 280.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Makeup Remover",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 190.00 },
+        "sizes": [
+          { "size": "100ml", "price": 190.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Toothpaste",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "100g", "price": 90.00 },
+          { "size": "200g", "price": 170.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Mouthwash",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 130.00 },
+        "sizes": [
+          { "size": "250ml", "price": 130.00 },
+          { "size": "500ml", "price": 240.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Nail Polish Remover",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 80.00, "discounted": 70.00 },
+        "sizes": [
+          { "size": "100ml", "price": 70.00 }
+        ]
+      }
+    ],
+    "Baby & Kids Care": [
+      {
+        "id": 1,
+        "name": "Baby Shampoo",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "200ml", "price": 180.00 },
+          { "size": "500ml", "price": 350.00 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Baby Lotion",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 250.00, "discounted": 230.00 },
+        "sizes": [
+          { "size": "200ml", "price": 230.00 },
+          { "size": "400ml", "price": 450.00 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Baby Wipes",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 140.00 },
+        "sizes": [
+          { "size": "Pack of 50", "price": 140.00 },
+          { "size": "Pack of 100", "price": 250.00 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Diapers",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 500.00, "discounted": 450.00 },
+        "sizes": [
+          { "size": "Pack of 20", "price": 450.00 },
+          { "size": "Pack of 40", "price": 850.00 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Baby Powder",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 100.00 },
+        "sizes": [
+          { "size": "200g", "price": 100.00 },
+          { "size": "400g", "price": 180.00 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Baby Feeding Bottle",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 300.00, "discounted": 280.00 },
+        "sizes": [
+          { "size": "150ml", "price": 280.00 },
+          { "size": "250ml", "price": 350.00 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Baby Oil",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "100ml", "price": 180.00 },
+          { "size": "200ml", "price": 350.00 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Baby Soap",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 50.00, "discounted": 45.00 },
+        "sizes": [
+          { "size": "75g", "price": 45.00 },
+          { "size": "100g", "price": 70.00 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Baby Blanket",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 800.00, "discounted": 750.00 },
+        "sizes": [
+          { "size": "Small", "price": 750.00 },
+          { "size": "Large", "price": 1200.00 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Baby Teether",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 200.00, "discounted": 180.00 },
+        "sizes": [
+          { "size": "1 Piece", "price": 180.00 }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Baby Nail Clipper",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 150.00, "discounted": 130.00 },
+        "sizes": [
+          { "size": "1 Piece", "price": 130.00 }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Baby Play Mat",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 1200.00, "discounted": 1100.00 },
+        "sizes": [
+          { "size": "Standard", "price": 1100.00 }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Baby Toothbrush",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 100.00, "discounted": 90.00 },
+        "sizes": [
+          { "size": "1 Piece", "price": 90.00 }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Baby Carrier",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 1500.00, "discounted": 1400.00 },
+        "sizes": [
+          { "size": "Standard", "price": 1400.00 }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Baby Pacifier",
+        "image": "https://via.placeholder.com/150",
+        "price": { "original": 120.00, "discounted": 110.00 },
+        "sizes": [
+          { "size": "1 Piece", "price": 110.00 }
+        ]
+      }
+    ]
+    }
+  }
+  

@@ -49,13 +49,17 @@
   <!--===== Category demo css =====-->
   <link rel="stylesheet" href="css/demo/food.css">
 
+  <link rel="stylesheet" href="css/custom.css">
 
-  <style>
+
+
+
+  <!-- <style>
     .hidden { display: none; }
     #userDetails { display: none; padding: 10px; border: 1px solid #ccc; margin-top: 10px; }
     .profile { display: flex; align-items: center; gap: 10px; cursor: pointer; }
     .profile img { width: 30px; height: 30px; border-radius: 50%; }
-  </style>
+  </style> -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -63,6 +67,8 @@
 
 <body class="stokes-wrapper">
 
+  <!-- <div id="main-container">
+  </div> -->
 
   <!--==========  Start of Header Section ========== -->
   <!-- <header class="header">
@@ -127,33 +133,22 @@
     </nav>
   </header> -->
 
-
-
-
-
-
-
-
-
   <header class="header">
     <nav class="navbar navbar-light navbar-expand-lg navbar-transparent navbar-blur navbar-text-dark">
       <div class="container-fluid">
-        <!--===== Start of logo ===== -->
+
         <a class="navbar-brand" href="index-food.html">
           <img class="logo" src="images/food/logo/kukmeelogo-removebg.png" alt="Logo">
         </a>
-        <!--===== End of logo ===== -->
-  
-        <!--===== Start of location input and button merged ===== -->
-        <div class="location-container d-flex align-items-center ms-3">
+      
+        <div class="location-container  ms-3 ">
           <div class="input-group">
             <button class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#locationModal"
-              style="border-radius: 5px 0px 0px 5px;" > Location </button>
+              style="border-radius: 5px 0px 0px 5px;" ><i class="bi bi-geo-alt-fill location-icon"></i></button>
             <input type="text" id="locationInput" data-bs-toggle="modal" data-bs-target="#locationModal" class="form-control" placeholder="Enter location" />
-            
           </div>
         </div>
-        <!--===== End of location input and button merged ===== -->
+       
   
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
           aria-label="Toggle navigation"
@@ -163,7 +158,7 @@
           <span class="icon-bar bottom-bar"></span>
         </button>
   
-        <!--===== Start of nav ===== -->
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item active">   
@@ -176,7 +171,7 @@
                 <span class="text-line"><strong></strong>Kukmart</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link" href="book-catering.html" id="navbar-features">
                 <span class="text-line"><strong></strong>Catering</span>
               </a>
@@ -192,24 +187,26 @@
               </a>
             </li>
           </ul>
+
+          <div class="location-container1  ms-3 ">
+          <div class="input-group">
+            <button class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#locationModal"
+              style="border-radius: 5px 0px 0px 5px;" ><i class="bi bi-geo-alt-fill location-icon"></i></button>
+            <input type="text" id="locationInput" data-bs-toggle="modal" data-bs-target="#locationModal" class="form-control" placeholder="Enter location" />
+            
+          </div>
+        </div>
         </div>
   
-        <i
-          class="bi bi-bag-check btn btn-round cart-btn"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        ></i>
+       
   
-       <!-- Profile Section: Hidden by default -->
-       <!-- Profile Section with Font Awesome -->
-<div class="profile-section d-none align-items-center ">
-  <!-- <span id="username-display" class="me-3"></span> -->
+<div class="profile-section d-none ">
+  
+  <span id="username-display" class="me-3"></span>
 
-  <!-- Dropdown with Font Awesome Icon -->
   <div class="dropdown">
     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="person-icon" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fas fa-user-circle"></i> <!-- Font Awesome User Icon -->
+      <i class="fas fa-user-circle"></i> 
     </button>
     <ul class="dropdown-menu" aria-labelledby="person-icon">
       <li><a class="dropdown-item" href="/profile.html"><i class="fas fa-user"></i> Profile</a></li>
@@ -217,27 +214,22 @@
       <li><a class="dropdown-item" href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </ul>
   </div>
+  
 </div>
 
-<!-- Login Button (hidden when logged in) -->
-<a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+      <a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html"> Login</a>
 
+
+
+      <i class="bi bi-bag-check btn btn-round cart-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
       
-      <!-- Login Button: Initially hidden -->
-      <a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html">Login</a>
-
       </div>
+     
     </nav>
   
-    <!-- Location Modal -->
+
     <div
-    class="modal fade"
-    id="locationModal"
-    tabindex="-1"
-    aria-labelledby="locationModalLabel"
-    aria-modal="true"
-    role="dialog"
-  >
+    class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-modal="true" role="dialog" >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -245,7 +237,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- Modal content -->
+         
           <div class="mb-3">
             <label for="manualLocation" class="form-label">Enter your address:</label>
             <input
@@ -280,108 +272,137 @@
   </header>
 
 
-
-
-
-
-
-
-
-
-
-
-  <!--========== End of header ========== -->
-
-
-
-
-  <!--==========  Start of banner section ==========-->
-  <section class="banner-food bg-fit" style="background-image: url(images/food/food_banner_img.jpg);">
+<!-- new chnaged old -->
+  <section class="banner-food bg-fit" style="background-image: url(images/food/Banner_food_img.png);">
 
     <div class="container overflow-hidden">
       <div class="row justify-content-center align-items-center">
-
-        <div class="col-lg-7">
-      
-
-
-
-
-          <div class="row justify-content-center align-items-center mb-4">
-            <div class="col-lg-6 text-start">
-              <h1>Order Food</h1>
-              <h2>@Kukmee Outlet</h2>
-            </div>
-            <div class="col-lg-6">
-              <div class="input-group search-input">
-                <span class="input-group-text search-box"><i class="bi bi-geo-alt"></i></span>
+        <!-- First Column: col-7 -->
+        <div class="col-12 col-lg-7 ">
+          <div class="row p-2 mb-5">
+              <h2 class="banner-word">Order Food On Kukmee Outlet</h2>
+              <p>Explore delicious meals and have them delivered straight to your home.<br>Fast, fresh, and hassle-free.</p>
+              <!-- <h2></h2> -->
+               <div class="input-group search-input">
+                <span class="input-group-text search-box"><i class="fas fa-utensils"></i></span>
                 <input type="text" class="form-control search-box" placeholder="Search food">
-              </div>
+             
             </div>
+            <!-- <div class="col-12 col-md-6">
+              
+            </div> -->
           </div>
+      
+          <div class="row p-2 mt-3">
+            <h2 class="banner-word">Order Groceries On Kukmart Store</h2>
+            <p>Find all your kitchen essentials in one place. Fresh groceries delivered<br>at your convenience.</p>
+              <!-- <h2></h2> -->
 
-
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 text-start">
-              <h1>Order Groceries</h1>
-              <h2>@Kukmart Store</h2>
-            </div>
-            <div class="col-lg-6">
               <div class="input-group search-input">
-                <span class="input-group-text search-box"><i class="bi bi-shop-window"></i></span>
+                <span class="input-group-text search-box"><i class="fas fa-store"></i></span>
                 <input type="text" class="form-control search-box" placeholder="Search Groceries">
               </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-5">
-          <div class="row justify-content-center align-items-center g-2">
-            <div class="col-lg-6">
-              <a href="book-catering.html" class="card me-3 mb-3 position-relative">
-                <img src="/images/food/Catering.png" class="card-img-top" alt="Book Catering">
-                <!-- <div class="hover-text">Book Catering</div> -->
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <a href="book-cook.html" class="card me-3 mb-3 position-relative">
-                <img src="/images/food/Cook.png" class="card-img-top" alt="Book Cook">
-                <!-- <div class="hover-text">Book Cook</div> -->
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <a href="chef.html" class="card me-3 mb-3 position-relative">
-                <img src="/images/food/Chef.png" class="card-img-top" alt="Book Chef">
-                <!-- <div class="hover-text">Book Chef</div> -->
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <a href="bartender.html" class="card me-3 mb-3 position-relative">
-                <img src="/images/food/Bartender.png" class="card-img-top" alt="Book Bartender">
-                <!-- <div class="hover-text">Book Bartender</div> -->
-              </a>
-            </div>
+            <!-- <div class="col-12 col-md-6">
+              
+            </div> -->
+            <!-- <div class="col-12 col-md-6">
+              
+            </div> -->
           </div>
         </div>
+      
+        <!-- Second Column: col-5 -->
+         <div class="col-12 col-lg-5">
+  <div class="row g-2 service-row">
+  <!-- Book Catering -->
+  <div class="col-6 col-md-3 col-lg-6">
+    <a href="book-catering.html" class="card service-card">
+      <img src="/images/food/Catering.png" class="card-img-top" alt="Book Catering">
+      <div class="service-overlay">
+        <h5>Book A Caterer</h5>
+        <p>Elevate your event with seamless catering services. We handle everything—from menu planning to serving—so you can focus on making memories.</p>
       </div>
+    </a>
+  </div>
+
+  <!-- Book Cook -->
+  <div class="col-6 col-md-3 col-lg-6">
+    <a href="cook&chef.html" class="card service-card">
+      <img src="/images/food/Cook.png" class="card-img-top" alt="Book Cook">
+      <div class="service-overlay">
+        <h5>Book A Cook</h5>
+        <p>Get a professional cook to prepare homemade meals tailored to your taste and lifestyle. Enjoy convenience and flavor without the hassle.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Book Chef -->
+  <div class="col-6 col-md-3 col-lg-6">
+    <a href="cook&chef.html" class="card service-card">
+      <img src="/images/food/Chef.png" class="card-img-top" alt="Book Chef">
+      <div class="service-overlay">
+        <h5>Book A Chef</h5>
+        <p>Experience personalized dining crafted by expert chefs. Perfect for celebrations, intimate dinners, or simply treating yourself.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Franchise -->
+  <div class="col-6 col-md-3 col-lg-6">
+    <a href="franchise.html" class="card service-card">
+      <img src="/images/food/Franchise.png" class="card-img-top" alt="Franchise">
+      <div class="service-overlay">
+        <h5>Become A Franchise</h5>
+        <p>Join Kukmee’s growing network and build a successful business with our trusted brand, resources, and expert guidance.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+</div>
+
+        <!-- <div class="col-12 col-lg-5">
+          <div class="row g-2 service-row">
+            <div class="col-6 col-md-3 col-lg-6">
+              <a href="book-catering.html" class="card">
+                <img src="/images/food/Catering.png" class="card-img-top" alt="Book Catering">
+              </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-6">
+              <a href="cook&chef.html" class="card">
+                <img src="/images/food/Cook.png" class="card-img-top" alt="Book Cook">
+              </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-6">
+              <a href="cook&chef.html" class="card">
+                <img src="/images/food/Chef.png" class="card-img-top" alt="Book Chef">
+              </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-6">
+              <a href="franchise.html" class="card">
+                <img src="/images/food/Franchise.png" class="card-img-top" alt="Book Bartender">
+              </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      
     </div>
   </section>
 
 
 
-
-  <div class="container py-5">
+  <div class="container pt-5 pb-3">
     <h2 class="text-center mb-4">Grab Your Deals Now</h2>
     <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
-        <!-- First Slide -->
+
         <div class="carousel-item active">
           <div class="row">
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 1">
+                <img src="images/food/offer/Special_Discount.png" alt="Offer 1">
                 <div class="offer-details">
                   <h5>Special Discount</h5>
                   <p>Up to 50% off on selected items.</p>
@@ -390,7 +411,7 @@
             </div>
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 2">
+                <img src="images/food/offer/Holiday_Deals.png" alt="Offer 2">
                 <div class="offer-details">
                   <h5>Holiday Deals</h5>
                   <p>Exciting holiday packages.</p>
@@ -399,7 +420,7 @@
             </div>
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 3">
+                <img src="images/food/offer/Buy_One_Get_One.png" alt="Offer 3">
                 <div class="offer-details">
                   <h5>Buy One Get One</h5>
                   <p>On selected products.</p>
@@ -409,12 +430,11 @@
           </div>
         </div>
 
-        <!-- Second Slide -->
         <div class="carousel-item">
           <div class="row">
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 4">
+                <img src="images/food/offer/flash_sale.jpg" alt="Offer 4">
                 <div class="offer-details">
                   <h5>Flash Sale</h5>
                   <p>Limited time deals!</p>
@@ -423,7 +443,7 @@
             </div>
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 5">
+                <img src="images/food/offer/Exclusive_Rewards.jpeg" alt="Offer 5">
                 <div class="offer-details">
                   <h5>Exclusive Rewards</h5>
                   <p>Earn points on every purchase.</p>
@@ -432,7 +452,7 @@
             </div>
             <div class="col-md-4">
               <div class="offer-card">
-                <img src="https://via.placeholder.com/100" alt="Offer 6">
+                <img src="images/food/offer/New_Arrivals.png" alt="Offer 6">
                 <div class="offer-details">
                   <h5>New Arrivals</h5>
                   <p>Check out the latest products.</p>
@@ -449,46 +469,38 @@
 
 
 
-  <!--========== End of banner section ==========-->
-
-
-
   <section class="slice-ptb position-relative">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="text-center mb-5">
-            <h2>Order Now!!</h2>
-          </div>
-        </div>
-      </div>
-      <!-- Veg & Non-Veg Sections -->
-      <div class="row justify-content-center">
-        <!-- Veg Section -->
-        <div class="col-lg-6 bg-green-section p-3 ">
-          <div class="row justify-content-center ">
-          <h3 class="text-center">Cooked Food</h3>
-            <div id="veg-section" class="row justify-content-center p-3">
-              <!-- Cards will be injected here dynamically -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Non-Veg Section -->
-        <div class="col-lg-6 bg-red-section p-3 ">
-          <div class="row justify-content-center">
-            <h3 class="text-center">Ready To Cook</h3>
-            <div id="non-veg-section" class="row justify-content-center p-3">
-              <!-- Cards will be injected here dynamically -->
-            </div>
-
-          </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center mb-3">
+          <h2>Order Now!!</h2>
+          <p>
+            Whether you’re craving a meal right away or planning for tomorrow, we’ve got you covered! Choose the option that suits your schedule and appetite — all made fresh and delivered with care.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+   
+    <div class="row justify-content-center">
+      <!-- ✅ Added col-12 for mobile stacking -->
+      <div class="col-12 col-lg-6 bg-green-section p-3">
+        <div class="row justify-content-center">
+          <h3 class="text-center">Cooked Food</h3>
+          <div id="veg-section" class="row justify-content-center p-3"></div>
+        </div>
+      </div>
 
-
+      <!-- ✅ Added col-12 for mobile stacking -->
+      <div class="col-12 col-lg-6 bg-red-section p-3">
+        <div class="row justify-content-center">
+          <h3 class="text-center">Ready To Cook</h3>
+          <div id="non-veg-section" class="row justify-content-center p-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -496,128 +508,51 @@
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <!-- Cart Items -->
-      <div id="cart-items"></div>
-      
-      <div id="cart-total" class="mt-4 d-flex justify-content-between">
-        <h5>Total:</h5>
-        <h5 id="grand-total">₹0</h5>
+   
+      <div id="cart-items" class="product-cart-items"></div>
+  
+      <hr>
+  
+      <div class="d-flex justify-content-between mb-2">
+        <span><strong>Subtotal:</strong></span>
+        <span id="grand-total">₹0.00</span>
       </div>
-      
-      <!-- GST Amount -->
-      <div class="mt-2 d-flex justify-content-between">
-        <h6>GST (18%):</h6>
-        <h6 id="gst-amount">₹0.00</h6>
+      <div class="d-flex justify-content-between mb-2">
+        <span><strong>GST (18%):</strong></span>
+        <span id="gst-amount">₹0.00</span>
       </div>
-      
-      <!-- Final Total -->
-      <div class="mt-2 d-flex justify-content-between">
-        <h5>Grand Total:</h5>
-        <h5 id="final-total">₹0.00</h5>
-      </div>
-
-      <div class=" d-flex">
-        <p class="mb-3">Date</p>
-        <input type="text" name="birthday" value="10/24/1984" class="form-control" />
-      </div>
-      
-      <!-- Delivery Address Inputs -->
-      <div id="delivery-address" class="mt-3">
-        <h5>Delivery Address:</h5>
-        <form id="address-form">
-          <div class="mb-2">
-            <input type="text" class="form-control" id="street" placeholder="Street Address" required>
-          </div>
-          <div class="mb-2">
-            <input type="text" class="form-control" id="city" placeholder="City" required>
-          </div>
-          <div class="mb-2">
-            <input type="text" class="form-control" id="state" placeholder="State" required>
-          </div>
-          <div class="mb-2">
-            <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" required>
-          </div>
-        </form>
+      <div class="d-flex justify-content-between mb-3">
+        <span><strong>Total:</strong></span>
+        <span id="final-total">₹0.00</span>
       </div>
   
-      <!-- Place Order Button -->
-      <button id="place-order-btn" class="btn btn-primary mt-3 w-100" style="display: none;">Place Order</button>
+      <div class="d-flex justify-content-between mb-2">
+        <span><strong>Delivery Date:</strong></span>
+        <input type="date" id="deliveryDateInput" class="form-control" min="" />
+      </div>
+  
+      <button id="add-address-btn" class="btn btn-outline-primary mt-2 w-100">
+        Add Address to Proceed
+      </button>
+  
+   
+      <button id="place-order-btn" class="btn btn-primary mt-2 w-100" style="display: none;">
+        Place Order
+      </button>
     </div>
   </div>
 
-  <!-- <section>
-    <div class="container py-5">
-        <h2 class="text-center mb-4">Order Our Dietary Meal</h2>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="d-flex border p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid me-3" alt="Diabetes-Friendly Meal">
-                    <div class="">
-                        <h5 class="mb-1">Diabetes-Friendly Meal</h5>
-                        <p class="mb-1 text-muted">Includes Quinoa Salad, Grilled Chicken, and Steamed Vegetables. Low in carbohydrates and high in protein.</p>
-                        <small class="text-secondary">Maker: Healthy Bites</small>
-                        <div class="text-end">
-                            <button class="btn-subscription me-auto">Make Subscription</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="d-flex border p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid me-3" alt="Heart Health Meal">
-                    <div class="">
-                        <h5 class="mb-1">Heart Health Meal</h5>
-                        <p class="mb-1 text-muted">Includes Oats Porridge, Grilled Salmon, and Mixed Greens. Rich in omega-3 fatty acids and fiber.</p>
-                        <small class="text-secondary">Maker: Fresh Plate</small>
-                        <div class="text-end">
-                            <button class="btn-subscription">Make Subscription</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="d-flex border p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid me-3" alt="Weight Loss Meal">
-                    <div class="">
-                        <h5 class="mb-1">Weight Loss Meal</h5>
-                        <p class="mb-1 text-muted">Includes Grilled Tofu, Brown Rice, and Stir-Fried Broccoli. Balanced and low-calorie meal.</p>
-                        <small class="text-secondary">Maker: NutriMeal</small>
-                        <div class="text-end">
-                            <button class="btn-subscription">Make Subscription</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="d-flex border p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid me-3" alt="Gut Health Meal">
-                    <div class="">
-                        <h5 class="mb-1">Gut Health Meal</h5>
-                        <p class="mb-1 text-muted">Includes Yogurt Bowl with Fresh Fruits, Lentil Soup, and Whole Grain Bread. Supports digestive health.</p>
-                        <small class="text-secondary">Maker: Taste Delight</small>
-                        <div class="text-end">
-                            <button class="btn-subscription">Make Subscription</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 
 
-<div class="container py-5">
+<div class="container">
   <h2 class="text-center mb-4">Order Our Dietary Meal</h2>
-  <div class="row" id="meal-cards">
-    <!-- Meal Cards will be populated by JavaScript -->
+  <div class="row justify-content-center" id="meal-cards">
+    
   </div>
 </div>
 
-<!-- Modal for Meal Details and Subscription Form -->
+
 <div class="modal fade" id="mealDetailsModal" tabindex="-1" aria-labelledby="mealDetailsModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -626,11 +561,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body meal-details active" id="meal-details-content">
-        <!-- Meal details will be dynamically inserted here -->
+       
       </div>
     
       <div class="modal-body subscription-form" id="subscription-form-content">
-        <!-- Subscription form will be dynamically inserted here -->
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -647,59 +582,350 @@
   <!--==========  Start of why choose us section ==========-->
 
 
-  <section class="slice-pb position-relative">
-    <div class="container">
-        <h2 class="text-center mb-4">Vrat Meal</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <img class="img-fluid h-100" src="images/food/temple.jpg" alt="">
+
+
+   <div class="container mb-5">
+    <h2 class="text-center mb-4">Summary Table</h2>
+     <table>
+    <thead>
+      <tr>
+        <th>Meal Plan</th>
+        <th>Organs &amp; Systems Supported</th>
+        <th>Key Nutrients</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Diabetes-Friendly</td>
+        <td>Pancreas, Liver</td>
+        <td>Fiber, Protein</td>
+      </tr>
+      <tr>
+        <td>Hypertension-Friendly</td>
+        <td>Heart, Blood Vessels</td>
+        <td>Potassium, Magnesium, Low Sodium</td>
+      </tr>
+      <tr>
+        <td>PCOS-Friendly</td>
+        <td>Ovaries, Endocrine System</td>
+        <td>Fiber, Protein</td>
+      </tr>
+      <tr>
+        <td>Weight Loss Lunch Plan</td>
+        <td>Fat metabolism, Muscle health</td>
+        <td>Low-calorie, Nutrient-dense</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+
+<section>
+    <div class="container-fluid mt-3 mb-5">
+      <h2 class="text-center mb-4">Vrat Meal</h2>
+      <div
+        class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0 ">
+          <img class="img-fluid  vrat-img" src="images/food/temple.jpg" alt="">
         </div>
         <div class="col-lg-6">
-          <div class="mb-5">
-            <!-- <span class="text-green d-block">Vart Meals</span> -->
-            <h2>Relish our authentic Vrat Meals made with devotion and purity.</h2>
-            <p>Prepared with utmost care, our Vrat Meals are perfect for your spiritual and fasting needs. Experience the divine flavors crafted for sacred occasions.</p>
+            <div class="mb-5">
+              <h2>Authentic, sattvik meals made with devotion and purity to support spiritual and fasting practices.</h2>
+              <!-- <p>Prepared with utmost care, our Vrat Meals are perfect for your spiritual and fasting needs. Experience the divine flavors crafted for sacred occasions.</p> -->
+            </div>
+            <div class="d-flex mb-4 ">
+              <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+                <h5 class="text-warning">01</h5>
+              </div>
+              <div class="ms-4">
+                <h5>Freshly Prepared</h5>
+                <p>Meals are made fresh daily with premium ingredients to ensure purity and quality.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+                <h5 class="text-warning">02</h5>
+              </div>
+              <div class="ms-4">
+                <h5>Affordable Pricing</h5>
+                <p>Enjoy high-quality meals at prices that respect your devotion and budget.</p>
+              </div>
+            </div>
+            <div class="d-sm-flex">
+              <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+                <h5 class="text-warning">03</h5>
+              </div>
+              <div class="ms-4">
+                <h5>Divine Taste</h5>
+                <p>Savor carefully crafted recipes tailored to enhance your spiritual journey.</p>
+              </div>
+            </div>
+            <div class="text mt-4">
+              <button class="btn btn-subscription" data-bs-toggle="modal" data-bs-target="#vratMealModal">Make Subscription</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="container pt-5 pb-3">
+      <h2 class="text-center mb-4"> Regional Style Vrat Meals</h2>
+  <div id="mealCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Tamil Nadu Style</h5>
+                <p>A wholesome meal featuring sambar, rasam, poriyal, kootu, vatha kuzhambu, curd rice, appalam, pickle, ghee rice or steamed rice, payasam or kesari, and buttermilk.</p>
+              </div>
+            </div>
           </div>
-          <div class="d-flex mb-4">
-            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
-              <h5 class="text-warning">01</h5>
-            </div>
-            <div class="ms-4">
-              <h5>Freshly Prepared</h5>
-              <p>Our meals are made fresh daily with premium, satvik ingredients to ensure purity and quality.</p>
-            </div>
-          </div>
-          <div class="d-flex mb-4">
-            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
-              <h5 class="text-warning">02</h5>
-            </div>
-            <div class="ms-4">
-              <h5>Affordable Pricing</h5>
-              <p>Enjoy high-quality Vrat Meals at prices that respect your devotion and budget.</p>
+           <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Andhra Pradesh Style</h5>
+                <p>A traditional meal with pulihora, pesarattu, gongura pachadi, daddojanam, avakaya pickle, vegetable curry, curd rice, sweet pongal, and buttermilk — ideal for a fulfilling vrat experience.</p>
+              </div>
             </div>
           </div>
-          <div class="d-sm-flex">
-            <div class="bg-warning-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
-              <h5 class="text-warning">03</h5>
-            </div>
-            <div class="ms-4">
-              <h5>Divine Taste</h5>
-              <p>Savor the divine taste of carefully selected recipes tailored to enhance your spiritual journey.</p>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Karnataka Style</h5>
+                <p>A comforting meal including bisibelebath, mosaranna (curd rice), kosambari, palya, soppu saaru, avalakki, pickle, sweet kesari, and spiced buttermilk.</p>
+              </div>
             </div>
           </div>
-          <div class="text mt-4">
-            <button class="btn-subscription">Make Subscription</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Kerala Style</h5>
+                <p>A simple and nutritious meal with parippu curry, thoran, olan, kalan, rasam, curd rice, pappadam, pickle, ada pradhaman, and buttermilk.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Telangana Style</h5>
+                <p>A hearty meal comprising tomato pappu, gongura pachadi, vegetable kurma, dosa or rice, dahi, pickle, payasam, and spiced buttermilk.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill h-90">
+              <div class="offer-details">
+                <h5>Maharashtra Style</h5>
+                <p>A delightful meal with varan-bhaat, batata bhaaji, koshimbir, thecha, curd rice, puran poli, pickle, and spiced buttermilk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Gujarat Style</h5>
+                <p>A flavorful meal including khichdi, kadhi, ringan no olo, bharela marcha, thepla, pickle, shrikhand, and buttermilk.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill h-90">
+              <div class="offer-details">
+                <h5>North India Style</h5>
+                <p>A hearty meal with rajma or chana masala, aloo jeera, mixed vegetable, plain rice, paneer butter masala, pickle, gulab jamun, and lassi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Odisha Style</h5>
+                <p>A traditional meal featuring dalma, sag, chhena ghanta, bhaja, steamed rice, khechudi, sweet chhena poda, pickle, and spiced buttermilk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 (last one padded to keep 3 cards) -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill">
+              <div class="offer-details">
+                <h5>Bengali Style</h5>
+                <p>A traditional meal with shorshe begun, moong dal, aloo bharta, labra (mixed vegetable curry), steamed rice, chutney, mishti doi, and spiced buttermilk.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Padding empty cards so design stays balanced -->
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill invisible"></div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="offer-card flex-fill invisible"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#mealCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mealCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+  <div class="modal fade" id="vratMealModal" tabindex="-1" aria-labelledby="vratMealModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vratMealModalLabel">Vrat Meal Subscription</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Step 1: Plan Selection -->
+          <div id="plan-selection">
+            <h3 class="text-center">Choose Your Plan</h3>
+            <p class="text-center">Relish our authentic Vrat Meals with flexible subscription options.</p>
+  
+            <div class="row my-4">
+              <div class="col-md-4 text-center">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>Single Meal</h5>
+                    <p>₹150</p>
+                    <button class="btn btn-primary" onclick="proceedToDetails('Single Meal', 150)">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>Weekly Plan</h5>
+                    <p>₹900 (7 Meals)</p>
+                    <button class="btn btn-primary" onclick="proceedToDetails('Weekly Plan', 900)">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>Monthly Plan</h5>
+                    <p>₹3,500 (30 Meals)</p>
+                    <button class="btn btn-primary" onclick="proceedToDetails('Monthly Plan', 3500)">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 2: Order Details -->
+          <div id="order-details" style="display: none;">
+            <h3 class="text-center">Order Details</h3>
+  
+            <!-- Start Date -->
+            <div class="mb-3">
+              <label for="startDate" class="form">Start Date</label>
+              <input type="date" id="startDate" class="form-control" required />
+            </div>
+
+            <!-- Days Selection -->
+<!-- Days Selection -->
+<div class="mb-3">
+  <h5>Select vart Days</h5>
+  
+    <div class="mb-3 d-flex ">
+      <div class="form-check day-check pl-3">
+        <input type="checkbox" class="form-check-input" id="allDays" name="days" onclick="toggleDaysSelection('all')">
+        <label class="form-check-label" for="allDays">All Days</label>
+      </div>
+      <div class="form-check day-check pl-3">
+        <input type="checkbox" class="form-check-input day-option" value="Saturday" id="saturday" onclick="toggleDaysSelection('single')">
+        <label class="form-check-label" for="saturday">Saturday</label>
+      </div>
+      <div class="form-check day-check pl-3">
+        <input type="checkbox" class="form-check-input day-option" value="Thursday" id="thursday" onclick="toggleDaysSelection('single')">
+        <label class="form-check-label" for="thursday">Thursday</label>
+      </div>
+      <div class="form-check day-check pl-3">
+        <input type="checkbox" class="form-check-input day-option" value="Tuesday" id="tuesday" onclick="toggleDaysSelection('single')">
+        <label class="form-check-label" for="tuesday">Tuesday</label>
+      </div>
+    </div>
+
+</div>
+
+
+  
+            <!-- Quantity -->
+            <div class="mb-3">
+              <label for="quantity" class="form">Quantity</label>
+              <input type="number" id="quantity" class="form-control" min="1" value="1" required onchange="updateTotal()" />
+            </div>
+  
+            <!-- Meal Price -->
+            <div class="d-flex justify-content-between mb-2">
+              <span>Meal Price:</span>
+              <span id="meal-price">₹0.00</span>
+            </div>
+  
+            <!-- GST -->
+            <div class="d-flex justify-content-between mb-2">
+              <span>GST (18%):</span>
+              <span id="gst-amount">₹0.00</span>
+            </div>
+  
+            <!-- Total Amount -->
+            <div class="d-flex justify-content-between mb-4">
+              <span><strong>Total:</strong></span>
+              <span id="total-amount">₹0.00</span>
+            </div>
+  
+            <!-- Address -->
+            <div id="address-input">
+              <h5>Delivery Address</h5>
+              <textarea id="deliveryAddress" class="form-control" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+  
+            <!-- Place Order Button -->
+            <button class="btn btn-primary w-100 mt-3" onclick="placeOrder()">Place Order</button>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!--==========  End of why choose us section ==========-->
-
-
-
-
+  </div>
+  
+  
 
 
 
@@ -710,9 +936,9 @@
   <section class="slice-pb position-relative">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2>Make people happy, have some fun and be number 1! satisfying people’s hunger for life’s simple pleasures
-          </h2>
+        <div class="col-lg-9 text-center">
+          <h2>Healthy, tasty, and hassle-free meals with Kukmee – making every bite a delight!</h2>
+          <h2>Fresh groceries at your doorstep with Kukmart – empowering healthy living every day.</h2>
           <a class="btn btn-green mt-4 btn-rounded" href="#">Get started</a>
         </div>
       </div>
@@ -724,43 +950,9 @@
 
 
   <!--========== Start of Reserve section ==========-->
-  <!-- <footer class="footer bg-green-soft-01">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 position-relative mb-5 mb-sm-0 food-footer-bg">
-          <div class="outside-box-left d-none d-lg-block">
-            <img class="img-fluid" src="images/food/03.jpg" alt="">
-          </div>
-          <div class="position-absolute top-0 start-0 slice-pt ps-lg-8 text-center text-lg-start">
-            <span class="text-green d-block">Dine in</span>
-            <h2 class="display-2 mb-5">Reserve <br /> online</h2>
-            <a class="btn btn-outline-dark btn-rounded" href="#">Book a table</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="text-center slice-ptb">
-            <h4 class="mb-4 mt-md-0">Time Open </h4>
-            <div class="mb-4">
-              <h5> Monday to Friday</h5>
-              <p>7 pm to 11 pm ( Dinner)</p>
-            </div>
-            <div class="mb-5">
-              <h5> Saturday to Sunday</h5>
-              <p>5 pm to 12 pm ( Dinner)</p>
-            </div>
-            <h4 class="mb-4">Address </h4>
-            <div class="mb-4">
-              <h5>4 Lakeview Lane Sterling, VA 20164</h5>
-              <p>info@example.com</p>
-            </div>
-            <h2 class="text-green mb-0 mt-5"> <i class="feather icon-phone-call"></i> (781) 210-0377</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer> -->
 
-
+<!-- Toast Container -->
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050;"></div>
 
   <!--==========  End of footer section ==========-->
 
@@ -769,25 +961,32 @@
   <footer class="footer bg-dark slice-pt">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
           <!--===== Start of footer item =====-->
-          <a href="index.html"> <img class="footer-logo" src="images/logo-light.svg" alt="Logo"> </a>
-          <ul class="list-unstyled mt-4">
-            <li class="mb-2">734 Fairfield dr. port charlotte, FL 33952</li>
-            <li class="mb-2">(781) 210-0377</li>
-            <li>info@example.com</li>
-          </ul>
+          <h3 class="text-white mb-4">KUKMEE</h3>
+
+          <p>Your Kitchen Companion making everyday cooking effortless and enjoyable with cooked food, daily<br>morning-made fresh ready-to-cook kits, hire cooks,<br>chefs, and cartering services for all occasions.</p>
 
           <!--===== Start of footer social =====-->
-          <div class="social-icons icon-colored list-unstyled mt-4">
-            <a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
-            <a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
-            <a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
-            <a class="pinterest icon" href="#"> <i class="fab fa-pinterest-p fa-fw"></i> </a>
-            <a class="rss icon" href="#"> <i class="fas fa-rss fa-fw"></i> </a>
-          </div>
+         <div class="social-icons icon-colored list-unstyled mt-4">
+  <a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
+  <a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
+  <a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
+  <a class="youtube icon" href="#"> <i class="fab fa-youtube fa-fw"></i> </a>
+</div>
+
           <!--===== End of footer social =====-->
 
+          <!--===== End of footer item =====-->
+
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <!--===== Start of footer item =====-->
+          <h3 class="text-white mb-4">KUKMART</h3>
+          <p>Integrated hyperlocal mini-supermarkets and <br> online grocery plus FMCG market delivering fresh<br>ingredients and everyday essentials right at your<br>doorstep with weekly and monthly refills.
+</p>
+          
           <!--===== End of footer item =====-->
 
         </div>
@@ -796,50 +995,64 @@
 
           <!--===== Start of footer item =====-->
           <div class="footer-links">
-            <h5 class="text-white mb-4">Additional Links</h5>
+            <h3 class="text-white mb-4">Explore</h3>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="#">Community</a></li>
-              <li class="mb-2"><a href="#">About us</a></li>
-              <li class="mb-2"><a href="#">Jobs</a></li>
-              <li class="mb-2"><a href="#">Forums</a></li>
-              <li class="mb-2"><a href="#">Keep in touch</a></li>
-              <li class="mb-2"><a href="#">Purchase</a></li>
+              <li class="mb-2"><a href="#">Order Food
+                </a></li>
+              <li class="mb-2"><a href="#">Kukmart</a></li>
+              <li class="mb-2"><a href="#">Catering</a></li>
+              <li class="mb-2"><a href="#">Cook & Chef</a></li>
+              <li class="mb-2"><a href="#">Franchise</a></li>
             </ul>
           </div>
           <!--===== End of footer item =====-->
 
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+        
 
-          <!--===== Start of footer item =====-->
+        <div class="col-lg-2 col-sm-6">
           <div class="footer-links">
-            <h5 class="text-white mb-4">About The Faculty</h5>
+            <h3 class="text-white mb-4">Contact Us</h3>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="#">Portfolio</a></li>
-              <li class="mb-2"><a href="#">Blogs</a></li>
-              <li class="mb-2"><a href="#">Video Tutorials</a></li>
-              <li class="mb-2"><a href="#">Tickets</a></li>
-              <li class="mb-2"><a href="#">Template Library</a></li>
-              <li class="mb-2"><a href="#">Documentation</a></li>
+              <li>
+                     <!-- <span><i class="fas fa-envelope"></i></span> -->
+                     <p> <span> <a href="mailto:info@businessname.com">contact@kukmee.com</a></span></p>
+                  </li>
+                  <li>
+                     <!-- <span><i class="fas fa-phone-alt"></i></span> -->
+                     <p> <span> <a href="tel:+10000000000">+91 9750005058</a></span></p>
+                  </li>
+                  <li>
+                     <!-- <span><i class="fas fa-map-marker-alt"></i></span> -->
+                     <p><span>
+                           1st Floor, No. 185, Nehru Nagar, 1st Main Road, Perungudi, Chennai, <br> India - 600096.</span>
+                     </p>
+                  </li>
+
             </ul>
           </div>
-          <!--===== End of footer item =====-->
-
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+           <!-- <div class="col-lg-2 col-sm-6">
+               <h5 class="mb30 mt30" id="contact-us">Contact Us</h5>
+               <ul class="footer-address-list ftr-details" id="contact-us">
+                  <li>
+                     <span><i class="fas fa-envelope"></i></span>
+                     <p>Email <span> <a href="mailto:info@businessname.com">contact@sociolancer.com</a></span></p>
+                  </li>
+                  <li>
+                     <span><i class="fas fa-phone-alt"></i></span>
+                     <p>Phone <span> <a href="tel:+10000000000">+91 9092009690</a></span></p>
+                  </li>
+                  <li>
+                     <span><i class="fas fa-map-marker-alt"></i></span>
+                     <p>Address <span>
+                           1st Floor, No. 185, Nehru Nagar,<br> 1st Main Road, Perungudi,<br> Chennai - 600096.</span>
+                     </p>
+                  </li>
+               </ul>
+            </div> -->
 
-          <!--===== Start of footer item =====-->
-          <h5 class="text-white mb-4">Join our newsletter and get 3 free products, instantly.</h5>
-          <form class="subscribe-form-francy">
-            <input type="email" class="form-control rounded" placeholder="Enter your email address">
-            <a href="#" class="btn btn-warning rounded">Subscribe</a>
-          </form>
-          <small class="form-text mt-3 text-muted d-block">Plus nothing but quality pixels in your inbox every 2
-            weeks!</small>
-          <!--===== End of footer item =====-->
-
-        </div>
         <div class="col-12 mt-4">
           <hr class="hr-light">
         </div>
@@ -851,7 +1064,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="mb-0 text-light">© 2020 <a target="_blank" href="#">infinitysoftway </a>all right reserved</p>
+            <p class="mb-0 text-light">© 2025 <a target="_blank" href="#">Kukmee </a>all right
+              reserved</p>
           </div>
           <div class="col-md-6 text-md-end">
             <div class="footer-links">
@@ -915,38 +1129,38 @@
   <!-- Stepper JS -->
   <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
 
-
+  <script src="config.js"></script>
 
   <script>
-    // Fetch and display the user's location
-    document.getElementById('getCurrentLocation').addEventListener('click', () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(async (position) => {
-          const { latitude, longitude } = position.coords;
-          const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`);
-          const data = await response.json();
-          const address = data.display_name || 'Unable to fetch address';
-          document.getElementById('manualLocation').value = address;
-        }, () => {
-          alert('Unable to fetch your location. Please try again.');
-        });
-      } else {
-        alert('Geolocation is not supported by this browser.');
-      }
-    });
+    // // Fetch and display the user's location
+    // document.getElementById('getCurrentLocation').addEventListener('click', () => {
+    //   if (navigator.geolocation) {
+    //     navigator.geolocation.getCurrentPosition(async (position) => {
+    //       const { latitude, longitude } = position.coords;
+    //       const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`);
+    //       const data = await response.json();
+    //       const address = data.display_name || 'Unable to fetch address';
+    //       document.getElementById('manualLocation').value = address;
+    //     }, () => {
+    //       alert('Unable to fetch your location. Please try again.');
+    //     });
+    //   } else {
+    //     alert('Geolocation is not supported by this browser.');
+    //   }
+    // });
   
-    // Save the location and update the input box
-    document.getElementById('saveLocation').addEventListener('click', () => {
-      const location = document.getElementById('manualLocation').value;
-      const locationType = document.getElementById('locationType').value;
-      if (location) {
-        document.getElementById('locationInput').value = `${location} (${locationType})`;
-        const modal = bootstrap.Modal.getInstance(document.getElementById('locationModal'));
-        modal.hide();
-      } else {
-        alert('Please enter or fetch a location before saving.');
-      }
-    });
+    // // Save the location and update the input box
+    // document.getElementById('saveLocation').addEventListener('click', () => {
+    //   const location = document.getElementById('manualLocation').value;
+    //   const locationType = document.getElementById('locationType').value;
+    //   if (location) {
+    //     document.getElementById('locationInput').value = `${location} (${locationType})`;
+    //     const modal = bootstrap.Modal.getInstance(document.getElementById('locationModal'));
+    //     modal.hide();
+    //   } else {
+    //     alert('Please enter or fetch a location before saving.');
+    //   }
+    // });
   </script>
   
 

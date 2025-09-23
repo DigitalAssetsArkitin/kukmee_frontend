@@ -13,7 +13,7 @@
 	<title>Kukmart</title>
 
 	<!--===== Favicon =====-->
-	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="shortcut icon" href="images/food/logo/JK (KUKMEE).png" />
 
 	<!--===== Google fonts =====-->
 	<link rel="stylesheet"
@@ -41,6 +41,7 @@
 	<!--===== Main theme css =====-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/demo/food.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 
 </head>
@@ -50,26 +51,34 @@
 
 	<!--==========  Start of Header Section ========== -->
 	<header class="header">
-		<nav class="navbar navbar-light navbar-expand-lg navbar-transparent navbar-blur navbar-text-dark kukmart-navbar"
-			style="background-color: #ffff;">
+		<nav class="navbar navbar-light navbar-expand-lg navbar-transparent navbar-blur navbar-text-dark">
 			<div class="container-fluid">
-				<!--===== Start of logo ===== -->
+
 				<a class="navbar-brand" href="index-food.html">
 					<img class="logo" src="images/food/logo/kukmeelogo-removebg.png" alt="Logo">
 				</a>
-				<!--===== End of logo ===== -->
 
-				<!--===== Start of location input and button merged ===== -->
-				<div class="location-container d-flex align-items-center ms-3">
+				<!-- <div class="location-container  ms-3 ">
+						<div class="input-group">
+							<button class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#locationModal"
+								style="border-radius: 5px 0px 0px 5px;"> Location </button>
+							<input type="text" id="locationInput" data-bs-toggle="modal" data-bs-target="#locationModal"
+								class="form-control" placeholder="Enter location" />
+	
+						</div>
+					</div> -->
+
+				<div class="location-container  ms-3 ">
 					<div class="input-group">
 						<button class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#locationModal"
-							style="border-radius: 5px 0px 0px 5px;"> Location </button>
+							style="border-radius: 5px 0px 0px 5px;"><i
+								class="bi bi-geo-alt-fill location-icon"></i></button>
 						<input type="text" id="locationInput" data-bs-toggle="modal" data-bs-target="#locationModal"
 							class="form-control" placeholder="Enter location" />
 
 					</div>
 				</div>
-				<!--===== End of location input and button merged ===== -->
+
 
 				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -79,7 +88,7 @@
 					<span class="icon-bar bottom-bar"></span>
 				</button>
 
-				<!--===== Start of nav ===== -->
+
 				<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 					<ul class="navbar-nav">
 						<li class="nav-item ">
@@ -92,7 +101,7 @@
 								<span class="text-line"><strong></strong>Kukmart</span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item ">
 							<a class="nav-link" href="book-catering.html" id="navbar-features">
 								<span class="text-line"><strong></strong>Catering</span>
 							</a>
@@ -108,21 +117,29 @@
 							</a>
 						</li>
 					</ul>
+
+					<div class="location-container1  ms-3 ">
+						<div class="input-group">
+							<button class="btn btn-outline-dark ms-2" data-bs-toggle="modal"
+								data-bs-target="#locationModal" style="border-radius: 5px 0px 0px 5px;"> Location
+							</button>
+							<input type="text" id="locationInput" data-bs-toggle="modal" data-bs-target="#locationModal"
+								class="form-control" placeholder="Enter location" />
+
+						</div>
+					</div>
 				</div>
 
-				<i class="bi bi-bag-check btn btn-round cart-btn" data-bs-toggle="offcanvas"
-					data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"></i>
 
-				<!-- Profile Section: Hidden by default -->
-				<!-- Profile Section with Font Awesome -->
-				<div class="profile-section d-none d-flex align-items-center ">
+
+				<div class="profile-section d-none ">
+
 					<span id="username-display" class="me-3"></span>
 
-					<!-- Dropdown with Font Awesome Icon -->
 					<div class="dropdown">
 						<button class="btn btn-outline-dark dropdown-toggle" type="button" id="person-icon"
 							data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="fas fa-user-circle"></i> <!-- Font Awesome User Icon -->
+							<i class="fas fa-user-circle"></i>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="person-icon">
 							<li><a class="dropdown-item" href="/profile.html"><i class="fas fa-user"></i> Profile</a>
@@ -133,20 +150,29 @@
 									Logout</a></li>
 						</ul>
 					</div>
+
 				</div>
 
-				<!-- Login Button (hidden when logged in) -->
-				<a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html"><i
-						class="fas fa-sign-in-alt"></i> Login</a>
+
+				<a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html"> Login</a>
 
 
-				<!-- Login Button: Initially hidden -->
+
 				<a class="btn btn-outline-dark btn-round btn-login d-none" href="login.html">Login</a>
 
+				<i class="bi bi-bag-check btn btn-round cart-btn" data-bs-toggle="offcanvas"
+					data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"></i>
+
 			</div>
+
+
+
 		</nav>
 
-		<!-- Location Modal -->
+
+
+
+
 		<div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-modal="true"
 			role="dialog">
 			<div class="modal-dialog modal-dialog-centered">
@@ -156,7 +182,7 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<!-- Modal content -->
+
 						<div class="mb-3">
 							<label for="manualLocation" class="form-label">Enter your address:</label>
 							<input type="text" id="manualLocation" class="form-control"
@@ -187,18 +213,19 @@
 
 	</header>
 
-	<i class="bi bi-bag-check btn btn-round cart-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-		aria-controls="offcanvasRight"></i>
+
+	<!-- <i class="bi bi-bag-check btn btn-round cart-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+		aria-controls="offcanvasRight"></i> -->
 
 
-	<section>
+	<!-- <section>
 		<div class="second-nav">
 			<div class="container">
 				<div class="row justify-content-center align-items-center g-2">
 					<div class="col-md-3">
 						<h5 class="widget-title mb-0">All Category</h5>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-3">
 						<div class="col-md-6 mb-4 mb-md-0" id="search-bar">
 							<form action="/search" method="get" class="d-flex align-items-center">
 								<div class="input-group">
@@ -212,11 +239,71 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wishlistModal">
-							View Wishlist
-						  </button>
-						  
+						<button type="button" class="btn btn-outline-dark mx-4" data-bs-toggle="modal"
+							data-bs-target="#wishlistModal">
+							View Refill Basket
+						</button>
+
 					</div>
+					<div class="col-md-3 d-lg-none mb-3 text-center">
+						<button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+							<i class="bi bi-filter"></i> Categories & Filters
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<section>
+		<div class="second-nav">
+			<div class="container">
+				<div class="row justify-content-flex-start align-items-center g-2">
+
+					<!-- "All Category" (Hidden in Mobile) -->
+					<div class="col-md-3 d-none d-lg-block">
+						<h5 class="widget-title mb-0">All Category</h5>
+					</div>
+
+					<!-- Search Bar (Full width on mobile) -->
+					<div class="col-12 col-md-5">
+						<div id="search-bar">
+							<form action="/search" method="get" class="d-flex align-items-center">
+								<div class="input-group">
+									<input type="text" id="search-input" class="form-control" placeholder="Search..."
+										aria-label="Search" />
+									<button class="btn btn-outline-secondary" type="submit">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- Refill Basket Button (Centered on Mobile) -->
+					<div class="col-3 col-md-2 text-center  my-2 my-md-0">
+						<button type="button" class="btn btn-outline-dark rounded" data-bs-toggle="modal"
+							data-bs-target="#wishlistModal">
+							View Refill Basket
+						</button>
+					</div>
+
+					<div class="col-3 col-md-2 text-center  my-2 my-md-0">
+						<button type="button" class="btn btn-outline-dark rounded" data-bs-toggle="modal"
+							data-bs-target="#wishlistModal">
+							Repeat My Orders
+						</button>
+					</div>
+
+					<!-- Categories & Filters Button (Visible only in Mobile) -->
+					<div class="col-6 col-md-3 d-lg-none  text-center my-2 my-md-0">
+						<button class="btn btn-outline-dark rounded" data-bs-toggle="offcanvas"
+							data-bs-target="#mobileSidebar">
+							<i class="bi bi-filter"></i> Categories
+						</button>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -224,15 +311,15 @@
 
 
 
-	<section class="slice-ptb product-section position-relative">
+	<!-- <section class="slice-ptb product-section position-relative">
 		<div class="container">
-			<!--===== Start of row =====-->
+	
 			<div class="row">
-				<!-- Sidebar for categories and filter (Fixed) -->
+
 				<div class="col-lg-3" id="sidebar">
 					<div class="shop-sidebar">
 						<div class="widget">
-							<!-- <h5 class="widget-title">All Category</h5> -->
+						
 							<ul class="widget-category list-unstyled">
 								<li><a href="#" data-category="all">All</a></li>
 								<li><a href="#" data-category="groceries">Groceries</a></li>
@@ -251,9 +338,89 @@
 					</div>
 				</div>
 
-				<!-- Product and Pagination Section -->
+			
 				<div class="col-lg-9 mb-5" id="product-section">
 
+
+			
+					<div class="row" id="product-list">
+						
+					</div>
+
+					
+					<div class="col-lg-12 text-center mt-6">
+						<nav aria-label="Page navigation">
+							<ul class="pagination justify-content-center" id="pagination">
+							
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<section class="slice-ptb product-section position-relative">
+		<div class="container">
+			<!--===== Start of row =====-->
+			<div class="row">
+
+				<!-- Sidebar (Desktop: Visible | Mobile: Offcanvas) -->
+				<div class="col-lg-3 d-none d-lg-block" id="sidebar">
+					<div class="shop-sidebar">
+						<div class="widget">
+							<ul class="widget-category list-unstyled">
+								<li><a href="#" data-category="all">All</a></li>
+								<li><a href="#" data-category="groceries">Groceries</a></li>
+								<li><a href="#" data-category="dairy">Dairy & Beverages</a></li>
+								<li><a href="#" data-category="packaged-foods">Packaged Foods</a></li>
+								<li><a href="#" data-category="fruits">Fruits & Vegetables</a></li>
+								<li><a href="#" data-category="home-kitchen">Home & Kitchen</a></li>
+								<li><a href="#" data-category="beauty">Personal Care & Beauty</a></li>
+								<li><a href="#" data-category="kids">Baby & Kids Care</a></li>
+							</ul>
+						</div>
+						<div class="widget">
+							<h5 class="widget-title">Filter by price</h5>
+							<input id="rangeslider-double" type="text" value="" />
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile Sidebar Button -->
+
+
+				<!-- Mobile Offcanvas Sidebar -->
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title">Categories & Filters</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="shop-sidebar">
+							<div class="widget">
+								<ul class="widget-category list-unstyled">
+									<li><a href="#" data-category="all">All</a></li>
+									<li><a href="#" data-category="groceries">Groceries</a></li>
+									<li><a href="#" data-category="dairy">Dairy & Beverages</a></li>
+									<li><a href="#" data-category="packaged-foods">Packaged Foods</a></li>
+									<li><a href="#" data-category="fruits">Fruits & Vegetables</a></li>
+									<li><a href="#" data-category="home-kitchen">Home & Kitchen</a></li>
+									<li><a href="#" data-category="beauty">Personal Care & Beauty</a></li>
+									<li><a href="#" data-category="kids">Baby & Kids Care</a></li>
+								</ul>
+							</div>
+							<div class="widget">
+								<h5 class="widget-title">Filter by price</h5>
+								<input id="rangeslider-double" type="text" value="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Product and Pagination Section -->
+				<div class="col-12 col-lg-9 mb-5" id="product-section">
 
 					<!-- Product List -->
 					<div class="row" id="product-list">
@@ -268,6 +435,7 @@
 							</ul>
 						</nav>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -275,207 +443,203 @@
 
 
 
-
-
 	<div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="wishlistModalLabel">Your Wishlist</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="wishlistModalLabel">Your Restocks</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="wishlist-items">
+					<!-- Wishlist items will be dynamically injected here -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
 			</div>
-			<div class="modal-body" id="wishlist-items">
-			  <!-- Wishlist items will be dynamically injected here -->
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			</div>
-		  </div>
 		</div>
-	  </div>
-	  
-
-
-
-
-
-
-
-<!-- Cart Offcanvas -->
-<!-- Off-Canvas Cart -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
-	<div class="offcanvas-header">
-	  <h5 id="cartOffcanvasLabel">Your Cart</h5>
-	  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
-	<div class="offcanvas-body">
-	  <!-- Cart Items -->
-	  <div id="cart-items"></div>
-	  <hr>
-	  <!-- Cart Summary -->
-	  <div class="d-flex justify-content-between mb-2">
-		<span><strong>Subtotal:</strong></span>
-		<span id="grand-total">₹0.00</span>
-	  </div>
-	  <div class="d-flex justify-content-between mb-2">
-		<span><strong>GST (18%):</strong></span>
-		<span id="gst-amount">₹0.00</span>
-	  </div>
-	  <div class="d-flex justify-content-between mb-4">
-		<span><strong>Total:</strong></span>
-		<span id="final-total">₹0.00</span>
-	  </div>
-	  <!-- Place Order Button -->
-	  <button type="button" id="place-order-btn" class="btn btn-dark w-100" style="display: none;" data-bs-toggle="modal" data-bs-target="#placeOrderModal">Place Order</button>
+
+
+
+
+
+
+
+
+	<!-- Cart Offcanvas -->
+	<!-- Off-Canvas Cart -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+		<div class="offcanvas-header">
+			<h5 id="cartOffcanvasLabel">Your Cart</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<!-- Cart Items -->
+			<div id="cart-items" class="product-cart-items"></div>
+			<hr>
+			<!-- Cart Summary -->
+			<div class="d-flex justify-content-between mb-2">
+				<span><strong>Subtotal:</strong></span>
+				<span id="grand-total">₹0.00</span>
+			</div>
+			<div class="d-flex justify-content-between mb-2">
+				<span><strong>GST (18%):</strong></span>
+				<span id="gst-amount">₹0.00</span>
+			</div>
+			<div class="d-flex justify-content-between mb-4">
+				<span><strong>Total:</strong></span>
+				<span id="final-total">₹0.00</span>
+			</div>
+			<!-- Delivery Date -->
+			<div class="d-flex justify-content-between mb-4">
+				<span><strong>Delivery Date:</strong></span>
+				<input type="date" id="deliveryDateInput" class="form-control" min="" />
+			</div>
+			<!-- Place Order Button -->
+			<div id="order-actions" class="mt-4">
+				<!-- Button shown when location is not set -->
+				<button id="add-address-btn" class="btn btn-primary w-100" data-bs-toggle="modal"
+					data-bs-target="#locationModal">
+					Add Address to Proceed
+				</button>
+
+
+				<!-- Button shown after location is set -->
+				<button id="place-order-btn" class="btn btn-dark w-100 d-none">Place Order</button>
+			</div>
+		</div>
+
 	</div>
-  </div>
-  
-  <!-- Modal for Place Order -->
-  <div class="modal fade" id="placeOrderModal" tabindex="-1" aria-labelledby="placeOrderModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="placeOrderModalLabel">Place Your Order</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  <form id="order-form">
-			<div class="mb-3">
-			  <label for="street" class="form-label">Street</label>
-			  <input type="text" class="form-control" id="street" required>
-			</div>
-			<div class="mb-3">
-			  <label for="city" class="form-label">City</label>
-			  <input type="text" class="form-control" id="city" required>
-			</div>
-			<div class="mb-3">
-			  <label for="state" class="form-label">State</label>
-			  <input type="text" class="form-control" id="state" required>
-			</div>
-			<div class="mb-3">
-			  <label for="zipCode" class="form-label">Zip Code</label>
-			  <input type="text" class="form-control" id="zipCode" required>
-			</div>
-		  </form>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" id="confirm-order-btn" class="btn btn-primary" onclick="placeOrder()">Confirm Order</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-  
-  
 
 
-
+	<div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050;"></div>
 
 	<!--Start of footer section ==========-->
 	<footer class="footer bg-dark slice-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-					<!--===== Start of footer item =====-->
-					<a href="index.html"> <img class="footer-logo" src="images/logo-light.svg" alt="Logo"> </a>
-					<ul class="list-unstyled mt-4">
-						<li class="mb-2">734 Fairfield dr. port charlotte, FL 33952</li>
-						<li class="mb-2">(781) 210-0377</li>
-						<li>info@example.com</li>
-					</ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <!--===== Start of footer item =====-->
+          <h3 class="text-white mb-4">KUKMEE</h3>
 
-					<!--===== Start of footer social =====-->
-					<div class="social-icons icon-colored list-unstyled mt-4">
-						<a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
-						<a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
-						<a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
-						<a class="pinterest icon" href="#"> <i class="fab fa-pinterest-p fa-fw"></i> </a>
-						<a class="rss icon" href="#"> <i class="fas fa-rss fa-fw"></i> </a>
-					</div>
-					<!--===== End of footer social =====-->
+          <p>Your Kitchen Companion making everyday cooking effortless and enjoyable with cooked food, daily<br>morning-made fresh ready-to-cook kits, hire cooks,<br>chefs, and cartering services for all occasions.</p>
 
-					<!--===== End of footer item =====-->
+          <!--===== Start of footer social =====-->
+          <div class="social-icons icon-colored list-unstyled mt-4">
+            <a class="facebook icon" href="#"> <i class="fab fa-facebook-f fa-fw"></i> </a>
+            <a class="instagram icon" href="#"> <i class="fab fa-instagram fa-fw"></i> </a>
+            <a class="twitter icon" href="#"> <i class="fab fa-twitter fa-fw"></i> </a>
+            <a class="pinterest icon" href="#"> <i class="fab fa-pinterest-p fa-fw"></i> </a>
+            <a class="rss icon" href="#"> <i class="fas fa-rss fa-fw"></i> </a>
+          </div>
+          <!--===== End of footer social =====-->
 
-				</div>
+          <!--===== End of footer item =====-->
 
-				<div class="col-lg-2 col-sm-6 mb-4 mb-lg-0">
+        </div>
 
-					<!--===== Start of footer item =====-->
-					<div class="footer-links">
-						<h5 class="text-white mb-4">Additional Links</h5>
-						<ul class="list-unstyled">
-							<li class="mb-2"><a href="#">Community</a></li>
-							<li class="mb-2"><a href="#">About us</a></li>
-							<li class="mb-2"><a href="#">Jobs</a></li>
-							<li class="mb-2"><a href="#">Forums</a></li>
-							<li class="mb-2"><a href="#">Keep in touch</a></li>
-							<li class="mb-2"><a href="#">Purchase</a></li>
-						</ul>
-					</div>
-					<!--===== End of footer item =====-->
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <!--===== Start of footer item =====-->
+          <h3 class="text-white mb-4">KUKMART</h3>
+          <p>Integrated hyperlocal mini-supermarkets and <br> online grocery plus FMCG market delivering fresh<br>ingredients and everyday essentials right at your<br>doorstep with weekly and monthly refills.
+</p>
+          
+          <!--===== End of footer item =====-->
 
-				</div>
-				<div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+        </div>
 
-					<!--===== Start of footer item =====-->
-					<div class="footer-links">
-						<h5 class="text-white mb-4">About The Faculty</h5>
-						<ul class="list-unstyled">
-							<li class="mb-2"><a href="#">Portfolio</a></li>
-							<li class="mb-2"><a href="#">Blogs</a></li>
-							<li class="mb-2"><a href="#">Video Tutorials</a></li>
-							<li class="mb-2"><a href="#">Tickets</a></li>
-							<li class="mb-2"><a href="#">Template Library</a></li>
-							<li class="mb-2"><a href="#">Documentation</a></li>
-						</ul>
-					</div>
-					<!--===== End of footer item =====-->
+        <div class="col-lg-2 col-sm-6 mb-4 mb-lg-0">
 
-				</div>
+          <!--===== Start of footer item =====-->
+          <div class="footer-links">
+            <h3 class="text-white mb-4">Explore</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Order Food
+                </a></li>
+              <li class="mb-2"><a href="#">Kukmart</a></li>
+              <li class="mb-2"><a href="#">Catering</a></li>
+              <li class="mb-2"><a href="#">Cook & Chef</a></li>
+              <li class="mb-2"><a href="#">Franchise</a></li>
+            </ul>
+          </div>
+          <!--===== End of footer item =====-->
 
-				<div class="col-lg-4 col-sm-6">
+        </div>
+        
 
-					<!--===== Start of footer item =====-->
-					<h5 class="text-white mb-4">Join our newsletter and get 3 free products, instantly.</h5>
-					<form class="subscribe-form-francy">
-						<input type="email" class="form-control rounded" placeholder="Enter your email address">
-						<a href="#" class="btn btn-warning rounded">Subscribe</a>
-					</form>
-					<small class="form-text mt-3 text-muted d-block">Plus nothing but quality pixels in your inbox every
-						2
-						weeks!</small>
-					<!--===== End of footer item =====-->
+        <div class="col-lg-2 col-sm-6">
+          <div class="footer-links">
+            <h3 class="text-white mb-4">Contact Us</h3>
+            <ul class="list-unstyled">
+              <li>
+                     <!-- <span><i class="fas fa-envelope"></i></span> -->
+                     <p> <span> <a href="mailto:info@businessname.com">contact@kukmee.com</a></span></p>
+                  </li>
+                  <li>
+                     <!-- <span><i class="fas fa-phone-alt"></i></span> -->
+                     <p> <span> <a href="tel:+10000000000">+91 9750005058</a></span></p>
+                  </li>
+                  <li>
+                     <!-- <span><i class="fas fa-map-marker-alt"></i></span> -->
+                     <p><span>
+                           1st Floor, No. 185, Nehru Nagar, 1st Main Road, Perungudi, Chennai, <br> India - 600096.</span>
+                     </p>
+                  </li>
 
-				</div>
-				<div class="col-12 mt-4">
-					<hr class="hr-light">
-				</div>
-			</div>
-		</div>
+            </ul>
+          </div>
+        </div>
 
-		<!--===== Start of copyright =====-->
-		<div class="py-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p class="mb-0 text-light">© 2020 <a target="_blank" href="#">infinitysoftway </a>all right
-							reserved</p>
-					</div>
-					<div class="col-md-6 text-md-end">
-						<div class="footer-links">
-							<ul class="list-unstyled list-inline mb-0">
-								<li class="list-inline-item"><a href="#">Privacy Policy </a></li>
-								<li class="list-inline-item"><a href="#">Terms of Use </a></li>
-								<li class="list-inline-item"><a href="#">Support </a></li>
-								<li class="list-inline-item"><a href="#">Contact us </a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--===== End of copyright =====-->
-	</footer>
+           <!-- <div class="col-lg-2 col-sm-6">
+               <h5 class="mb30 mt30" id="contact-us">Contact Us</h5>
+               <ul class="footer-address-list ftr-details" id="contact-us">
+                  <li>
+                     <span><i class="fas fa-envelope"></i></span>
+                     <p>Email <span> <a href="mailto:info@businessname.com">contact@sociolancer.com</a></span></p>
+                  </li>
+                  <li>
+                     <span><i class="fas fa-phone-alt"></i></span>
+                     <p>Phone <span> <a href="tel:+10000000000">+91 9092009690</a></span></p>
+                  </li>
+                  <li>
+                     <span><i class="fas fa-map-marker-alt"></i></span>
+                     <p>Address <span>
+                           1st Floor, No. 185, Nehru Nagar,<br> 1st Main Road, Perungudi,<br> Chennai - 600096.</span>
+                     </p>
+                  </li>
+               </ul>
+            </div> -->
+
+        <div class="col-12 mt-4">
+          <hr class="hr-light">
+        </div>
+      </div>
+    </div>
+
+    <!--===== Start of copyright =====-->
+    <div class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0 text-light">© 2025 <a target="_blank" href="#">Kukmee </a>all right
+              reserved</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="footer-links">
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item"><a href="#">Privacy Policy </a></li>
+                <li class="list-inline-item"><a href="#">Terms of Use </a></li>
+                <li class="list-inline-item"><a href="#">Support </a></li>
+                <li class="list-inline-item"><a href="#">Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== End of copyright =====-->
+  </footer>
 
 	<!--========== End of footer section ==========-->
 
@@ -513,9 +677,9 @@
 	<!--========== 
 	End of Javascript ==========-->
 
-
+<script src="config.js"></script>
 	<script src="js/kukmart.js"></script>
-<!-- 
+	<!-- 
 	<script src="js/new.js"></script> -->
 
 

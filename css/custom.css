@@ -1,0 +1,96 @@
+@media (min-width:320px) and (max-width:576px) {
+    .location-container{
+        display: none;
+    }
+    .location-container1{
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 0rem !important;
+        margin-right: 0rem !important;
+        margin-top: 0.1rem;
+    }
+    .service-row{
+        margin-top: 1rem;
+    }
+
+    .product-section {
+        padding: 210px 0px;
+        padding-bottom: 0px;
+    }
+
+    .modal-dialog {
+        /* max-width: 500px;  */
+        max-width: 100%; 
+        margin: 10px;
+    }
+
+    .diet-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        display: block;
+        align-items: center;
+        padding: 10px;
+        margin: 0px;
+        background-color: #fff;
+        height: 18rem;
+    }
+
+    .modal-body {
+        padding: 0px;
+    }
+
+    .diet-details h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 9px;
+    }
+
+    .vrat-img {
+        height: auto;
+    }
+    .banner-word {
+        font-size: 19px;
+    }
+
+    .search-input {
+        background: white;
+        border-radius: 50px;
+        width: 95%;
+    }
+
+}
+
+@media (min-width:577px) and (max-width:768px) {
+
+    .navbar-brand {
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 0rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .subscription {
+        margin-top: 1rem;
+        text-align: start;
+    }
+    .btn-subscription {
+        margin-top: 1rem;
+    }
+
+    .service-row{
+        margin-top: 3rem;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .product-section {
+        padding-bottom: 0px;
+    }
+}
+
+

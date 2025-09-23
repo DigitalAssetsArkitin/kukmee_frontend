@@ -4,97 +4,97 @@
         "meal_name": "Diabetes-Friendly Meal",
         "maker": "Healthy Bites",
         "price": 250,
-        "description": "Includes Quinoa Salad, Grilled Chicken, and Steamed Vegetables. Low in carbohydrates and high in protein.",
+        "description": "Meals carefully crafted to regulate blood sugar levels, supporting pancreatic function and liver health, with fiber and protein for sustained energy.",
         "food_plan": [
           {
             "day": "Monday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "Start your week with a light yet filling meal, full of protein and fiber to fuel your day."
           },
           {
             "day": "Tuesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "A repeat of Monday’s meal to keep your day balanced and maintain steady energy levels."
           },
           {
             "day": "Wednesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "Mid-week meal to help you stay on track with your health goals, perfect for a nutritious lunch."
           },
           {
             "day": "Thursday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "A hearty, low-carb meal to keep your energy up without sacrificing your dietary goals."
           },
           {
             "day": "Friday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "End the week with a healthy, satisfying meal that is packed with nutrients."
           },
           {
             "day": "Saturday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "A refreshing yet hearty option to keep your weekend meals in line with your health goals."
           },
           {
             "day": "Sunday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Quinoa Salad, Grilled Chicken, Steamed Vegetables",
             "meal_description": "A nutritious Sunday meal to finish your week strong and feel ready for the upcoming days."
           }
         ]
       },
       {
-        "meal_name": "Heart Health Meal",
+        "meal_name": "Hypertension-Friendly Meal",
         "maker": "Fresh Plate",
         "price": 150,
-        "description": "Includes Oats Porridge, Grilled Salmon, and Mixed Greens. Rich in omega-3 fatty acids and fiber.",
+        "description": "Meals designed to lower blood pressure, promoting heart and vascular health with potassium and magnesium while keeping sodium in check.",
         "food_plan": [
           {
             "day": "Monday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "Start your week with a heart-healthy meal filled with omega-3 fatty acids and fiber."
           },
           {
             "day": "Tuesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "A delicious and satisfying meal to keep your heart and body nourished through the week."
           },
           {
             "day": "Wednesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "Midweek meal to support heart health with a combination of wholesome oats and nutritious salmon."
           },
           {
             "day": "Thursday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "A great combination of protein, fiber, and healthy fats to help you stay energized and balanced."
           },
           {
             "day": "Friday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "Celebrate the end of the week with a nutritious, heart-healthy meal that supports your overall wellness."
           },
           {
             "day": "Saturday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "A perfect meal to help you recharge on the weekend with essential nutrients for heart health."
           },
           {
             "day": "Sunday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Oats Porridge, Grilled Salmon, Mixed Greens",
             "meal_description": "End your week on a healthy note with a nutrient-packed meal to support your heart and overall well-being."
           }
@@ -108,43 +108,43 @@
         "food_plan": [
           {
             "day": "Monday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "Kick off the week with a low-calorie, protein-rich meal to help you stay on track with your weight loss goals."
           },
           {
             "day": "Tuesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "A well-balanced meal for maintaining steady energy while keeping your calorie intake low."
           },
           {
             "day": "Wednesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "Mid-week meal that’s light, nutritious, and perfect for weight management."
           },
           {
             "day": "Thursday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "Enjoy a satisfying yet light meal to help you stay motivated toward your health and fitness goals."
           },
           {
             "day": "Friday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "A tasty meal to help you wrap up the week feeling nourished and energized while sticking to your calorie targets."
           },
           {
             "day": "Saturday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "Weekend-friendly meal to enjoy guilt-free while maintaining your healthy eating habits."
           },
           {
             "day": "Sunday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Grilled Tofu, Brown Rice, Stir-Fried Broccoli",
             "meal_description": "A nutritious and filling meal to close out your week on a positive and healthy note."
           }
@@ -158,43 +158,43 @@
         "food_plan": [
           {
             "day": "Monday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "Start the week with a gut-friendly meal, filled with probiotics and fiber to aid digestion."
           },
           {
             "day": "Tuesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "A fiber-rich meal to keep your digestive system in check and feeling good."
           },
           {
             "day": "Wednesday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "Mid-week digestion boost with this healthy, fiber-packed combination."
           },
           {
             "day": "Thursday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "A delicious meal to help support your digestive health and keep you energized."
           },
           {
             "day": "Friday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "A nutrient-dense meal perfect for maintaining a healthy gut and staying active over the weekend."
           },
           {
             "day": "Saturday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "Enjoy this tasty, digestion-boosting meal on your weekend for a healthy gut."
           },
           {
             "day": "Sunday",
-            "meal_image": "https://via.placeholder.com/100",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly",
             "food_name": "Yogurt Bowl with Fresh Fruits, Lentil Soup, Whole Grain Bread",
             "meal_description": "Finish the week strong with a gut-health meal that nourishes both your digestive system and your taste buds."
           }

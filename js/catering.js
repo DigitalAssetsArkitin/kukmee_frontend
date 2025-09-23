@@ -1,4 +1,36 @@
 
+function showToast(message, type = "success") {
+  const toastContainer = document.getElementById("toast-container");
+
+  // Create toast element
+  const toast = document.createElement("div");
+  toast.className = `toast align-items-center text-white bg-${type} border-0 show`;
+  toast.role = "alert";
+  toast.ariaLive = "assertive";
+  toast.ariaAtomic = "true";
+  toast.innerHTML = `
+    <div class="d-flex">
+      <div class="toast-body">
+        ${message}
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  `;
+
+  // Append to container
+  toastContainer.appendChild(toast);
+
+  // Bootstrap toast activation
+  const bsToast = new bootstrap.Toast(toast, { delay: 6000 });
+  bsToast.show();
+
+  // Remove toast after 6 seconds
+  setTimeout(() => {
+    toast.remove();
+  }, 6000);
+}
+
+
 // catering services
 function checkOtherEvent() {
     const eventType = document.getElementById('eventType').value;
@@ -90,7 +122,7 @@ function checkOtherEvent() {
   
     // Validate fields
     if (!fullName || !email || !phoneNumber || !packageName || !eventType || !eventDate || !eventLocation) {
-      alert("Please fill in all required fields.");
+      showToast("Please fill in all required fields.");
       return;
     }
   
@@ -107,7 +139,7 @@ function checkOtherEvent() {
     const packagePrice = packagePrices[normalizedPackageName];
   
     if (packagePrice === undefined) {
-      alert("Invalid package selected.");
+      showToast("Invalid package selected.");
       return;
     }
   
@@ -129,7 +161,7 @@ function checkOtherEvent() {
     const token = localStorage.getItem('jwt_token'); // Assuming the token is stored in localStorage
   
     // Sending data to backend via fetch API
-    fetch('https://80b5-2401-4900-1c29-15a9-1c0a-c946-6344-e037.ngrok-free.app/api/event/create', {
+    fetch(`${API_BASE_URL}/event/create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -143,12 +175,12 @@ function checkOtherEvent() {
         // Redirect to the payment gateway
         window.location.href = data.sessionUrl;
       } else {
-        alert('Payment session creation failed. Please try again.');
+        showToast('Payment session creation failed. Please try again.');
       }
     })
     .catch(error => {
       console.error('Error creating catering booking:', error);
-      alert('An error occurred while submitting the form. Please try again.');
+      showToast('An error occurred while submitting the form. Please try again.');
     });
   }
   

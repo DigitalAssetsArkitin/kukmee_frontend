@@ -3,97 +3,97 @@
     {
       "name": "Curry Combo",
       "image": "images/food/categories/combo.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
+      "description": "Wholesome curries, vegetables, and rice for a satisfying meal.",
+      "rating": 4.9,
       "reviews": 1900,
       "price": 10
     },
     {
       "name": "Kovaka Poriyal",
       "image": "images/food/categories/poriyal.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 1.5,
+      "description": "Light, healthy stir-fried vegetables bursting with flavor.",
+      "rating": 4.8,
+      "reviews": 1500,
       "price": 20
     },
     {
       "name": "Panner with Masala",
       "image": "images/food/categories/panner.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 1.9,
+      "description": "Creamy paneer in rich masala, ready to serve in minutes.",
+      "rating": 4.9,
+      "reviews": 1900,
       "price": 20
     },
     {
       "name": "Gobi with Masala",
       "image": "images/food/categories/gobi.jpg",
-      "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-      "rating": 5,
-      "reviews": 1.9,
+      "description": "Spiced cauliflower cooked to perfection for a quick meal.",
+      "rating": 4.8,
+      "reviews": 1900,
       "price": 20
     },
     {
       "name": "Kalyana Sambar",
       "image": "images/food/categories/sambar.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 1.9,
+      "description": "Traditional sambar with lentils and vegetables, freshly prepared.",
+      "rating": 4.9,
+      "reviews": 1900,
       "price": 20
     },
     {
       "name": "Puli Kulambu",
       "image": "images/food/categories/puli kulambu.jpg",
-      "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-      "rating": 5,
-      "reviews": 1.9,
+      "description": "Tangy tamarind curry with a bold, authentic flavor.",
+      "rating": 4.8,
+      "reviews": 1900,
       "price": 20
     },
     {
       "name": "Puli Rasam",
       "image": "images/food/categories/rasam.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 1,
+      "description": "Tangy and flavorful rasam made fresh for your comfort.",
+      "rating": 4.8,
+      "reviews": 1000,
       "price": 20
     },
     {
       "name": "Payasam",
       "image": "images/food/categories/payasam.jpg",
-      "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-      "rating": 5,
-      "reviews": 1.5,
+      "description": "Rich, creamy dessert prepared fresh to satisfy your sweet tooth.",
+      "rating": 4.9,
+      "reviews": 1500,
       "price": 20
     },
     {
       "name": "Butter Milk",
       "image": "images/food/categories/butter milk.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 2,
+      "description": "Cool and refreshing buttermilk to complement your meals.",
+      "rating": 4.9,
+      "reviews": 2000,
       "price": 10
     },
     {
       "name": "Birkankai Kuutu",
       "image": "images/food/categories/kootu.jpg",
-      "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-      "rating": 5,
-      "reviews": 1.5,
+      "description": "Wholesome vegetable stew made fresh with spices and care.",
+      "rating": 4.8,
+      "reviews": 1500,
       "price": 10
     },
     {
       "name": "Boiled Rice",
       "image": "images/food/categories/boiled rice.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae corporis facere.",
-      "rating": 5,
-      "reviews": 1.5,
+      "description": "Soft and fluffy rice cooked fresh for every meal.",
+      "rating": 4.9,
+      "reviews": 1500,
       "price": 10
     },
     {
       "name": "Veg-Biryani",
       "image": "images/food/categories/veg biryani.jpg",
-      "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-      "rating": 5,
-      "reviews": 2.5,
+      "description": "Aromatic vegetable biryani made with fresh ingredients.",
+      "rating": 4.9,
+      "reviews": 2500,
       "price": 10
     }
   ],
@@ -101,97 +101,97 @@
     {
       "name": "Chicken Biryani Seeraga Samba",
       "image": "images/food/categories/seeraga samba chicken briyani.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae.",
-      "rating": 5,
-      "reviews": 2.5,
+      "description": "Aromatic biryani kit made with premium Seeraga Samba rice and spices.",
+      "rating": 4.9,
+      "reviews": 2500,
       "price": 10
     },
     {
       "name": "Chicken Biryani Basmati Rice",
       "image": "images/food/categories/basmati chicken rice.jpg",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae.",
-      "rating": 5,
-      "reviews": 2.5,
+      "description": "Classic biryani kit with fragrant basmati rice and expertly blended spices.",
+      "rating": 4.9,
+      "reviews": 2500,
       "price": 10
     },
     {
       "name": "Mutton Biryani Seeraga Samba",
       "image": "images/food/categories/Mutton Briyani - 600x600.png",
-      "description": "Odio reprehenderit, deserunt tenetur nemo beatae.",
-      "rating": 5,
-      "reviews": 2.5,
+      "description": "Aromatic biryani kit with Seeraga Samba rice and premium spices.",
+      "rating": 4.9,
+      "reviews": 2500,
       "price": 10
     },
     {
         "name": "Mutton Biryani Basmati Rice",
         "image": "images/food/categories/basmati mutton briyani.jpg",
-        "description": "Odio reprehenderit, deserunt tenetur nemo beatae.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Fragrant basmati biryani kit with expertly balanced flavors.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Chettinad Chicken",
         "image": "images/food/categories/chettinadu chicken.jpg",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Spicy, bold Chettinad-style chicken curry kit for a restaurant-quality meal.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Pepper Chicken",
         "image": "images/food/categories/pepper chicken.jpg",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Flavored with aromatic pepper for a hearty and comforting dish.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Chicken-65",
         "image": "images/food/categories/chicken 65.jpg",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Crispy and spicy chicken kit ready to fry at home.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Chicken Kulambu",
         "image": "images/food/categories/chicken kulambu.JPG",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Aromatic chicken gravy kit for a hearty home-style meal.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Mutton Kulambu",
         "image": "images/food/categories/mutton kulambu.jpg",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Flavorful mutton curry kit with rich spices for a traditional dish.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Egg Curry",
         "image": "images/food/categories/egg curry.jpg",
-        "description": "Expedita reprehenderit saepe, sapiente iure deserunt molestias.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Spicy and flavorful egg curry kit for a quick, satisfying dish.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       },
       {
         "name": "Fish Fry",
         "image": "images/food/categories/fish fry.jpg",
-        "description": "Sunt animi ratione doloribus illo reprehenderit ipsam deserunt.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Crispy fish fry kit ready to cook with flavorful masala.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 30
       },
       {
         "name": "Fish Kulambu",
         "image": "images/food/categories/fish kulambu.jpg",
-        "description": "Sunt animi ratione doloribus illo reprehenderit ipsam deserunt.",
-        "rating": 5,
-        "reviews": 2.5,
+        "description": "Spicy and tangy fish curry kit for an authentic taste at home.",
+        "rating": 4.9,
+        "reviews": 2500,
         "price": 10
       }
 

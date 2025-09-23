@@ -168,6 +168,40 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 
+function showToast(message, type = "success") {
+    const toastContainer = document.getElementById("toast-container");
+  
+    // Create toast element
+    const toast = document.createElement("div");
+    toast.className = `toast align-items-center text-white bg-${type} border-0 show`;
+    toast.role = "alert";
+    toast.ariaLive = "assertive";
+    toast.ariaAtomic = "true";
+    toast.innerHTML = `
+      <div class="d-flex">
+        <div class="toast-body">
+          ${message}
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    `;
+  
+    // Append to container
+    toastContainer.appendChild(toast);
+  
+    // Bootstrap toast activation
+    const bsToast = new bootstrap.Toast(toast, { delay: 6000 });
+    bsToast.show();
+  
+    // Remove toast after 6 seconds
+    setTimeout(() => {
+      toast.remove();
+    }, 6000);
+  }
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Set the minimum date for service start and end date fields
   const today = new Date().toISOString().split('T')[0];
@@ -226,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
           !phoneNumber ||
           mealPreferences.length === 0
       ) {
-          alert("Please fill in all required fields!");
+        showToast("Please fill in all required fields!");
           return;
       }
 
@@ -281,16 +315,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Proceed to payment
   window.proceedToPay = function () {
-      const chefData = JSON.parse(localStorage.getItem("chefData"));
+    //   const chefData = JSON.parse(localStorage.getItem("chefData"));
       const token = localStorage.getItem("jwt_token");
 
       if (!token) {
-          alert("Authentication token not found. Please log in again.");
+        showToast("Authentication token not found. Please log in again.");
           return;
       }
 
       // Send the data to the backend
-      fetch("https://65ee-2401-4900-1cc8-ee0c-1d87-d0be-cc2d-19f.ngrok-free.app/api/chefbookings/create", {
+      fetch(`${API_BASE_URL}/chefbookings/create`, {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
@@ -309,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .catch((error) => {
               console.error("Error during payment process:", error);
-              alert("Error: " + error.message);
+              showToast("Error: " + error.message);
           });
   };
 });
@@ -411,9 +445,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 // }
 
-
-
-
 function submitCookForm() {
   const cookDuration = parseInt(document.querySelector("#cookFormElement select").value);
   const members = parseInt(document.querySelector('#cookFormElement input[placeholder="Enter Number of Members"]').value);
@@ -421,10 +452,10 @@ function submitCookForm() {
   const mealPreferences = Array.from(
       document.querySelectorAll('#cookFormElement input[type="checkbox"]:checked')
   ).map((el) => el.value);
-  const location = document.querySelector('#cookFormElement input[placeholder="Enter Location"]').value;
-  const fullName = document.querySelector('#cookFormElement input[placeholder="Enter Full Name"]').value;
-  const email = document.querySelector('#cookFormElement input[placeholder="Enter Email"]').value;
-  const phoneNumber = document.querySelector('#cookFormElement input[placeholder="Enter Phone Number"]').value;
+  const location = document.querySelector('#commonFormElement input[placeholder="Enter Location"]').value;
+  const fullName = document.querySelector('#commonFormElement input[placeholder="Enter Full Name"]').value;
+  const email = document.querySelector('#commonFormElement input[placeholder="Enter Email"]').value;
+  const phoneNumber = document.querySelector('#commonFormElement input[placeholder="Enter Phone Number"]').value;
 
   // Validate inputs
   if (
@@ -437,56 +468,145 @@ function submitCookForm() {
       !email ||
       !phoneNumber
   ) {
-      alert("Please fill in all required fields.");
+    showToast("Please fill in all required fields.");
       return;
   }
 
-  // Calculation constants
+
+   // ---- Debug check (place here) ----
+  [
+    "modalMembersCount","modalMembersPrice","modalMealCount","modalMealPrice",
+    "modalMealList","modalDailyBaseCharge","modalDailyTotal",
+    "modalCookDuration","modalTotalPrice","modalGstPrice","modalGrandTotal"
+  ].forEach(id => {
+    if (!document.getElementById(id)) {
+      console.error("❌ Missing element in HTML:", id);
+    }
+  });
+
+  // Pricing constants
   const pricePerMember = 50;
   const pricePerMealPreference = 100;
   const dailyBaseCharge = 300;
 
-  // Price calculations
+  // Calculations
   const membersPrice = members * pricePerMember;
   const mealPreferencesPrice = mealPreferences.length * pricePerMealPreference;
   const dailyTotal = membersPrice + mealPreferencesPrice + dailyBaseCharge;
   const totalPrice = dailyTotal * cookDuration;
-  const gst = totalPrice * 0.18; // 18% GST
+  const gst = totalPrice * 0.18;
   const grandTotal = totalPrice + gst;
 
-  // Update modal details
-  document.getElementById("membersCount").textContent = members;
-  document.getElementById("membersPrice").textContent = membersPrice;
+  // ✅ Update modal details
+document.getElementById("modalMembersCount").textContent = members;
+document.getElementById("modalMembersPrice").textContent = membersPrice;
+document.getElementById("modalMealCount").textContent = mealPreferences.length;
+document.getElementById("modalMealPrice").textContent = mealPreferencesPrice;
+document.getElementById("modalMealList").textContent =
+  mealPreferences.length > 0 ? mealPreferences.join(", ") : "None";
+document.getElementById("modalDailyBaseCharge").textContent = dailyBaseCharge;
+document.getElementById("modalDailyTotal").textContent = dailyTotal;
+document.getElementById("modalCookDuration").textContent = cookDuration;
+document.getElementById("modalTotalPrice").textContent = totalPrice.toFixed(2);
+document.getElementById("modalGstPrice").textContent = gst.toFixed(2);
+document.getElementById("modalGrandTotal").textContent = grandTotal.toFixed(2);
 
-  document.getElementById("mealCount").textContent = mealPreferences.length;
-  document.getElementById("mealPrice").textContent = mealPreferencesPrice;
 
-  document.getElementById("dailyBaseCharge").textContent = dailyBaseCharge;
-  document.getElementById("dailyTotal").textContent = dailyTotal;
-
-  document.getElementById("totalPrice").textContent = totalPrice.toFixed(2);
-  document.getElementById("gstPrice").textContent = gst.toFixed(2);
-  document.getElementById("grandTotal").textContent = grandTotal.toFixed(2);
-
-  // Save data for submission
+  // Save data
   const cookData = {
-      cookDuration,
-      members,
-      serviceStartDate,
-      mealPreferences: mealPreferences.join(", "), // Convert array to string
-      location,
-      fullName,
-      email,
-      phoneNumber,
-      grandTotal,
+    cookDuration,
+    members,
+    serviceStartDate,
+    mealPreferences: mealPreferences.join(", "),
+    location,
+    fullName,
+    email,
+    phoneNumber,
+    grandTotal,
   };
 
   localStorage.setItem("cookData", JSON.stringify(cookData));
 
-  // Display modal
+  // ✅ Show modal AFTER updating DOM
   const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
   paymentModal.show();
 }
+
+
+
+// function submitCookForm() {
+//   const cookDuration = parseInt(document.querySelector("#cookFormElement select").value);
+//   const members = parseInt(document.querySelector('#cookFormElement input[placeholder="Enter Number of Members"]').value);
+//   const serviceStartDate = document.querySelector('#cookFormElement input[type="date"]').value;
+//   const mealPreferences = Array.from(
+//       document.querySelectorAll('#cookFormElement input[type="checkbox"]:checked')
+//   ).map((el) => el.value);
+//   const location = document.querySelector('#commonFormElement input[placeholder="Enter Location"]').value;
+//   const fullName = document.querySelector('#commonFormElement input[placeholder="Enter Full Name"]').value;
+//   const email = document.querySelector('#commonFormElement input[placeholder="Enter Email"]').value;
+//   const phoneNumber = document.querySelector('#commonFormElement input[placeholder="Enter Phone Number"]').value;
+
+//   // Validate inputs
+//   if (
+//       isNaN(members) ||
+//       members <= 0 ||
+//       isNaN(cookDuration) ||
+//       !serviceStartDate ||
+//       !location ||
+//       !fullName ||
+//       !email ||
+//       !phoneNumber
+//   ) {
+//     showToast("Please fill in all required fields.");
+//       return;
+//   }
+
+//   // Calculation constants
+//   const pricePerMember = 50;
+//   const pricePerMealPreference = 100;
+//   const dailyBaseCharge = 300;
+
+//   // Price calculations
+//   const membersPrice = members * pricePerMember;
+//   const mealPreferencesPrice = mealPreferences.length * pricePerMealPreference;
+//   const dailyTotal = membersPrice + mealPreferencesPrice + dailyBaseCharge;
+//   const totalPrice = dailyTotal * cookDuration;
+//   const gst = totalPrice * 0.18; // 18% GST
+//   const grandTotal = totalPrice + gst;
+
+//   // Update modal details
+//   document.getElementById("membersCount").textContent = members;
+//   document.getElementById("membersPrice").textContent = membersPrice;
+
+//   document.getElementById("mealCount").textContent = mealPreferences.length;
+//   document.getElementById("mealPrice").textContent = mealPreferencesPrice;
+
+//   document.getElementById("dailyBaseCharge").textContent = dailyBaseCharge;
+//   document.getElementById("dailyTotal").textContent = dailyTotal;
+
+//   document.getElementById("totalPrice").textContent = totalPrice.toFixed(2);
+//   document.getElementById("gstPrice").textContent = gst.toFixed(2);
+//   document.getElementById("grandTotal").textContent = grandTotal.toFixed(2);
+
+//   // Save data for submission
+//   const cookData = {
+//       cookDuration,
+//       members,
+//       serviceStartDate,
+//       mealPreferences: mealPreferences.join(", "), // Convert array to string
+//       location,
+//       fullName,
+//       email,
+//       phoneNumber,
+//       grandTotal,
+//   };
+
+//   localStorage.setItem("cookData", JSON.stringify(cookData));
+
+//   // Display modal
+//   const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+//   paymentModal.show();
+// }
 
 function proceedToPay() {
   const cookData = JSON.parse(localStorage.getItem("cookData")); // Retrieve saved data
@@ -494,7 +614,7 @@ function proceedToPay() {
   const token = localStorage.getItem("jwt_token"); // Assuming the token is stored in localStorage
 
   fetch(
-      "https://65ee-2401-4900-1cc8-ee0c-1d87-d0be-cc2d-19f.ngrok-free.app/api/cookbookings/create",
+      `${API_BASE_URL}/cookbookings/create`,
       {
           method: "POST",
           headers: {
@@ -520,6 +640,6 @@ function proceedToPay() {
   })
   .catch((error) => {
       console.error("Error during payment process:", error);
-      alert("Error: " + error.message);
+      showToast("Error: " + error.message);
   });
 }

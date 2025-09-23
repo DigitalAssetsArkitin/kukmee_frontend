@@ -1,0 +1,389 @@
+{
+  "meals": [
+    {
+      "meal_name": "Diabetes-Friendly Meal",
+      "maker": "Healthy Bites",
+      "price": 200,
+      "description": "Meals carefully crafted to regulate blood sugar levels, supporting pancreatic function and liver health, with fiber and protein for sustained energy.",
+      "food_plan": {
+        "veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Quinoa_Khichdi.jpg",
+            "food_name": "Quinoa Khichdi with Steamed Broccoli and Mint Raita",
+            "meal_description": "A high-fiber, protein-packed meal to help control blood sugar levels."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Lentil_Soup_with_Brown_Rice_and_Sautéed_Zucchini.jpg",
+            "food_name": "Lentil Soup with Brown Rice and Sautéed Zucchini",
+            "meal_description": "A light yet fulfilling meal packed with proteins and complex carbs."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Stuffed Multigrain Roti with Spinach and Cottage Cheese.jpg",
+            "food_name": "Stuffed Multigrain Roti with Spinach and Cottage Cheese",
+            "meal_description": "Midweek vegetarian meal high in nutrients and low in glycemic index."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Vegetable Stew with Red Rice and Coconut Chutney.jpg",
+            "food_name": "Vegetable Stew with Red Rice and Coconut Chutney",
+            "meal_description": "A low-carb, wholesome lunch to support steady energy levels."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Grilled Tofu with Quinoa and a Side of Stir-Fried Vegetables.png",
+            "food_name": "Grilled Tofu with Quinoa and a Side of Stir-Fried Vegetables",
+            "meal_description": "A protein-rich meal to end the workweek on a healthy note."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Barley Salad with Roasted Vegetables and Lemon Dressing.png",
+            "food_name": "Barley Salad with Roasted Vegetables and Lemon Dressing",
+            "meal_description": "A light and refreshing lunch to enjoy on a weekend."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Vegetable Pulao with Cucumber Raita and Fresh Salad.png",
+            "food_name": "Vegetable Pulao with Cucumber Raita and Fresh Salad",
+            "meal_description": "A hearty meal to help recharge and prepare for the upcoming week."
+          }
+        ],
+        "non_veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Grilled Chicken with Quinoa Salad and Steamed Spinach.png",
+            "food_name": "Grilled Chicken with Quinoa Salad and Steamed Spinach",
+            "meal_description": "Start your week with a balanced meal high in protein and fiber."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Fish Curry with Red Rice and Sautéed Green Beans.png",
+            "food_name": "Fish Curry with Red Rice and Sautéed Green Beans",
+            "meal_description": "A flavorful, low-carb meal perfect for maintaining blood sugar levels."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Baked Chicken Breast with Mashed Sweet Potatoes and Steamed Vegetables.png",
+            "food_name": "Baked Chicken Breast with Mashed Sweet Potatoes and Steamed Vegetables",
+            "meal_description": "A midweek meal rich in protein and complex carbs."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Grilled Salmon with Barley and a Side of Sautéed Broccoli.png",
+            "food_name": "Grilled Salmon with Barley and a Side of Sautéed Broccoli",
+            "meal_description": "A nutrient-rich lunch with omega-3 fats for better metabolic health."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Turkey Stir-Fry with Brown Rice and Mixed Vegetables.png",
+            "food_name": "Turkey Stir-Fry with Brown Rice and Mixed Vegetables",
+            "meal_description": "A flavorful meal with a balance of protein and carbs."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Grilled Shrimp with Whole Wheat Pasta and Fresh Salad.png",
+            "food_name": "Grilled Shrimp with Whole Wheat Pasta and Fresh Salad",
+            "meal_description": "A light and delicious lunch for your weekend."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Diabetes-Friendly_Meal/Chicken and Vegetable Soup with Multigrain Bread.png",
+            "food_name": "Chicken and Vegetable Soup with Multigrain Bread",
+            "meal_description": "End your week with a comforting, blood sugar-friendly lunch."
+          }
+        ]
+      }
+    },
+    {
+      "meal_name": "Hypertension-Friendly Meal",
+      "maker": "Fresh Plate",
+      "price": 220,
+      "description": "Meals designed to lower blood pressure, promoting heart and vascular health with potassium and magnesium while keeping sodium in check.",
+      "food_plan": {
+        "veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Spinach and Chickpea Salad with Lemon Dressing.png",
+            "food_name": "Spinach and Chickpea Salad with Lemon Dressing",
+            "meal_description": "A nutrient-packed meal high in potassium and fiber."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Grilled Tofu with Steamed Vegetables and Brown Rice.png",
+            "food_name": "Grilled Tofu with Steamed Vegetables and Brown Rice",
+            "meal_description": "A protein-rich, heart-healthy meal to start your week."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Vegetable and Lentil Stew with Quinoa.png",
+            "food_name": "Vegetable and Lentil Stew with Quinoa",
+            "meal_description": "A filling, low-sodium stew rich in fiber and heart-healthy nutrients."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Roasted Beets and Carrot Salad with Avocado.png",
+            "food_name": "Roasted Beets and Carrot Salad with Avocado",
+            "meal_description": "A heart-healthy salad to support healthy blood pressure."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Broccoli and Cauliflower Stir-Fry with Brown Rice.png",
+            "food_name": "Broccoli and Cauliflower Stir-Fry with Brown Rice",
+            "meal_description": "A low-sodium, high-fiber meal perfect for managing blood pressure."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Zucchini Noodles with Roasted Tomatoes and Pesto.png",
+            "food_name": "Zucchini Noodles with Roasted Tomatoes and Pesto",
+            "meal_description": "A low-sodium, heart-healthy dish to end your week."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Vegetable Biryani with Yogurt Dressing.png",
+            "food_name": "Vegetable Biryani with Yogurt Dressing",
+            "meal_description": "A flavorful, low-sodium dish to recharge and boost heart health."
+          }
+        ],
+        "non_veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Grilled Chicken with Quinoa Salad and Steamed Spinach.png",
+            "food_name": "Grilled Chicken with Quinoa Salad and Steamed Spinach",
+            "meal_description": "A heart-healthy meal rich in lean protein and fiber."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Baked Salmon with Sweet Potato and Roasted Asparagus.png",
+            "food_name": "Baked Salmon with Sweet Potato and Roasted Asparagus",
+            "meal_description": "A meal high in omega-3 fats and potassium for heart health."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Grilled Turkey with Cauliflower Mash and Steamed Broccoli.png",
+            "food_name": "Grilled Turkey with Cauliflower Mash and Steamed Broccoli",
+            "meal_description": "A low-sodium, high-protein meal perfect for reducing blood pressure."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Shrimp Stir-Fry with Brown Rice and Vegetables.png",
+            "food_name": "Shrimp Stir-Fry with Brown Rice and Vegetables",
+            "meal_description": "A light and flavorful meal with high protein and low sodium."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Chicken and Spinach Salad with Lemon Dressing.png",
+            "food_name": "Chicken and Spinach Salad with Lemon Dressing",
+            "meal_description": "A heart-healthy meal to support better blood circulation."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Grilled Fish Tacos with Avocado and Cabbage.png",
+            "food_name": "Grilled Fish Tacos with Avocado and Cabbage",
+            "meal_description": "A low-sodium, omega-3 rich meal for heart health."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Hypertension-Friendly_Meal/Chicken and Vegetable Soup with Whole Wheat Bread.png",
+            "food_name": "Chicken and Vegetable Soup with Whole Wheat Bread",
+            "meal_description": "A comforting and low-sodium soup to finish the week."
+          }
+        ]
+      }
+    },
+    {
+      "meal_name": "PCOS-Friendly Lunch Plan",
+      "maker": "Healthy Bites",
+      "price": 180,
+      "description": "Meals formulated to support hormonal balance and regulate insulin, boosting ovarian health with fiber and protein for better weight management.",
+      "food_plan": {
+        "veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Paneer Tikka with Quinoa and Sautéed Vegetables.png",
+            "food_name": "Paneer Tikka with Quinoa and Sautéed Vegetables",
+            "meal_description": "A high-protein and fiber meal, perfect for balancing blood sugar levels."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Zucchini Noodles with Pesto and Roasted Chickpeas.png.crdownload",
+            "food_name": "Zucchini Noodles with Pesto and Roasted Chickpeas",
+            "meal_description": "A light and nutritious meal that supports digestion and keeps you energized."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Spinach and Lentil Curry with Brown Rice.png",
+            "food_name": "Spinach and Lentil Curry with Brown Rice",
+            "meal_description": "A nutrient-dense, fiber-rich meal that helps regulate hormones."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Grilled Tofu with Sweet Potato Wedges and Steamed Broccoli.png",
+            "food_name": "Grilled Tofu with Sweet Potato Wedges and Steamed Broccoli",
+            "meal_description": "A filling and balanced meal with plant-based protein and low GI carbs."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Mixed Vegetable Salad with Flaxseeds and Olive Oil.png",
+            "food_name": "Mixed Vegetable Salad with Flaxseeds and Olive Oil",
+            "meal_description": "A refreshing salad to boost your metabolism and support healthy hormones."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Barley Soup with Roasted Pumpkin and Green Beans.png",
+            "food_name": "Barley Soup with Roasted Pumpkin and Green Beans",
+            "meal_description": "A warming soup to help reduce inflammation and balance blood sugar."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Soya Chunks Stir-fry with Quinoa and Mint Chutney.png",
+            "food_name": "Soya Chunks Stir-fry with Quinoa and Mint Chutney",
+            "meal_description": "A high-protein, fiber-rich stir-fry to keep your insulin levels stable."
+          }
+        ],
+        "non_veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Grilled Chicken with Roasted Zucchini and Kale Salad.png",
+            "food_name": "Grilled Chicken with Roasted Zucchini and Kale Salad",
+            "meal_description": "A lean protein meal with fiber-rich veggies to promote hormonal balance."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Baked Salmon with Mashed Sweet Potato and Steamed Broccoli.png",
+            "food_name": "Baked Salmon with Mashed Sweet Potato and Steamed Broccoli",
+            "meal_description": "A heart-healthy meal high in omega-3 fatty acids and fiber."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Chicken Curry with Red Rice and Side Salad.png",
+            "food_name": "Chicken Curry with Red Rice and Side Salad",
+            "meal_description": "A flavorful, low-glycemic meal that provides essential nutrients."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Shrimp Stir-fry with Bok Choy and Millet.png",
+            "food_name": "Shrimp Stir-fry with Bok Choy and Millet",
+            "meal_description": "A lean protein stir-fry that supports insulin regulation."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Turkey Salad with Mixed Greens, Avocado, and Olive Oil Dressing.png",
+            "food_name": "Turkey Salad with Mixed Greens, Avocado, and Olive Oil Dressing",
+            "meal_description": "A nutrient-packed salad with healthy fats and lean protein to support hormone health."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Lemon Coriander Fish with Sautéed Spinach and Quinoa.png",
+            "food_name": "Lemon Coriander Fish with Sautéed Spinach and Quinoa",
+            "meal_description": "A light yet satisfying dish to support metabolic health."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/PCOS-Friendly/Chicken Stew with Roasted Carrots and Sweet Potato.png",
+            "food_name": "Chicken Stew with Roasted Carrots and Sweet Potato",
+            "meal_description": "A comforting, protein-rich meal to help maintain hormonal balance."
+          }
+        ]
+      }
+    },
+    {
+      "meal_name": "Weight Loss Lunch Plan",
+      "maker": "Healthy Bites",
+      "price": 200,
+      "description": "Low-calorie, nutrient-rich meals that boost metabolism and muscle health, helping you achieve weight loss while staying energized and satisfied.",
+      "food_plan": {
+        "veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Grilled Tofu Salad with Mixed Greens, Cucumber, and Lemon Dressing.png",
+            "food_name": "Grilled Tofu Salad with Mixed Greens, Cucumber, and Lemon Dressing",
+            "meal_description": "A light yet satisfying salad rich in protein and fiber to keep you full longer."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Lentil Soup with Sautéed Vegetables.png",
+            "food_name": "Lentil Soup with Sautéed Vegetables",
+            "meal_description": "A hearty, fiber-rich soup that supports weight loss and digestion."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Sautéed Spinach and Mushroom Stir-fry with Quinoa.png",
+            "food_name": "Sautéed Spinach and Mushroom Stir-fry with Quinoa",
+            "meal_description": "A nutrient-dense, low-calorie stir-fry to keep you full and nourished."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Barley Salad with Roasted Vegetables and Olive Oil.png",
+            "food_name": "Barley Salad with Roasted Vegetables and Olive Oil",
+            "meal_description": "A filling, high-fiber salad that supports weight loss while providing essential nutrients."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Grilled Paneer with Sweet Potato Mash and Green Salad.png",
+            "food_name": "Grilled Paneer with Sweet Potato Mash and Green Salad",
+            "meal_description": "A protein-packed, satisfying meal to keep hunger at bay and support your weight loss goals."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Cauliflower Rice Stir-fry with Eggplant and Chickpeas.png",
+            "food_name": "Cauliflower Rice Stir-fry with Eggplant and Chickpeas",
+            "meal_description": "A low-carb, filling stir-fry that provides plenty of fiber and protein."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Vegetable Stew with Whole-Grain Bread or Millet Roti.png",
+            "food_name": "Vegetable Stew with Whole-Grain Bread or Millet Roti",
+            "meal_description": "A hearty, low-calorie stew with whole grains to keep you full and energized."
+          }
+        ],
+        "non_veg": [
+          {
+            "day": "Monday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Grilled Chicken Breast with Steamed Broccoli and Quinoa.png",
+            "food_name": "Grilled Chicken Breast with Steamed Broccoli and Quinoa",
+            "meal_description": "A protein-rich meal that promotes muscle retention while supporting weight loss."
+          },
+          {
+            "day": "Tuesday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Lemon-Baked Fish with Zucchini Noodles and Cucumber Salad.png",
+            "food_name": "Lemon-Baked Fish with Zucchini Noodles and Cucumber Salad",
+            "meal_description": "A light, heart-healthy meal with protein and low-calorie vegetables."
+          },
+          {
+            "day": "Wednesday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Shrimp Stir-fry with Sautéed Vegetables and Cauliflower Rice.png",
+            "food_name": "Shrimp Stir-fry with Sautéed Vegetables and Cauliflower Rice",
+            "meal_description": "A low-calorie, high-protein meal perfect for keeping you on track with your weight loss."
+          },
+          {
+            "day": "Thursday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Turkey Lettuce Wraps with Roasted Vegetables.png",
+            "food_name": "Turkey Lettuce Wraps with Roasted Vegetables",
+            "meal_description": "A light, protein-rich lunch to keep you full without the extra calories."
+          },
+          {
+            "day": "Friday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Grilled Salmon with Spinach Sautéed in Olive Oil and Sweet Potato.png",
+            "food_name": "Grilled Salmon with Spinach Sautéed in Olive Oil and Sweet Potato",
+            "meal_description": "A balanced meal with healthy fats and protein to support weight loss."
+          },
+          {
+            "day": "Saturday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Chicken Soup with Green Beans and Wild Rice.png",
+            "food_name": "Chicken Soup with Green Beans and Wild Rice",
+            "meal_description": "A comforting, filling soup packed with nutrients for weight management."
+          },
+          {
+            "day": "Sunday",
+            "meal_image": "images/food/deit_meal/Weight_Loss/Roasted Chicken Breast with Quinoa Salad and Steamed Vegetables.png",
+            "food_name": "Roasted Chicken Breast with Quinoa Salad and Steamed Vegetables",
+            "meal_description": "A wholesome, satisfying meal that’s low in calories but rich in essential nutrients."
+          }
+        ]
+      }
+    }
+  ]
+}
+

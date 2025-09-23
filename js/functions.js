@@ -1470,6 +1470,41 @@
 //     });
 // });
 
+
+
+
+function showToast(message, type = "success") {
+  const toastContainer = document.getElementById("toast-container");
+
+  // Create toast element
+  const toast = document.createElement("div");
+  toast.className = `toast align-items-center text-white bg-${type} border-0 show`;
+  toast.role = "alert";
+  toast.ariaLive = "assertive";
+  toast.ariaAtomic = "true";
+  toast.innerHTML = `
+    <div class="d-flex">
+      <div class="toast-body">
+        ${message}
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  `;
+
+  // Append to container
+  toastContainer.appendChild(toast);
+
+  // Bootstrap toast activation
+  const bsToast = new bootstrap.Toast(toast, { delay: 6000 });
+  bsToast.show();
+
+  // Remove toast after 6 seconds
+  setTimeout(() => {
+    toast.remove();
+  }, 6000);
+}
+
+
 // custom js codes ======================================================================================================================================================================================================
 
 // signup
@@ -1492,8 +1527,7 @@ document
     };
 
     try {
-      const response = await fetch(
-        "https://84ee-2405-201-e025-f011-c92e-9fc2-c6b8-2af1.ngrok-free.app/api/auth/customersignup",
+      const response = await fetch(`${API_BASE_URL}/auth/customersignup`,
         {
           method: "POST",
           headers: {
@@ -1508,13 +1542,13 @@ document
       }
 
       const data = await response.json();
-      alert("Signup successful! You can now log in.");
+      showToast("Signup successful! You can now log in.");
 
       // Redirect to login page
       window.location.href = "login.html";
     } catch (error) {
       console.error("Error:", error);
-      alert("Error: " + error.message);
+      showToast("Error: " + error.message);
     }
   });
 

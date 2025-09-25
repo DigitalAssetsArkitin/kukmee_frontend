@@ -260,6 +260,7 @@
                                         <div class="col-md-6 form-group">
                                             <label class="custom-label">Chef Type</label>
                                             <select id="chefType" class="form-control custom-input">
+                                                <option value="">-- Select Your Chef type --</option>
                                                 <option value="domestic">Domestic</option>
                                                 <option value="international">International</option>
                                             </select>
@@ -352,10 +353,12 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <p><strong>Number of Members:</strong> <span id="membersCount">0</span> x
+                                            <p><strong>Number of Members:</strong> <span id="modalMembersCount">0</span>
+                                                x
                                                 ₹50 =
-                                                ₹<span id="membersPrice">0</span></p>
-                                            <p><strong>Meal Preferences:</strong> <span id="mealCount">0</span> x ₹100 =
+                                                ₹<span id="modalMembersPrice">0</span></p>
+                                            <p><strong>Meal Preferences:</strong> <span id="modalMealCount">0</span> x
+                                                ₹100 =
                                                 ₹<span id="mealPrice">0</span></p>
                                             <p><strong>Daily Base Charge:</strong> ₹<span
                                                     id="dailyBaseCharge">300</span>
@@ -393,7 +396,7 @@
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <label class="custom-label">Number of Members</label>
-                                            <input type="number" class="form-control"
+                                            <input type="number" id="cookMembers" class="form-control"
                                                 placeholder="Enter Number of Members">
                                         </div>
                                     </div>
@@ -438,47 +441,52 @@
                     </div>
                 </div>
 
-<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+                <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
 
-      <div class="modal-body">
-        <p><strong>Number of Members:</strong>
-          <span id="modalMembersCount">0</span> x ₹50 = ₹<span id="modalMembersPrice">0</span>
-        </p>
+                            <div class="modal-body">
+                                <p><strong>Number of Members:</strong>
+                                    <span id="members">0</span>
+                                    x ₹50 = ₹<span id="membersPrice">0</span>
+                                </p>
 
-        <p><strong>Meal Preferences:</strong>
-          <span id="modalMealCount">0</span> x ₹100 = ₹<span id="modalMealPrice">0</span>
-        </p>
+                                <p><strong>Meal Preferences:</strong>
+                                    <span id="mealPreferences">0</span>
+                                    x ₹100 = ₹<span id="modalMealPrice">0</span>
+                                </p>
 
-        <p><strong>Selected Meals:</strong>
-          <span id="modalMealList">None</span>
-        </p>
+                                <p><strong>Selected Meals:</strong>
+                                    <span id="modalMealList">None</span>
+                                </p>
 
-        <p><strong>Daily Base Charge:</strong> ₹<span id="modalDailyBaseCharge">300</span></p>
+                                <p><strong>Daily Base Charge:</strong> ₹<span id="modalDailyBaseCharge">300</span></p>
 
-        <p><strong>Daily Total:</strong> ₹<span id="modalDailyTotal">0</span></p>
+                                <p><strong>Daily Total:</strong> ₹<span id="modalDailyTotal">0</span></p>
 
-        <p><strong>Total Price for <span id="modalCookDuration">0</span> Days:</strong>
-          ₹<span id="modalTotalPrice">0</span>
-        </p>
+                                <p><strong>Total Price for <span id="modalCookDuration">0</span> Days:</strong>
+                                    ₹<span id="modalTotalPrice">0</span>
+                                </p>
 
-        <p><strong>GST (18%):</strong> ₹<span id="modalGstPrice">0</span></p>
+                                <p><strong>GST (18%):</strong> ₹<span id="modalGstPrice">0</span></p>
 
-        <p><strong>Grand Total:</strong> ₹<span id="modalGrandTotal">0</span></p>
-      </div>
+                                <p><strong>Grand Total:</strong> ₹<span id="modalGrandTotal">0</span></p>
+                            </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="proceedToPay()">Proceed to Pay</button>
-      </div>
-    </div>
-  </div>
-</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" onclick="proceedToPayCook()">Proceed to
+                                    Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Payment Modal -->
                 <!-- <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
@@ -1101,7 +1109,8 @@
                                         </div>
                                     </div>
                                     <div class="blog-box-img"
-                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);"></div>
+                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);">
+                                    </div>
                                 </div>
                             </div>
 
@@ -1121,7 +1130,8 @@
                                         </div>
                                     </div>
                                     <div class="blog-box-img"
-                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);"></div>
+                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);">
+                                    </div>
                                 </div>
                             </div>
 
@@ -1141,7 +1151,8 @@
                                         </div>
                                     </div>
                                     <div class="blog-box-img"
-                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);"></div>
+                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);">
+                                    </div>
                                 </div>
                             </div>
 
@@ -1161,7 +1172,8 @@
                                         </div>
                                     </div>
                                     <div class="blog-box-img"
-                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);"></div>
+                                        style="background-image: url(images/food/logo/Kukmee-background-remove.png);">
+                                    </div>
                                 </div>
                             </div>
 
